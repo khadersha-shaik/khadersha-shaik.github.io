@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Judges Evaluation & Scoring Sheet — AI Music Competition</title>
+  <title>Official Judges Evaluation & Scoring Sheet — AI Music Competition</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #1F4E78;
-      --primary-dark: #143552;
+      --primary: #1E3A8A;
       --border: #D1D5DB;
-      --text: #111827;
-      --text-muted: #4B5563;
+      --text: #0F172A;
+      --text-muted: #475569;
       --bg-ai: #ECFDF5;
       --text-ai: #065F46;
       --bg-write: #FFFBEB;
@@ -28,20 +27,20 @@
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
       color: var(--text);
-      background-color: #F9FAFB;
-      padding: 20px;
-      font-size: 12px;
-      line-height: 1.4;
+      background-color: #F8FAFC;
+      padding: 16px;
+      font-size: 11px;
+      line-height: 1.35;
     }
 
     .no-print-bar {
-      max-width: 1200px;
-      margin: 0 auto 20px auto;
+      max-width: 1300px;
+      margin: 0 auto 16px auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
       background: white;
-      padding: 12px 20px;
+      padding: 10px 20px;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
       border: 1px solid var(--border);
@@ -49,29 +48,26 @@
 
     .btn {
       font-family: inherit;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 700;
-      padding: 8px 18px;
+      padding: 7px 16px;
       border-radius: 6px;
       cursor: pointer;
       border: 1px solid transparent;
-      transition: all 0.2s;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
 
-    .btn-primary {
-      background-color: var(--primary);
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background-color: var(--primary-dark);
-    }
+    .btn-primary { background-color: var(--primary); color: white; }
+    .btn-secondary { background-color: #E2E8F0; color: #1E293B; }
 
     .sheet-page {
-      max-width: 1200px;
+      max-width: 1300px;
       margin: 0 auto;
       background: white;
-      padding: 30px;
+      padding: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
       border: 1px solid var(--border);
@@ -80,92 +76,90 @@
     .header-banner {
       background: var(--primary);
       color: white;
-      padding: 16px 20px;
+      padding: 12px 16px;
       border-radius: 6px;
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
 
     .header-banner h1 {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 800;
       letter-spacing: 0.5px;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
 
     .header-banner p {
-      font-size: 11px;
+      font-size: 10.5px;
       color: #E0E7FF;
     }
 
     .judge-meta-grid {
       display: grid;
-      grid-template-columns: 2fr 1.2fr 1.5fr;
+      grid-template-columns: 1.8fr 1.2fr 1.5fr;
       gap: 20px;
-      margin-bottom: 20px;
-      padding: 12px 16px;
-      background-color: #F3F4F6;
+      margin-bottom: 14px;
+      padding: 10px 14px;
+      background-color: #F1F5F9;
       border-radius: 6px;
-      border: 1px solid #E5E7EB;
+      border: 1px solid #E2E8F0;
     }
 
     .meta-field {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 600;
     }
 
     .meta-line {
       flex: 1;
-      border-bottom: 1px solid #9CA3AF;
-      height: 16px;
+      border-bottom: 1px solid #94A3B8;
+      height: 14px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 11px;
+      font-size: 10px;
     }
 
     th {
       background-color: #1E293B;
       color: white;
       font-weight: 700;
-      padding: 8px 6px;
+      padding: 6px 4px;
       border: 1px solid #334155;
       text-align: center;
       vertical-align: middle;
     }
 
     td {
-      padding: 7px 6px;
+      padding: 6px 4px;
       border: 1px solid var(--border);
       vertical-align: middle;
     }
 
-    tr:nth-child(even) {
-      background-color: #F9FAFB;
-    }
+    tr:nth-child(even) { background-color: #F8FAFC; }
 
     .col-sno {
       font-family: 'JetBrains Mono', monospace;
       font-weight: 700;
       text-align: center;
-      width: 40px;
+      width: 30px;
     }
 
     .col-team {
       font-weight: 700;
-      font-size: 11.5px;
-      width: 150px;
+      font-size: 11px;
+      width: 130px;
     }
 
     .col-theme {
-      font-size: 10.5px;
+      font-size: 9.5px;
       color: var(--text-muted);
-      width: 120px;
+      width: 110px;
     }
 
     .col-ai {
@@ -174,88 +168,59 @@
       font-family: 'JetBrains Mono', monospace;
       font-weight: 700;
       text-align: center;
-      width: 65px;
+      width: 50px;
     }
 
     .col-write {
       background-color: var(--bg-write);
-      width: 65px;
-      height: 24px;
+      width: 55px;
+      height: 22px;
     }
 
-    .col-total {
+    .col-jtotal {
       background-color: #FEF3C7;
       font-weight: 700;
       text-align: center;
-      width: 70px;
+      width: 60px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .col-grand {
+      background-color: #DBEAFE;
+      color: #1E3A8A;
+      font-weight: 800;
+      text-align: center;
+      width: 65px;
+      font-family: 'JetBrains Mono', monospace;
     }
 
     .col-notes {
-      width: 250px;
+      width: 220px;
     }
 
     .tag-theme {
       display: inline-block;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-size: 9.5px;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-size: 9px;
       font-weight: 600;
-      background: #E5E7EB;
-      color: #374151;
+      background: #E2E8F0;
+      color: #334155;
     }
 
-    /* Print Styles */
+    /* Print Formatting */
     @media print {
-      body {
-        padding: 0;
-        background: white;
-      }
-
-      .no-print-bar {
-        display: none !important;
-      }
-
-      .sheet-page {
-        max-width: 100%;
-        padding: 10px;
-        box-shadow: none;
-        border: none;
-      }
-
-      .header-banner {
-        background: #1F4E78 !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-        padding: 10px;
-      }
-
-      th {
-        background-color: #1E293B !important;
-        color: white !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-
-      .col-ai {
-        background-color: #ECFDF5 !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-
-      .col-write {
-        background-color: #FFFBEB !important;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-
-      @page {
-        size: A4 landscape;
-        margin: 10mm;
-      }
-
-      tr {
-        page-break-inside: avoid;
-      }
+      body { padding: 0; background: white; }
+      .no-print-bar { display: none !important; }
+      .sheet-page { max-width: 100%; padding: 6px; box-shadow: none; border: none; }
+      .header-banner { background: #1E3A8A !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      th { background-color: #1E293B !important; color: white !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .col-ai { background-color: #ECFDF5 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .col-write { background-color: #FFFBEB !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .col-jtotal { background-color: #FEF3C7 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .col-grand { background-color: #DBEAFE !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      @page { size: A4 landscape; margin: 8mm; }
+      tr { page-break-inside: avoid; }
     }
   </style>
 </head>
@@ -264,11 +229,12 @@
   <!-- Top Actions (Hidden during print) -->
   <div class="no-print-bar">
     <div>
-      <h2 style="font-size: 15px; font-weight: 800; color: var(--primary);">Judges Scoring Sheet (Printable A4)</h2>
-      <p style="font-size: 11px; color: var(--text-muted);">Ready for physical grading with pre-filled AI benchmark marks.</p>
+      <h2 style="font-size: 14px; font-weight: 800; color: var(--primary);">Official Judges Scoring Sheet (A4 Landscape)</h2>
+      <p style="font-size: 11px; color: var(--text-muted);">Pre-populated with 44 Teams & AI Benchmark Marks | Framework: AI (40M) + Human Judges (60M) = 100M.</p>
     </div>
-    <div style="display: flex; gap: 10px;">
-      <a href="index.html" class="btn" style="background: #E5E7EB; color: #1F2937; text-decoration: none;">&larr; Back to Live Stage</a>
+    <div style="display: flex; gap: 8px;">
+      <a href="index.html" class="btn btn-secondary">&larr; Live Stage</a>
+      <a href="eval_doc_A4.html" class="btn btn-secondary">📄 A4 Rubric Guide</a>
       <button class="btn btn-primary" onclick="window.print()">🖨️ Print Sheet (Ctrl+P)</button>
     </div>
   </div>
@@ -278,7 +244,7 @@
     
     <div class="header-banner">
       <h1>AI MUSIC COMPETITION — OFFICIAL JUDGES SCORING SHEET</h1>
-      <p>Instructions: Review the pre-evaluated AI Benchmark score, evaluate the live team defense & song, and record your scores.</p>
+      <p>Grading Framework: Part A: AI Benchmark (40 Marks) + Part B: Human Judges Live Defense (60 Marks) = Grand Total: 100 Marks</p>
     </div>
 
     <div class="judge-meta-grid">
@@ -299,21 +265,22 @@
     <table>
       <thead>
         <tr>
-          <th rowspan="2" style="width: 35px;">#</th>
-          <th rowspan="2" style="width: 140px;">Team Name</th>
-          <th rowspan="2" style="width: 120px;">Theme</th>
-          <th colspan="2" style="background: #047857;">AI Benchmark</th>
-          <th colspan="4" style="background: #D97706;">Judge Scores (Max 10 each)</th>
-          <th rowspan="2" style="background: #B45309; width: 65px;">Judge<br>Total (40)</th>
+          <th rowspan="2" style="width: 25px;">#</th>
+          <th rowspan="2" style="width: 120px;">Team Name</th>
+          <th rowspan="2" style="width: 110px;">Theme</th>
+          <th colspan="2" style="background: #065F46;">PART A: AI Benchmark (40M)</th>
+          <th colspan="4" style="background: #92400E;">PART B: Human Judges Live Scoring (60M)</th>
+          <th rowspan="2" style="background: #78350F; width: 55px;">Judge<br>Total (60)</th>
+          <th rowspan="2" style="background: #1E3A8A; width: 60px;">Grand<br>Total (100)</th>
           <th rowspan="2">Judges Defense Remarks & Notes</th>
         </tr>
         <tr>
-          <th style="background: #065F46; width: 55px;">AI Mark<br>(/40)</th>
-          <th style="background: #065F46; width: 50px;">AI %</th>
-          <th style="background: #92400E; width: 60px;">Theme & Lyrics</th>
-          <th style="background: #92400E; width: 60px;">Music & Prompt</th>
-          <th style="background: #92400E; width: 60px;">Q&A Defense</th>
-          <th style="background: #92400E; width: 60px;">Creativity</th>
+          <th style="background: #047857; width: 48px;">AI Mark (/40)</th>
+          <th style="background: #047857; width: 45px;">AI %</th>
+          <th style="background: #B45309; width: 55px;">Creativity<br>(Max 20)</th>
+          <th style="background: #B45309; width: 55px;">Composition<br>(Max 20)</th>
+          <th style="background: #B45309; width: 55px;">Emotion<br>(Max 10)</th>
+          <th style="background: #B45309; width: 55px;">Present./Q&A<br>(Max 10)</th>
         </tr>
       </thead>
       <tbody>
@@ -323,12 +290,13 @@
           <td class="col-team">ajay guptha</td>
           <td class="col-theme"><span class="tag-theme">Heroes Among us</span></td>
           <td class="col-ai">33.5</td>
-          <td class="col-ai" style="font-size: 10px;">83.8%</td>
+          <td class="col-ai" style="font-size: 9.5px;">83.8%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -336,12 +304,13 @@
           <td class="col-team">Sound Waves</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">29.5</td>
-          <td class="col-ai" style="font-size: 10px;">73.8%</td>
+          <td class="col-ai" style="font-size: 9.5px;">73.8%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -349,12 +318,13 @@
           <td class="col-team">Code & Chords</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">31.0</td>
-          <td class="col-ai" style="font-size: 10px;">77.5%</td>
+          <td class="col-ai" style="font-size: 9.5px;">77.5%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -362,12 +332,13 @@
           <td class="col-team">SYNERA</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">28.0</td>
-          <td class="col-ai" style="font-size: 10px;">70.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">70.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -375,12 +346,13 @@
           <td class="col-team">CODE & CHORDS</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">31.0</td>
-          <td class="col-ai" style="font-size: 10px;">77.5%</td>
+          <td class="col-ai" style="font-size: 9.5px;">77.5%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -388,12 +360,13 @@
           <td class="col-team">Code & Chords</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">29.0</td>
-          <td class="col-ai" style="font-size: 10px;">72.5%</td>
+          <td class="col-ai" style="font-size: 9.5px;">72.5%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -401,12 +374,13 @@
           <td class="col-team">404TALENTNOTFOUND</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">26.0</td>
-          <td class="col-ai" style="font-size: 10px;">65.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">65.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -414,12 +388,13 @@
           <td class="col-team">Algorythm</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">31.5</td>
-          <td class="col-ai" style="font-size: 10px;">78.8%</td>
+          <td class="col-ai" style="font-size: 9.5px;">78.8%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -427,12 +402,13 @@
           <td class="col-team">NEUROBEATS</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">34.5</td>
-          <td class="col-ai" style="font-size: 10px;">86.2%</td>
+          <td class="col-ai" style="font-size: 9.5px;">86.2%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -440,12 +416,13 @@
           <td class="col-team">404 Not Found</td>
           <td class="col-theme"><span class="tag-theme">Heroes Among us</span></td>
           <td class="col-ai">24.5</td>
-          <td class="col-ai" style="font-size: 10px;">61.3%</td>
+          <td class="col-ai" style="font-size: 9.5px;">61.3%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -453,12 +430,13 @@
           <td class="col-team">TEAM JIGS</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">29.5</td>
-          <td class="col-ai" style="font-size: 10px;">73.8%</td>
+          <td class="col-ai" style="font-size: 9.5px;">73.8%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -466,12 +444,13 @@
           <td class="col-team">MUSIC QUEENS</td>
           <td class="col-theme"><span class="tag-theme">Heroes Among us</span></td>
           <td class="col-ai">32.0</td>
-          <td class="col-ai" style="font-size: 10px;">80.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">80.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -479,12 +458,13 @@
           <td class="col-team">SOLO</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">27.5</td>
-          <td class="col-ai" style="font-size: 10px;">68.8%</td>
+          <td class="col-ai" style="font-size: 9.5px;">68.8%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -492,12 +472,13 @@
           <td class="col-team">Single knight</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">30.0</td>
-          <td class="col-ai" style="font-size: 10px;">75.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">75.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -505,12 +486,13 @@
           <td class="col-team">Kanyarasi</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">26.0</td>
-          <td class="col-ai" style="font-size: 10px;">65.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">65.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -518,12 +500,13 @@
           <td class="col-team">Sonic Innovators</td>
           <td class="col-theme"><span class="tag-theme">Heroes Among us</span></td>
           <td class="col-ai">32.0</td>
-          <td class="col-ai" style="font-size: 10px;">80.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">80.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -531,12 +514,13 @@
           <td class="col-team">TEAM EYES</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">32.0</td>
-          <td class="col-ai" style="font-size: 10px;">80.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">80.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -544,12 +528,13 @@
           <td class="col-team">Musical Chairs</td>
           <td class="col-theme"><span class="tag-theme">Heroes Among us</span></td>
           <td class="col-ai">31.5</td>
-          <td class="col-ai" style="font-size: 10px;">78.8%</td>
+          <td class="col-ai" style="font-size: 9.5px;">78.8%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -557,12 +542,13 @@
           <td class="col-team">RAAGA</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">33.0</td>
-          <td class="col-ai" style="font-size: 10px;">82.5%</td>
+          <td class="col-ai" style="font-size: 9.5px;">82.5%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -570,12 +556,13 @@
           <td class="col-team">LONGCLAW</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">32.5</td>
-          <td class="col-ai" style="font-size: 10px;">81.2%</td>
+          <td class="col-ai" style="font-size: 9.5px;">81.2%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -583,12 +570,13 @@
           <td class="col-team">Quantum Minds</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">29.5</td>
-          <td class="col-ai" style="font-size: 10px;">73.8%</td>
+          <td class="col-ai" style="font-size: 9.5px;">73.8%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -596,12 +584,13 @@
           <td class="col-team">GUITAR AI</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">24.0</td>
-          <td class="col-ai" style="font-size: 10px;">60.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">60.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -609,12 +598,13 @@
           <td class="col-team">Code slayers</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">30.5</td>
-          <td class="col-ai" style="font-size: 10px;">76.2%</td>
+          <td class="col-ai" style="font-size: 9.5px;">76.2%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -622,12 +612,13 @@
           <td class="col-team">Cadence</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">31.0</td>
-          <td class="col-ai" style="font-size: 10px;">77.5%</td>
+          <td class="col-ai" style="font-size: 9.5px;">77.5%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -635,12 +626,13 @@
           <td class="col-team">AI MELODY</td>
           <td class="col-theme"><span class="tag-theme">Heroes Among us</span></td>
           <td class="col-ai">37.0</td>
-          <td class="col-ai" style="font-size: 10px;">92.5%</td>
+          <td class="col-ai" style="font-size: 9.5px;">92.5%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -648,12 +640,13 @@
           <td class="col-team">Melody Minds</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">19.5</td>
-          <td class="col-ai" style="font-size: 10px;">48.8%</td>
+          <td class="col-ai" style="font-size: 9.5px;">48.8%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -661,12 +654,13 @@
           <td class="col-team">Epic beats</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">26.0</td>
-          <td class="col-ai" style="font-size: 10px;">65.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">65.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -674,12 +668,13 @@
           <td class="col-team">AInovators</td>
           <td class="col-theme"><span class="tag-theme">Heroes Among us</span></td>
           <td class="col-ai">34.0</td>
-          <td class="col-ai" style="font-size: 10px;">85.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">85.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -687,12 +682,13 @@
           <td class="col-team">Melody makers</td>
           <td class="col-theme"><span class="tag-theme">Heroes Among us</span></td>
           <td class="col-ai">34.5</td>
-          <td class="col-ai" style="font-size: 10px;">86.2%</td>
+          <td class="col-ai" style="font-size: 9.5px;">86.2%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -700,12 +696,13 @@
           <td class="col-team">Melody Lemon</td>
           <td class="col-theme"><span class="tag-theme">Heroes Among us</span></td>
           <td class="col-ai">36.0</td>
-          <td class="col-ai" style="font-size: 10px;">90.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">90.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -713,12 +710,13 @@
           <td class="col-team">The Boyzz</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">28.0</td>
-          <td class="col-ai" style="font-size: 10px;">70.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">70.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -726,12 +724,13 @@
           <td class="col-team">Muse Ai</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">36.5</td>
-          <td class="col-ai" style="font-size: 10px;">91.2%</td>
+          <td class="col-ai" style="font-size: 9.5px;">91.2%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -739,12 +738,13 @@
           <td class="col-team">Musical stars</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">20.5</td>
-          <td class="col-ai" style="font-size: 10px;">51.2%</td>
+          <td class="col-ai" style="font-size: 9.5px;">51.2%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -752,12 +752,13 @@
           <td class="col-team">Utimatrix</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">37.5</td>
-          <td class="col-ai" style="font-size: 10px;">93.8%</td>
+          <td class="col-ai" style="font-size: 9.5px;">93.8%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -765,12 +766,13 @@
           <td class="col-team">CYBER KNIGHTS</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">36.0</td>
-          <td class="col-ai" style="font-size: 10px;">90.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">90.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -778,12 +780,13 @@
           <td class="col-team">SoulSync</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">31.0</td>
-          <td class="col-ai" style="font-size: 10px;">77.5%</td>
+          <td class="col-ai" style="font-size: 9.5px;">77.5%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -791,12 +794,13 @@
           <td class="col-team">Trinetras</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">34.5</td>
-          <td class="col-ai" style="font-size: 10px;">86.2%</td>
+          <td class="col-ai" style="font-size: 9.5px;">86.2%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -804,12 +808,13 @@
           <td class="col-team">VisionX</td>
           <td class="col-theme"><span class="tag-theme">Heroes Among us</span></td>
           <td class="col-ai">37.5</td>
-          <td class="col-ai" style="font-size: 10px;">93.8%</td>
+          <td class="col-ai" style="font-size: 9.5px;">93.8%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -817,12 +822,13 @@
           <td class="col-team">THE DIGITAL MAESTROS</td>
           <td class="col-theme"><span class="tag-theme">Heroes Among us</span></td>
           <td class="col-ai">34.0</td>
-          <td class="col-ai" style="font-size: 10px;">85.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">85.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -830,12 +836,13 @@
           <td class="col-team">THE SOUNDERS</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">32.0</td>
-          <td class="col-ai" style="font-size: 10px;">80.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">80.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -843,12 +850,13 @@
           <td class="col-team">Mikrokosmos</td>
           <td class="col-theme"><span class="tag-theme">The Greatest Gift</span></td>
           <td class="col-ai">37.0</td>
-          <td class="col-ai" style="font-size: 10px;">92.5%</td>
+          <td class="col-ai" style="font-size: 9.5px;">92.5%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -856,12 +864,13 @@
           <td class="col-team">Think Twice</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">35.0</td>
-          <td class="col-ai" style="font-size: 10px;">87.5%</td>
+          <td class="col-ai" style="font-size: 9.5px;">87.5%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -869,12 +878,13 @@
           <td class="col-team">Coders</td>
           <td class="col-theme"><span class="tag-theme">Heroes Among us</span></td>
           <td class="col-ai">28.0</td>
-          <td class="col-ai" style="font-size: 10px;">70.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">70.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
         <tr>
@@ -882,12 +892,13 @@
           <td class="col-team">Byteforce</td>
           <td class="col-theme"><span class="tag-theme">Engineering</span></td>
           <td class="col-ai">28.0</td>
-          <td class="col-ai" style="font-size: 10px;">70.0%</td>
+          <td class="col-ai" style="font-size: 9.5px;">70.0%</td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
           <td class="col-write"></td>
-          <td class="col-total"></td>
+          <td class="col-jtotal"></td>
+          <td class="col-grand"></td>
           <td class="col-notes"></td>
         </tr>
       </tbody>

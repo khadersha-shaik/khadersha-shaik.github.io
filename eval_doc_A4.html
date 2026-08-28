@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official Judges Evaluation Rubric & Guidelines — AI Music Competition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Strict A4 Portrait Styling */
+    @page {
+      size: A4 portrait;
+      margin: 10mm 12mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      color: #0F172A;
+      background-color: #F8FAFC;
+      line-height: 1.35;
+      font-size: 11px;
+    }
+
+    .no-print {
+      max-width: 800px;
+      margin: 15px auto;
+      padding: 10px 20px;
+      background: #FFFFFF;
+      border: 1px solid #CBD5E1;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    }
+
+    .btn {
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-primary { background: #1E3A8A; color: white; }
+    .btn-secondary { background: #E2E8F0; color: #1E293B; }
+
+    /* Single Page A4 Container */
+    .a4-container {
+      width: 190mm;
+      min-height: 275mm;
+      max-height: 277mm;
+      margin: 0 auto;
+      background: white;
+      padding: 10mm 12mm;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Header */
+    .doc-header {
+      border-bottom: 2px solid #1E3A8A;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .header-left h1 {
+      font-size: 16px;
+      font-weight: 800;
+      color: #1E3A8A;
+      letter-spacing: -0.3px;
+      text-transform: uppercase;
+    }
+
+    .header-left p {
+      font-size: 10.5px;
+      color: #475569;
+      font-weight: 600;
+    }
+
+    .header-badge {
+      background: #1E3A8A;
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Section Styling */
+    .section-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #1E3A8A;
+      background: #F1F5F9;
+      padding: 4px 8px;
+      border-left: 3px solid #1E3A8A;
+      margin: 8px 0 5px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .section-title span.tag {
+      font-size: 9.5px;
+      font-weight: 700;
+      color: #64748B;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 6px;
+      font-size: 10px;
+    }
+
+    th {
+      background-color: #1E293B;
+      color: white;
+      font-weight: 700;
+      padding: 5px 6px;
+      border: 1px solid #334155;
+      text-align: left;
+    }
+
+    td {
+      padding: 5px 6px;
+      border: 1px solid #CBD5E1;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) {
+      background-color: #F8FAFC;
+    }
+
+    .text-center { text-align: center; }
+    .font-bold { font-weight: 700; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+    .tag-theme {
+      font-weight: 700;
+      color: #0F172A;
+      white-space: nowrap;
+    }
+
+    .pill-ai {
+      background: #ECFDF5;
+      color: #065F46;
+      border: 1px solid #A7F3D0;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 3px;
+      display: inline-block;
+    }
+
+    .pill-human {
+      background: #EFF6FF;
+      color: #1E40AF;
+      border: 1px solid #BFDBFE;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 3px;
+      display: inline-block;
+    }
+
+    /* Two Column Rubric Grid */
+    .rubric-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 8px;
+    }
+
+    /* Guidelines / Scoring Scale Box */
+    .guideline-box {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 4px;
+      padding: 6px 10px;
+      margin-top: 4px;
+      font-size: 9.5px;
+      color: #334155;
+    }
+
+    .guideline-box strong {
+      color: #0F172A;
+    }
+
+    .scale-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .scale-item {
+      flex: 1;
+      background: white;
+      border: 1px solid #CBD5E1;
+      border-radius: 3px;
+      padding: 3px 5px;
+      text-align: center;
+    }
+
+    .scale-item .score {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      color: #1E3A8A;
+      display: block;
+    }
+
+    /* Judge Signature Footer */
+    .doc-footer {
+      border-top: 1px solid #CBD5E1;
+      padding-top: 8px;
+      margin-top: 8px;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1.2fr;
+      gap: 15px;
+      font-size: 10px;
+    }
+
+    .sign-field {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .sign-line {
+      flex: 1;
+      border-bottom: 1px solid #94A3B8;
+      height: 14px;
+    }
+
+    /* Exact Print Formatting */
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .a4-container {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        min-height: auto;
+      }
+      th {
+        background-color: #1E293B !important;
+        color: white !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .section-title {
+        background: #F1F5F9 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .header-badge {
+        background: #1E3A8A !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Bar (Hidden in Print) -->
+  <div class="no-print">
+    <div>
+      <strong style="color: #1E3A8A; font-size: 14px;">Official Evaluation Rubric (Print-Ready A4)</strong>
+      <p style="color: #64748B; font-size: 11px;">Formatted to fit precisely onto 1 sheet of A4 paper for distribution to judges.</p>
+    </div>
+    <div style="display: flex; gap: 10px;">
+      <a href="index.html" class="btn btn-secondary">&larr; Live Stage</a>
+      <a href="judges_sheet.html" class="btn btn-secondary">Scoring Sheet</a>
+      <button class="btn btn-primary" onclick="window.print()">🖨️ Print A4 Document</button>
+    </div>
+  </div>
+
+  <!-- A4 Single-Page Printable Document -->
+  <div class="a4-container">
+    
+    <!-- 1. Header -->
+    <div>
+      <div class="doc-header">
+        <div class="header-left">
+          <h1>AI Music Competition</h1>
+          <p>Official Judges Evaluation Rubric & Assessment Guidelines</p>
+        </div>
+        <div class="header-badge">Judges Reference Sheet</div>
+      </div>
+
+      <!-- 2. Competition Themes -->
+      <div class="section-title">
+        <span>1. ANNOUNCED THEMES & CORE FOCUS</span>
+        <span class="tag">Thematic Alignment Standard</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 35px;" class="text-center">#</th>
+            <th style="width: 170px;">Theme Name</th>
+            <th>Core Focus & Thematic Concept</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-center font-bold font-mono">01</td>
+            <td class="tag-theme">Heroes Among Us</td>
+            <td>Celebrate the individuals whose <strong>sacrifices, guidance, or service</strong> inspire you to become a better person (parents, mentors, teachers, soldiers, frontline workers, farmers).</td>
+          </tr>
+          <tr>
+            <td class="text-center font-bold font-mono">02</td>
+            <td class="tag-theme">Engineering Beyond the Classroom</td>
+            <td>Show how engineering can be used to <strong>solve real-world problems and build a better future</strong> (practical societal impact, innovation vs classroom theory).</td>
+          </tr>
+          <tr>
+            <td class="text-center font-bold font-mono">03</td>
+            <td class="tag-theme">The Greatest Gift</td>
+            <td>Express <strong>gratitude for the people or opportunities</strong> that have shaped your life (supportive friendship, unconditional presence, life lessons).</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 3. Evaluation Criteria (Dual Grid: AI Benchmark 40% + Human Judge 60%) -->
+      <div class="section-title">
+        <span>2. EVALUATION CRITERIA & SCORING FRAMEWORK (TOTAL: 100 MARKS)</span>
+        <span class="tag">AI (40M) + Human Judges (60M)</span>
+      </div>
+
+      <div class="rubric-grid">
+        
+        <!-- Left: AI Evaluation Framework (40 Marks) -->
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="3" style="background: #065F46;">PART A: AI Benchmark (40 Marks)</th>
+              </tr>
+              <tr>
+                <th>Criterion</th>
+                <th style="width: 40px;" class="text-center">Max</th>
+                <th>Key Assessment Parameters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-bold">Theme Relevance</td>
+                <td class="text-center font-mono font-bold">10</td>
+                <td>Alignment of song lyrics and mood with the announced theme.</td>
+              </tr>
+              <tr>
+                <td class="font-bold">Lyrics Quality</td>
+                <td class="text-center font-mono font-bold">10</td>
+                <td>Rhyme structure, vocabulary, poetic quality, and coherence.</td>
+              </tr>
+              <tr>
+                <td class="font-bold">Prompt Engineering</td>
+                <td class="text-center font-mono font-bold">10</td>
+                <td>Complexity, structure, clarity, and efficacy of AI prompts.</td>
+              </tr>
+              <tr>
+                <td class="font-bold">Submission Completeness</td>
+                <td class="text-center font-mono font-bold">10</td>
+                <td>Complete upload of audio, lyrics, prompt log, and tool list.</td>
+              </tr>
+              <tr style="background: #ECFDF5;">
+                <td class="font-bold">AI Subtotal</td>
+                <td class="text-center font-mono font-bold" style="color: #065F46;">40</td>
+                <td><span class="pill-ai">Pre-evaluated Benchmark</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Right: Human Judges Live Defense (60 Marks) -->
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="3" style="background: #1E40AF;">PART B: Human Judges Live Defense (60 Marks)</th>
+              </tr>
+              <tr>
+                <th>Criterion</th>
+                <th style="width: 40px;" class="text-center">Max</th>
+                <th>Key Assessment Parameters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-bold">Creativity</td>
+                <td class="text-center font-mono font-bold">20</td>
+                <td>Originality, innovation in genre choice, and artistic vision.</td>
+              </tr>
+              <tr>
+                <td class="font-bold">Music Composition</td>
+                <td class="text-center font-mono font-bold">20</td>
+                <td>Musical harmony, melody flow, vocal integration, and structure.</td>
+              </tr>
+              <tr>
+                <td class="font-bold">Emotional Impact</td>
+                <td class="text-center font-mono font-bold">10</td>
+                <td>Overall resonance, engagement factor, and thematic appeal.</td>
+              </tr>
+              <tr>
+                <td class="font-bold">Presentation & Q&A</td>
+                <td class="text-center font-mono font-bold">10</td>
+                <td>Clarity of presentation, prompt breakdown, and response to Q&A.</td>
+              </tr>
+              <tr style="background: #EFF6FF;">
+                <td class="font-bold">Judge Subtotal</td>
+                <td class="text-center font-mono font-bold" style="color: #1E40AF;">60</td>
+                <td><span class="pill-human">Live Scoring by Judges</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- 4. Guidelines & Scoring Scale -->
+      <div class="section-title">
+        <span>3. JUDGES SCORING SCALE & DEFENSE INTERROGATION GUIDE</span>
+        <span class="tag">Standardized Rating</span>
+      </div>
+
+      <div class="guideline-box">
+        <strong>Suggested Questioning Areas During Team Defense:</strong>
+        <ul style="padding-left: 15px; margin-top: 2px; line-height: 1.3;">
+          <li><strong>Prompt Architecture:</strong> Did the team craft specific musical parameters (BPM, instruments, vocal timbre) or use raw/generic queries?</li>
+          <li><strong>Thematic Authenticity:</strong> Does the track genuinely reflect real sacrifice, problem-solving, or gratitude vs generic party/pop tropes?</li>
+          <li><strong>Workflow Mastery:</strong> How well did the team refine, iterate, master, and edit the AI audio output?</li>
+        </ul>
+
+        <div class="scale-row">
+          <div class="scale-item">
+            <span class="score">90% - 100%</span>
+            <strong>Exceptional</strong><br>Masterful prompt, profound theme & flawless audio
+          </div>
+          <div class="scale-item">
+            <span class="score">75% - 89%</span>
+            <strong>Proficient</strong><br>Solid musicality, clear structure & strong defense
+          </div>
+          <div class="scale-item">
+            <span class="score">60% - 74%</span>
+            <strong>Competent</strong><br>Basic theme alignment, standard pop formula
+          </div>
+          <div class="scale-item">
+            <span class="score">&lt; 60%</span>
+            <strong>Needs Work</strong><br>Off-topic theme, minimal prompt or weak defense
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 5. Footer Sign-off Block -->
+    <div class="doc-footer">
+      <div class="sign-field">
+        <strong>Judge Name:</strong>
+        <div class="sign-line"></div>
+      </div>
+      <div class="sign-field">
+        <strong>Date:</strong>
+        <div class="sign-line"></div>
+      </div>
+      <div class="sign-field">
+        <strong>Signature:</strong>
+        <div class="sign-line"></div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
