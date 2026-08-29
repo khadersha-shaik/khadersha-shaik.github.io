@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliminated Submissions Archive — AI Music Competition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .elim-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(239, 68, 68, 0.15);
+      color: #ef4444;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+    .elim-badge.warning {
+      background: rgba(245, 158, 11, 0.15);
+      color: #f59e0b;
+      border-color: rgba(245, 158, 11, 0.3);
+    }
+    .elim-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .elim-card:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+    }
+    .elim-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .elim-team-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .elim-sno {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--text-muted);
+      background: var(--bg-surface);
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+    }
+    .elim-reason-box {
+      background: rgba(239, 68, 68, 0.08);
+      border-left: 4px solid #ef4444;
+      padding: 10px 14px;
+      border-radius: 0 6px 6px 0;
+      font-size: 13px;
+      color: var(--text-main);
+    }
+    .player-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--bg-surface);
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+    .mini-play-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 14px;
+      transition: transform 0.1s;
+    }
+    .mini-play-btn:hover {
+      transform: scale(1.05);
+    }
+    .waveform-fill {
+      flex: 1;
+      height: 6px;
+      background: var(--border-color);
+      border-radius: 3px;
+      position: relative;
+      cursor: pointer;
+    }
+    .waveform-progress {
+      height: 100%;
+      background: var(--primary);
+      border-radius: 3px;
+      width: 0%;
+    }
+    .time-disp {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+      min-width: 75px;
+      text-align: right;
+    }
+    .details-toggle-btn {
+      background: transparent;
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .details-toggle-btn:hover {
+      color: var(--text-main);
+      border-color: var(--text-muted);
+    }
+    .details-drawer {
+      display: none;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-color);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    .details-drawer.open {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top App Navigation -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="header-brand">
+        <div class="brand-logo">🚫</div>
+        <div class="brand-text">
+          <h1 class="brand-title">Eliminated Submissions Archive</h1>
+          <p class="brand-subtitle">8 Disqualified / Unselected Entries (Audio & Evaluation Records)</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-primary">
+          <span>&larr;</span> Back to Live Stage (36 Finalists)
+        </a>
+        <a href="judges_sheet.html" class="btn btn-secondary">
+          <span>🖨️</span> Judges Score Sheet
+        </a>
+        <button id="themeToggleBtn" class="btn btn-icon" title="Toggle Theme">
+          <span id="themeIcon">☀️</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="content-container">
+
+      <!-- Summary Banner -->
+      <div class="queue-status-card" style="margin-bottom: 24px;">
+        <div class="queue-info">
+          <span class="queue-badge" style="background: rgba(239, 68, 68, 0.2); color: #ef4444; border-color: rgba(239, 68, 68, 0.4);">
+            ARCHIVED ENTRIES
+          </span>
+          <h2 style="font-size: 16px; font-weight: 800; margin-top: 4px;">Audition Screening & Elimination Record</h2>
+          <p style="font-size: 13px; color: var(--text-muted);">These 8 entries did not advance to the live stage due to off-topic lyrics, prompt failures, or weak audio execution. You can play their tracks and review the full reasons below.</p>
+        </div>
+        <div style="display: flex; gap: 10px;">
+          <div style="text-align: right;">
+            <div style="font-size: 24px; font-weight: 800; color: #ef4444;">8</div>
+            <div style="font-size: 11px; color: var(--text-muted); font-weight: 600;">ELIMINATED</div>
+          </div>
+          <div style="text-align: right; border-left: 1px solid var(--border-color); padding-left: 12px;">
+            <div style="font-size: 24px; font-weight: 800; color: #10b981;">36</div>
+            <div style="font-size: 11px; color: var(--text-muted); font-weight: 600;">FINALISTS</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Filter -->
+      <div class="directory-toolbar" style="margin-bottom: 20px;">
+        <div class="search-box" style="flex: 1;">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="elimSearchInput" class="search-input" placeholder="Search eliminated team name, theme, or reason...">
+        </div>
+      </div>
+
+      <!-- Eliminated Teams Container -->
+      <div id="eliminatedListContainer">
+        <!-- Injected via JavaScript -->
+      </div>
+
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+  <script>
+    // Theme Management
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeIcon = document.getElementById('themeIcon');
+    const htmlEl = document.documentElement;
+
+    const savedTheme = localStorage.getItem('ai_music_theme') || 'dark';
+    htmlEl.setAttribute('data-theme', savedTheme);
+    themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+    themeToggleBtn.addEventListener('click', () => {
+      const current = htmlEl.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      htmlEl.setAttribute('data-theme', next);
+      localStorage.setItem('ai_music_theme', next);
+      themeIcon.textContent = next === 'dark' ? '☀️' : '🌙';
+    });
+
+    // Render Eliminated Teams
+    const container = document.getElementById('eliminatedListContainer');
+    const searchInput = document.getElementById('elimSearchInput');
+    const elimData = window.ELIMINATED_TEAMS || [];
+
+    let currentAudio = null;
+    let currentPlayBtn = null;
+    let currentProgressBar = null;
+    let currentTimeDisp = null;
+
+    function formatTime(secs) {
+      if (isNaN(secs) || secs < 0) return "0:00";
+      const m = Math.floor(secs / 60);
+      const s = Math.floor(secs % 60);
+      return `${m}:${s < 10 ? '0' : ''}${s}`;
+    }
+
+    function renderList(data) {
+      if (!data.length) {
+        container.innerHTML = `<div style="text-align: center; padding: 40px; color: var(--text-muted);">No eliminated teams match your search.</div>`;
+        return;
+      }
+
+      container.innerHTML = data.map((t, idx) => `
+        <div class="elim-card" id="card-${t.sno}">
+          <div class="elim-header">
+            <div class="elim-team-info">
+              <span class="elim-sno">Orig. S.No #${t.sno.toString().padStart(2, '0')}</span>
+              <div>
+                <h3 style="font-size: 16px; font-weight: 800; color: var(--text-main); margin-bottom: 2px;">${t.teamName}</h3>
+                <span class="badge badge-theme">${t.theme}</span>
+              </div>
+            </div>
+            <div style="text-align: right;">
+              <span class="elim-badge ${t.elimBadge.includes('Irrelevant') ? 'warning' : ''}">${t.elimBadge}</span>
+              <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px; font-weight: 600;">
+                Audition Mark: <strong style="color: var(--text-main);">${t.userMarks}</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="elim-reason-box">
+            <strong>Elimination Justification:</strong> ${t.elimReason}
+          </div>
+
+          <div class="player-row">
+            <button class="mini-play-btn" data-audio="${t.audioSrc}" data-sno="${t.sno}" title="Play Track">▶</button>
+            <div class="waveform-fill" data-sno="${t.sno}">
+              <div class="waveform-progress" id="progress-${t.sno}"></div>
+            </div>
+            <div class="time-disp" id="time-${t.sno}">0:00 / --:--</div>
+            <button class="details-toggle-btn" onclick="toggleDetails(${t.sno})">Details ▾</button>
+          </div>
+
+          <div class="details-drawer" id="details-${t.sno}">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 8px;">
+              <div>
+                <strong style="color: var(--text-muted); font-size: 11px; text-transform: uppercase;">Submitted AI Prompts:</strong>
+                <pre style="background: var(--bg-surface); padding: 8px; border-radius: 6px; border: 1px solid var(--border-color); font-size: 11px; white-space: pre-wrap; font-family: 'JetBrains Mono', monospace; margin-top: 4px; max-height: 120px; overflow-y: auto;">${t.prompts || 'None submitted'}</pre>
+              </div>
+              <div>
+                <strong style="color: var(--text-muted); font-size: 11px; text-transform: uppercase;">Submitted Lyrics:</strong>
+                <pre style="background: var(--bg-surface); padding: 8px; border-radius: 6px; border: 1px solid var(--border-color); font-size: 11px; white-space: pre-wrap; font-family: inherit; margin-top: 4px; max-height: 120px; overflow-y: auto;">${t.lyrics || 'None submitted'}</pre>
+              </div>
+            </div>
+            <div style="margin-top: 10px; font-size: 11px; color: var(--text-muted);">
+              <strong>Tools Used:</strong> ${t.tools || 'N/A'} | <strong>Workflow:</strong> ${t.workflow || 'None'} | <strong>Contact:</strong> ${t.phone || 'N/A'}
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      // Attach Audio Events
+      document.querySelectorAll('.mini-play-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const audioSrc = btn.getAttribute('data-audio');
+          const sno = btn.getAttribute('data-sno');
+          playTrack(audioSrc, btn, sno);
+        });
+      });
+
+      document.querySelectorAll('.waveform-fill').forEach(bar => {
+        bar.addEventListener('click', (e) => {
+          const sno = bar.getAttribute('data-sno');
+          if (currentAudio && currentAudio.src.includes(sno)) {
+            const rect = bar.getBoundingClientRect();
+            const clickPos = (e.clientX - rect.left) / rect.width;
+            currentAudio.currentTime = clickPos * currentAudio.duration;
+          }
+        });
+      });
+    }
+
+    function playTrack(src, btn, sno) {
+      if (currentAudio && currentAudio.src.includes(encodeURI(src).split('/').pop())) {
+        if (currentAudio.paused) {
+          currentAudio.play();
+          btn.textContent = '⏸';
+        } else {
+          currentAudio.pause();
+          btn.textContent = '▶';
+        }
+        return;
+      }
+
+      if (currentAudio) {
+        currentAudio.pause();
+        if (currentPlayBtn) currentPlayBtn.textContent = '▶';
+      }
+
+      currentAudio = new Audio(src);
+      currentPlayBtn = btn;
+      currentProgressBar = document.getElementById(`progress-${sno}`);
+      currentTimeDisp = document.getElementById(`time-${sno}`);
+
+      btn.textContent = '⏸';
+      currentAudio.play();
+
+      currentAudio.addEventListener('timeupdate', () => {
+        if (!currentAudio) return;
+        const cur = currentAudio.currentTime;
+        const dur = currentAudio.duration || 0;
+        if (dur > 0 && currentProgressBar) {
+          currentProgressBar.style.width = `${(cur / dur) * 100}%`;
+        }
+        if (currentTimeDisp) {
+          currentTimeDisp.textContent = `${formatTime(cur)} / ${formatTime(dur)}`;
+        }
+      });
+
+      currentAudio.addEventListener('ended', () => {
+        btn.textContent = '▶';
+        if (currentProgressBar) currentProgressBar.style.width = '0%';
+      });
+
+      currentAudio.addEventListener('error', () => {
+        alert('Unable to load audio file: ' + src);
+        btn.textContent = '▶';
+      });
+    }
+
+    window.toggleDetails = function(sno) {
+      const drawer = document.getElementById(`details-${sno}`);
+      if (drawer) {
+        drawer.classList.toggle('open');
+      }
+    };
+
+    searchInput.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      const filtered = elimData.filter(t => 
+        t.teamName.toLowerCase().includes(q) ||
+        t.theme.toLowerCase().includes(q) ||
+        t.elimReason.toLowerCase().includes(q) ||
+        t.elimBadge.toLowerCase().includes(q) ||
+        t.sno.toString().includes(q)
+      );
+      renderList(filtered);
+    });
+
+    renderList(elimData);
+  </script>
+</body>
+</html>

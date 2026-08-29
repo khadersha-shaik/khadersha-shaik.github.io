@@ -1,10 +1,9 @@
-// Generated AI Music Competition Evaluation Data (Matched with Final Music List)
+// AI Music Competition Data: 36 Selected Finalists & 8 Eliminated Teams
 window.TEAMS_DATA = [
   {
     "id": 38,
     "sno": 38,
     "finalRank": 1,
-    "isFinalist": true,
     "teamName": "VisionX",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/38 - VisionX.mpeg",
@@ -19,7 +18,7 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 10.0
     },
     "merits": [
-      "Top Finalist (Listening Score: 50/50): Exceptional musicality, deep emotional resonance & strong thematic adherence."
+      "Top Finalist (Listening Score: 50/50): Exceptional musicality & strong theme adherence."
     ],
     "deductions": [],
     "userMarks": "50 / 50",
@@ -34,7 +33,6 @@ window.TEAMS_DATA = [
     "id": 41,
     "sno": 41,
     "finalRank": 2,
-    "isFinalist": true,
     "teamName": "Mikrokosmos",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/41 - Mikrokosmos.mp3",
@@ -49,10 +47,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 8.8
     },
     "merits": [
-      "Top Finalist (Listening Score: 46/50): Exceptional musicality, deep emotional resonance & strong thematic adherence."
+      "Top Finalist (Listening Score: 46/50): Exceptional musicality & strong theme adherence."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-3.2 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-3.2 marks)."
     ],
     "userMarks": "46 / 50",
     "userRemarks": "-",
@@ -66,7 +64,6 @@ window.TEAMS_DATA = [
     "id": 1,
     "sno": 1,
     "finalRank": 3,
-    "isFinalist": true,
     "teamName": "ajay guptha",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/01 - ajay guptha.mp3",
@@ -81,10 +78,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 8.2
     },
     "merits": [
-      "Top Finalist (Listening Score: 44/50): Exceptional musicality, deep emotional resonance & strong thematic adherence."
+      "Top Finalist (Listening Score: 44/50): Exceptional musicality & strong theme adherence."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-4.8 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-4.8 marks)."
     ],
     "userMarks": "44 / 50",
     "userRemarks": "-",
@@ -98,7 +95,6 @@ window.TEAMS_DATA = [
     "id": 40,
     "sno": 40,
     "finalRank": 4,
-    "isFinalist": true,
     "teamName": "THE SOUNDERS",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/40 - THE SOUNDERS.mp3",
@@ -113,10 +109,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 8.1
     },
     "merits": [
-      "Top Finalist (Listening Score: 42/50): Exceptional musicality, deep emotional resonance & strong thematic adherence."
+      "Top Finalist (Listening Score: 42/50): Exceptional musicality & strong theme adherence."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-6.4 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-6.4 marks)."
     ],
     "userMarks": "42 / 50",
     "userRemarks": "-",
@@ -130,7 +126,6 @@ window.TEAMS_DATA = [
     "id": 25,
     "sno": 25,
     "finalRank": 5,
-    "isFinalist": true,
     "teamName": "AI MELODY",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/25 - AI MELODY.mp3",
@@ -145,11 +140,11 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 7.0
     },
     "merits": [
-      "Top Finalist (Listening Score: 40/50): Exceptional musicality, deep emotional resonance & strong thematic adherence."
+      "Top Finalist (Listening Score: 40/50): Exceptional musicality & strong theme adherence."
     ],
     "deductions": [
       "Listening Feedback: song is good,but theme is different",
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-8.0 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-8.0 marks)."
     ],
     "userMarks": "40 / 50",
     "userRemarks": "song is good,but theme is different",
@@ -163,7 +158,6 @@ window.TEAMS_DATA = [
     "id": 32,
     "sno": 32,
     "finalRank": 6,
-    "isFinalist": true,
     "teamName": "Muse Ai",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/32 - Muse Ai.mp3",
@@ -178,10 +172,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 7.0
     },
     "merits": [
-      "Top Finalist (Listening Score: 40/50): Exceptional musicality, deep emotional resonance & strong thematic adherence."
+      "Top Finalist (Listening Score: 40/50): Exceptional musicality & strong theme adherence."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-8.0 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-8.0 marks)."
     ],
     "userMarks": "40 / 50",
     "userRemarks": "-",
@@ -195,7 +189,6 @@ window.TEAMS_DATA = [
     "id": 39,
     "sno": 39,
     "finalRank": 7,
-    "isFinalist": true,
     "teamName": "THE DIGITAL MAESTROS",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/39 - THE DIGITAL MAESTROS.mpeg",
@@ -210,10 +203,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 8.0
     },
     "merits": [
-      "Top Finalist (Listening Score: 40/50): Exceptional musicality, deep emotional resonance & strong thematic adherence."
+      "Top Finalist (Listening Score: 40/50): Exceptional musicality & strong theme adherence."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-8.0 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-8.0 marks)."
     ],
     "userMarks": "40 / 50",
     "userRemarks": "-",
@@ -227,7 +220,6 @@ window.TEAMS_DATA = [
     "id": 9,
     "sno": 9,
     "finalRank": 8,
-    "isFinalist": true,
     "teamName": "NEUROBEATS",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/09 - NEUROBEATS.mp3",
@@ -242,10 +234,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 7.6
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 38/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 38/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-9.6 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-9.6 marks)."
     ],
     "userMarks": "38 / 50",
     "userRemarks": "-",
@@ -259,7 +251,6 @@ window.TEAMS_DATA = [
     "id": 19,
     "sno": 19,
     "finalRank": 9,
-    "isFinalist": true,
     "teamName": "RAAGA",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/19 - RAAGA.mp3",
@@ -274,10 +265,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 7.6
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 38/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 38/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-9.6 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-9.6 marks)."
     ],
     "userMarks": "38 / 50",
     "userRemarks": "-",
@@ -291,7 +282,6 @@ window.TEAMS_DATA = [
     "id": 37,
     "sno": 37,
     "finalRank": 10,
-    "isFinalist": true,
     "teamName": "Trinetras",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/37 - Trinetras.mp3",
@@ -306,10 +296,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 7.6
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 38/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 38/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-9.6 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-9.6 marks)."
     ],
     "userMarks": "38 / 50",
     "userRemarks": "-",
@@ -323,7 +313,6 @@ window.TEAMS_DATA = [
     "id": 30,
     "sno": 30,
     "finalRank": 11,
-    "isFinalist": true,
     "teamName": "Melody Lemon",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/30 - Melody Lemon.mp3",
@@ -338,10 +327,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 7.4
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 37/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 37/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-10.4 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-10.4 marks)."
     ],
     "userMarks": "37 / 50",
     "userRemarks": "-",
@@ -355,7 +344,6 @@ window.TEAMS_DATA = [
     "id": 3,
     "sno": 3,
     "finalRank": 12,
-    "isFinalist": true,
     "teamName": "Code & Chords",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/03 - Code & Chords.mp3",
@@ -370,10 +358,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 7.2
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 36/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 36/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-11.2 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-11.2 marks)."
     ],
     "userMarks": "36 / 50",
     "userRemarks": "-",
@@ -384,74 +372,9 @@ window.TEAMS_DATA = [
     "phone": "+91 93912 85102"
   },
   {
-    "id": 5,
-    "sno": 5,
-    "finalRank": 12,
-    "isFinalist": true,
-    "teamName": "CODE & CHORDS",
-    "theme": "The Greatest Gift",
-    "audioSrc": "downloaded_audio_files/05 - CODE & CHORDS.mp3",
-    "totalScore": 28.8,
-    "userMark50": 36.0,
-    "maxScore": 40,
-    "percentage": 72.0,
-    "scores": {
-      "themeRelevance": 7.2,
-      "lyricsQuality": 7.2,
-      "promptEngineering": 7.2,
-      "submissionCompleteness": 7.2
-    },
-    "merits": [
-      "Shortlisted Finalist (Listening Score: 36/50): Solid melody structure, clear vocals & good theme connection."
-    ],
-    "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-11.2 marks)."
-    ],
-    "userMarks": "36 / 50",
-    "userRemarks": "-",
-    "lyrics": "[Verse 1]\nI used to think a gift was wrapped in gold and thread,\nSomething bought, something sold, something bright instead,\nBut I remember evenings, curled up on the floor,\nMom's hand through my hair, and I needed nothing more,\nDad's tired eyes still glowing after a long, long day —\nThat was never nothing, that was never small,\nThat was everything, that was all.\n\n[Pre-Chorus]\n'Cause when your hands are empty and there's nothing left to give,\nAnd you've got no golden treasure to prove the way you live,\nJust sit a while, just stay a while,\nLet your presence be the way you love.\n\n[Chorus]\nThe greatest gift is borrowed time, given away for free,\nJust a fleeting moment, just you beside of me,\nNo ribbon wrapped around it, no reward to chase,\nJust love written soft in a face.\nIf the one who loves you is the one your heart holds too,\nThen baby that's the gift — that's you.\n[Bridge]\nMom and Dad, you gave me everything without a single word,\nEvery hour, every worry, every prayer I never heard,\nNow it's my turn to give it back, to hold your weathered hand,\n'Cause love saved up for later is love left in the sand.\n\nLet it be, let it be,\nEvery season holds its reason, let it be,\nLife itself's the greatest gift there'll ever be —\nSo I'll spend mine loving you, and you, loving me.\n\n[Chorus]\nThe greatest gift is borrowed time, given away for free,\nJust a fleeting moment, just you beside of me,\nNo ribbon wrapped around it, no reward to chase,\nJust love written soft in a face.\nIf the one who loves you is the one your heart holds too,\nThen baby that's the gift —\nThat's you.\n\n[Outro]\nThat's you... that's you...",
-    "prompts": "Create lyrics for this context...Love from fam and our loved ones.. spending time with someone who loves us makes them happy maybe it would be like a gift for them when you have nothing to give them just give them a little time.. the greatest gift in my opinion is spending and giving time to someone we love and someone who loves us... If these two persons are the same in your case they are you're best gift. In my vision that one person will definitely be our mom and dad.\nLife itself is a gift for us.. just enjoyy each and every moment.. let whatever happen it is going to happen for our good so let it be.. these days will always not be the same just like winter and summer, hardship and happiness goes and comes",
-    "tools": "Claude, Udio",
-    "workflow": "I gave my theme to Claude, and it has suggested some related subtopics and have read all of them and created my own prompt and given to Claude to create song lyrics... Later lyrics are done. Now, I asked Claude how to create a song with these lyrics. It has suggested to me 'Udio'. I used Udio to create song by pasting my lyrics",
-    "phone": "9391285102"
-  },
-  {
-    "id": 6,
-    "sno": 6,
-    "finalRank": 12,
-    "isFinalist": true,
-    "teamName": "Code & Chords",
-    "theme": "The Greatest Gift",
-    "audioSrc": "downloaded_audio_files/06 - Code & Chords.mp3",
-    "totalScore": 28.8,
-    "userMark50": 36.0,
-    "maxScore": 40,
-    "percentage": 72.0,
-    "scores": {
-      "themeRelevance": 7.2,
-      "lyricsQuality": 7.2,
-      "promptEngineering": 7.2,
-      "submissionCompleteness": 7.2
-    },
-    "merits": [
-      "Shortlisted Finalist (Listening Score: 36/50): Solid melody structure, clear vocals & good theme connection."
-    ],
-    "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-11.2 marks)."
-    ],
-    "userMarks": "36 / 50",
-    "userRemarks": "-",
-    "lyrics": "THE GREATEST GIFT\n\n[Verse]\nBefore I knew the world, you were my sky,\nYou held my little dreams when I was afraid to try.\nIn every fall, I found your hands,\nIn every tear, you helped me stand.\n\n[Pre-Chorus]\nYou gave me more than words can say,\nYou turned my darkest nights into brighter days.\nAnd every step I take today,\nCarries a piece of you along the way.\n\n[Chorus]\nYou are the greatest gift life gave to me,\nThe roots beneath me, the wings that set me free.\nMom and Dad, your love made me who I am,\nMy brothers, my sisters—you helped me understand.\nIf I become someone I’m proud to be,\nIt’s because your love lives inside of me.\n\n[Bridge]\nOne day I’ll chase my dreams beyond your sight,\nBut your voices will guide me through every night.\nI may grow older, I may walk far,\nBut home will always be wherever you are.\n\n[Final Chorus]\nYou are my beginning, my strength, my home,\nThe greatest gift I’ll never outgrow.\nFor every sacrifice, every smile, every tear,\nThank you for making my life what it is today.",
-    "prompts": "Create a deeply emotional, unique, original English song based on the theme “The Greatest Gift.”\n\nThe song should express my heartfelt love, gratitude, thankfulness, and appreciation for my parents and siblings, who have shaped my life into the person I am today.\n\nCore Emotion & Story \n\nMake the song feel like a personal journey through life:\n\nMy parents are the people who gave me life, stood beside me, protected me, supported me, and made countless sacrifices for my happiness and future. My siblings are my childhood memories, my partners in laughter, arguments, teasing, secrets, support, and unforgettable moments. Together, my family has been my first home, safest place, strongest support, and greatest blessing. Express how I may not always say “thank you” or express my feelings openly, but deep inside, I carry immense love and gratitude for them. Show how their love, sacrifices, guidance, mistakes, lessons, encouragement, and presence shaped my personality, dreams, courage, and future. Include the feeling of realizing as I grow older that the things I once considered ordinary were actually precious gifts. Mixed Emotions \n\nBlend multiple emotions naturally: love + gratitude + nostalgia + childhood memories + happiness + tears + regret for not expressing feelings enough + hope + admiration + warmth + emotional vulnerability + pride + togetherness.\n\nThe song should make someone feel both smile and emotional at the same time.\n\nLyrics Style Write completely original lyrics; do not imitate or copy any existing song. Use beautiful but understandable English. Make the lyrics poetic without becoming overly complicated. Use meaningful metaphors such as home, light, roots, wings, stars, journey, hands, shelter, heartbeat, and tomorrow, but use them naturally rather than forcing them. Avoid generic clichés and predictable phrases. Make the lyrics feel like they came from a real person's heart. Include a few emotionally powerful lines that could become the memorable highlight of the song. Keep the language suitable for singing and make the lyrics flow naturally with a strong rhythm. Song Structure \n\nCreate a complete song with:\n\n[Verse 1] — Childhood and memories with parents and siblings\n[Pre-Chorus] — Realizing how much they quietly gave me\n[Chorus] — Powerful central message: my family is the greatest gift I could ever receive\n[Verse 2] — Parents' sacrifices, guidance, and unconditional love\n[Pre-Chorus] — Growing up and understanding their value\n[Chorus] — More emotionally powerful variation\n[Bridge] — The deepest emotional moment: expressing everything I struggle to say to them face-to-face\n[Final Chorus] — Bigger, more emotional, celebrating the whole family\n[Outro] — Soft, intimate ending that feels like a heartfelt “thank you.”\n\nImportant Creative Direction \n\nDo NOT make it sound like a simple “thank you, Mom and Dad” song.\n\nInstead, tell a story.\n\nShow that the greatest gifts were not expensive things, but:\n\na parent's hand holding mine, a sibling's laughter, someone waiting for me to come home, sacrifices I didn't understand as a child, encouragement when I doubted myself, forgiveness after mistakes, ordinary family moments that became lifelong memories. \n\nThe central message should be:\n\n“Everything I am, everything I dream of becoming, carries a piece of the people who loved me first.”\n\nMake the final song feel timeless, cinematic, intimate, emotional, and deeply personal — something that could make parents and siblings feel truly seen and appreciated.\n\nGive the song a beautiful, unique title connected to the idea of family being the greatest gift.",
-    "tools": "Chatgpt, Suno AI",
-    "workflow": "The song 'The Greatest Gift' starts off by saying that parents and siblings are the most valuable gifts that life has to offer. It recalls various childhood memories, family occasions, acts of sacrifice, moments of laughter and the support given, and turns them into a sense of love, gratitude and nostalgia. These emotions are then expressed in the lyrics through the use of verses, a catchy chorus, an emotional bridge and a touching conclusion. Because it makes use of simple words and real memories, the song comes across as personal and authentic. A warm and emotional melody is achieved by incorporating soft piano, acoustic instruments and gentle strings. In the end, the lyrics, the music and the vocals all come together to show how family love and the sacrifices made by them have shaped who I am today.",
-    "phone": "9502496414"
-  },
-  {
     "id": 17,
     "sno": 17,
     "finalRank": 13,
-    "isFinalist": true,
     "teamName": "TEAM EYES",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/17 - TEAM EYES.mp3",
@@ -466,10 +389,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 7.2
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 36/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 36/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-11.2 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-11.2 marks)."
     ],
     "userMarks": "36 / 50",
     "userRemarks": "-",
@@ -483,7 +406,6 @@ window.TEAMS_DATA = [
     "id": 2,
     "sno": 2,
     "finalRank": 14,
-    "isFinalist": true,
     "teamName": "Sound Waves",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/02 - Sound Waves.mp3",
@@ -498,10 +420,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 7.0
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 35/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 35/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-12.0 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-12.0 marks)."
     ],
     "userMarks": "35 / 50",
     "userRemarks": "-",
@@ -512,10 +434,71 @@ window.TEAMS_DATA = [
     "phone": "7209373190"
   },
   {
+    "id": 5,
+    "sno": 5,
+    "finalRank": 15,
+    "teamName": "CODE & CHORDS",
+    "theme": "The Greatest Gift",
+    "audioSrc": "downloaded_audio_files/05 - CODE & CHORDS.mp3",
+    "totalScore": 28.0,
+    "userMark50": 35.0,
+    "maxScore": 40,
+    "percentage": 70.0,
+    "scores": {
+      "themeRelevance": 7.0,
+      "lyricsQuality": 7.0,
+      "promptEngineering": 7.0,
+      "submissionCompleteness": 7.0
+    },
+    "merits": [
+      "Shortlisted Finalist (Listening Score: 35/50): Solid melody structure & clear vocals."
+    ],
+    "deductions": [
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-12.0 marks)."
+    ],
+    "userMarks": "35 / 50",
+    "userRemarks": "-",
+    "lyrics": "[Verse 1]\nI used to think a gift was wrapped in gold and thread,\nSomething bought, something sold, something bright instead,\nBut I remember evenings, curled up on the floor,\nMom's hand through my hair, and I needed nothing more,\nDad's tired eyes still glowing after a long, long day —\nThat was never nothing, that was never small,\nThat was everything, that was all.\n\n[Pre-Chorus]\n'Cause when your hands are empty and there's nothing left to give,\nAnd you've got no golden treasure to prove the way you live,\nJust sit a while, just stay a while,\nLet your presence be the way you love.\n\n[Chorus]\nThe greatest gift is borrowed time, given away for free,\nJust a fleeting moment, just you beside of me,\nNo ribbon wrapped around it, no reward to chase,\nJust love written soft in a face.\nIf the one who loves you is the one your heart holds too,\nThen baby that's the gift — that's you.\n[Bridge]\nMom and Dad, you gave me everything without a single word,\nEvery hour, every worry, every prayer I never heard,\nNow it's my turn to give it back, to hold your weathered hand,\n'Cause love saved up for later is love left in the sand.\n\nLet it be, let it be,\nEvery season holds its reason, let it be,\nLife itself's the greatest gift there'll ever be —\nSo I'll spend mine loving you, and you, loving me.\n\n[Chorus]\nThe greatest gift is borrowed time, given away for free,\nJust a fleeting moment, just you beside of me,\nNo ribbon wrapped around it, no reward to chase,\nJust love written soft in a face.\nIf the one who loves you is the one your heart holds too,\nThen baby that's the gift —\nThat's you.\n\n[Outro]\nThat's you... that's you...",
+    "prompts": "Create lyrics for this context...Love from fam and our loved ones.. spending time with someone who loves us makes them happy maybe it would be like a gift for them when you have nothing to give them just give them a little time.. the greatest gift in my opinion is spending and giving time to someone we love and someone who loves us... If these two persons are the same in your case they are you're best gift. In my vision that one person will definitely be our mom and dad.\nLife itself is a gift for us.. just enjoyy each and every moment.. let whatever happen it is going to happen for our good so let it be.. these days will always not be the same just like winter and summer, hardship and happiness goes and comes",
+    "tools": "Claude, Udio",
+    "workflow": "I gave my theme to Claude, and it has suggested some related subtopics and have read all of them and created my own prompt and given to Claude to create song lyrics... Later lyrics are done. Now, I asked Claude how to create a song with these lyrics. It has suggested to me 'Udio'. I used Udio to create song by pasting my lyrics",
+    "phone": "9391285102"
+  },
+  {
+    "id": 6,
+    "sno": 6,
+    "finalRank": 16,
+    "teamName": "Code & Chords",
+    "theme": "The Greatest Gift",
+    "audioSrc": "downloaded_audio_files/06 - Code & Chords.mp3",
+    "totalScore": 28.0,
+    "userMark50": 35.0,
+    "maxScore": 40,
+    "percentage": 70.0,
+    "scores": {
+      "themeRelevance": 7.0,
+      "lyricsQuality": 7.0,
+      "promptEngineering": 7.0,
+      "submissionCompleteness": 7.0
+    },
+    "merits": [
+      "Shortlisted Finalist (Listening Score: 35/50): Solid melody structure & clear vocals."
+    ],
+    "deductions": [
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-12.0 marks)."
+    ],
+    "userMarks": "35 / 50",
+    "userRemarks": "-",
+    "lyrics": "THE GREATEST GIFT\n\n[Verse]\nBefore I knew the world, you were my sky,\nYou held my little dreams when I was afraid to try.\nIn every fall, I found your hands,\nIn every tear, you helped me stand.\n\n[Pre-Chorus]\nYou gave me more than words can say,\nYou turned my darkest nights into brighter days.\nAnd every step I take today,\nCarries a piece of you along the way.\n\n[Chorus]\nYou are the greatest gift life gave to me,\nThe roots beneath me, the wings that set me free.\nMom and Dad, your love made me who I am,\nMy brothers, my sisters—you helped me understand.\nIf I become someone I’m proud to be,\nIt’s because your love lives inside of me.\n\n[Bridge]\nOne day I’ll chase my dreams beyond your sight,\nBut your voices will guide me through every night.\nI may grow older, I may walk far,\nBut home will always be wherever you are.\n\n[Final Chorus]\nYou are my beginning, my strength, my home,\nThe greatest gift I’ll never outgrow.\nFor every sacrifice, every smile, every tear,\nThank you for making my life what it is today.",
+    "prompts": "Create a deeply emotional, unique, original English song based on the theme “The Greatest Gift.”\n\nThe song should express my heartfelt love, gratitude, thankfulness, and appreciation for my parents and siblings, who have shaped my life into the person I am today.\n\nCore Emotion & Story \n\nMake the song feel like a personal journey through life:\n\nMy parents are the people who gave me life, stood beside me, protected me, supported me, and made countless sacrifices for my happiness and future. My siblings are my childhood memories, my partners in laughter, arguments, teasing, secrets, support, and unforgettable moments. Together, my family has been my first home, safest place, strongest support, and greatest blessing. Express how I may not always say “thank you” or express my feelings openly, but deep inside, I carry immense love and gratitude for them. Show how their love, sacrifices, guidance, mistakes, lessons, encouragement, and presence shaped my personality, dreams, courage, and future. Include the feeling of realizing as I grow older that the things I once considered ordinary were actually precious gifts. Mixed Emotions \n\nBlend multiple emotions naturally: love + gratitude + nostalgia + childhood memories + happiness + tears + regret for not expressing feelings enough + hope + admiration + warmth + emotional vulnerability + pride + togetherness.\n\nThe song should make someone feel both smile and emotional at the same time.\n\nLyrics Style Write completely original lyrics; do not imitate or copy any existing song. Use beautiful but understandable English. Make the lyrics poetic without becoming overly complicated. Use meaningful metaphors such as home, light, roots, wings, stars, journey, hands, shelter, heartbeat, and tomorrow, but use them naturally rather than forcing them. Avoid generic clichés and predictable phrases. Make the lyrics feel like they came from a real person's heart. Include a few emotionally powerful lines that could become the memorable highlight of the song. Keep the language suitable for singing and make the lyrics flow naturally with a strong rhythm. Song Structure \n\nCreate a complete song with:\n\n[Verse 1] — Childhood and memories with parents and siblings\n[Pre-Chorus] — Realizing how much they quietly gave me\n[Chorus] — Powerful central message: my family is the greatest gift I could ever receive\n[Verse 2] — Parents' sacrifices, guidance, and unconditional love\n[Pre-Chorus] — Growing up and understanding their value\n[Chorus] — More emotionally powerful variation\n[Bridge] — The deepest emotional moment: expressing everything I struggle to say to them face-to-face\n[Final Chorus] — Bigger, more emotional, celebrating the whole family\n[Outro] — Soft, intimate ending that feels like a heartfelt “thank you.”\n\nImportant Creative Direction \n\nDo NOT make it sound like a simple “thank you, Mom and Dad” song.\n\nInstead, tell a story.\n\nShow that the greatest gifts were not expensive things, but:\n\na parent's hand holding mine, a sibling's laughter, someone waiting for me to come home, sacrifices I didn't understand as a child, encouragement when I doubted myself, forgiveness after mistakes, ordinary family moments that became lifelong memories. \n\nThe central message should be:\n\n“Everything I am, everything I dream of becoming, carries a piece of the people who loved me first.”\n\nMake the final song feel timeless, cinematic, intimate, emotional, and deeply personal — something that could make parents and siblings feel truly seen and appreciated.\n\nGive the song a beautiful, unique title connected to the idea of family being the greatest gift.",
+    "tools": "Chatgpt, Suno AI",
+    "workflow": "The song 'The Greatest Gift' starts off by saying that parents and siblings are the most valuable gifts that life has to offer. It recalls various childhood memories, family occasions, acts of sacrifice, moments of laughter and the support given, and turns them into a sense of love, gratitude and nostalgia. These emotions are then expressed in the lyrics through the use of verses, a catchy chorus, an emotional bridge and a touching conclusion. Because it makes use of simple words and real memories, the song comes across as personal and authentic. A warm and emotional melody is achieved by incorporating soft piano, acoustic instruments and gentle strings. In the end, the lyrics, the music and the vocals all come together to show how family love and the sacrifices made by them have shaped who I am today.",
+    "phone": "9502496414"
+  },
+  {
     "id": 8,
     "sno": 8,
     "finalRank": 17,
-    "isFinalist": true,
     "teamName": "Algorythm",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/08 - Algorythm.mp3",
@@ -530,10 +513,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 7.0
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 35/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 35/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-12.0 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-12.0 marks)."
     ],
     "userMarks": "35 / 50",
     "userRemarks": "-",
@@ -547,7 +530,6 @@ window.TEAMS_DATA = [
     "id": 23,
     "sno": 23,
     "finalRank": 18,
-    "isFinalist": true,
     "teamName": "Code slayers",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/23 - Code slayers.mp3",
@@ -562,10 +544,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 6.8
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 34/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 34/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-12.8 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-12.8 marks)."
     ],
     "userMarks": "34 / 50",
     "userRemarks": "-",
@@ -579,7 +561,6 @@ window.TEAMS_DATA = [
     "id": 20,
     "sno": 20,
     "finalRank": 19,
-    "isFinalist": true,
     "teamName": "LONGCLAW",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/20 - LONGCLAW.mp3",
@@ -594,10 +575,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 6.6
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 33/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 33/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-13.6 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-13.6 marks)."
     ],
     "userMarks": "33 / 50",
     "userRemarks": "-",
@@ -611,7 +592,6 @@ window.TEAMS_DATA = [
     "id": 35,
     "sno": 35,
     "finalRank": 20,
-    "isFinalist": true,
     "teamName": "CYBER KNIGHTS",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/35 - CYBER KNIGHTS.mp3",
@@ -626,10 +606,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 6.4
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 32/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 32/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-14.4 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-14.4 marks)."
     ],
     "userMarks": "32 / 50",
     "userRemarks": "-",
@@ -643,7 +623,6 @@ window.TEAMS_DATA = [
     "id": 24,
     "sno": 24,
     "finalRank": 21,
-    "isFinalist": true,
     "teamName": "Cadence",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/24 - Cadence.mp3",
@@ -658,10 +637,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 6.2
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 31/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 31/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-15.2 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-15.2 marks)."
     ],
     "userMarks": "31 / 50",
     "userRemarks": "-",
@@ -675,7 +654,6 @@ window.TEAMS_DATA = [
     "id": 4,
     "sno": 4,
     "finalRank": 22,
-    "isFinalist": true,
     "teamName": "SYNERA",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/04 - SYNERA.mp3",
@@ -690,10 +668,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 6.0
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 30/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 30/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-16.0 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-16.0 marks)."
     ],
     "userMarks": "30 / 50",
     "userRemarks": "-",
@@ -707,7 +685,6 @@ window.TEAMS_DATA = [
     "id": 18,
     "sno": 18,
     "finalRank": 23,
-    "isFinalist": true,
     "teamName": "Musical Chairs",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/18 - Musical Chairs.mp3",
@@ -722,10 +699,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 6.0
     },
     "merits": [
-      "Shortlisted Finalist (Listening Score: 30/50): Solid melody structure, clear vocals & good theme connection."
+      "Shortlisted Finalist (Listening Score: 30/50): Solid melody structure & clear vocals."
     ],
     "deductions": [
-      "Refinement Deduction: Minor gaps in prompt specificity or audio mastering dynamics (-16.0 marks)."
+      "Minor Gap: Scope for more nuanced transitions or prompt engineering (-16.0 marks)."
     ],
     "userMarks": "30 / 50",
     "userRemarks": "-",
@@ -739,7 +716,6 @@ window.TEAMS_DATA = [
     "id": 12,
     "sno": 12,
     "finalRank": 24,
-    "isFinalist": true,
     "teamName": "MUSIC QUEENS",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/12 - MUSIC QUEENS.mp3",
@@ -754,10 +730,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 5.8
     },
     "merits": [
-      "Qualified Entry (Listening Score: 29/50): Met basic audio submission criteria."
+      "Qualified Finalist (Listening Score: 29/50): Met audio submission criteria."
     ],
     "deductions": [
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-16.8 marks)."
+      "Audio Deduction: Lacks dynamic audio build-up or deeper narrative nuances (-16.8 marks)."
     ],
     "userMarks": "29 / 50",
     "userRemarks": "-",
@@ -771,7 +747,6 @@ window.TEAMS_DATA = [
     "id": 21,
     "sno": 21,
     "finalRank": 25,
-    "isFinalist": true,
     "teamName": "Quantum Minds",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/21 - Quantum Minds.aac",
@@ -786,10 +761,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 5.6
     },
     "merits": [
-      "Qualified Entry (Listening Score: 28/50): Met basic audio submission criteria."
+      "Qualified Finalist (Listening Score: 28/50): Met audio submission criteria."
     ],
     "deductions": [
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-17.6 marks)."
+      "Audio Deduction: Lacks dynamic audio build-up or deeper narrative nuances (-17.6 marks)."
     ],
     "userMarks": "28 / 50",
     "userRemarks": "-",
@@ -803,7 +778,6 @@ window.TEAMS_DATA = [
     "id": 10,
     "sno": 10,
     "finalRank": 26,
-    "isFinalist": true,
     "teamName": "404 Not Found",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/10 - 404 Not Found.mp3",
@@ -818,10 +792,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 5.2
     },
     "merits": [
-      "Qualified Entry (Listening Score: 26/50): Met basic audio submission criteria."
+      "Qualified Finalist (Listening Score: 26/50): Met audio submission criteria."
     ],
     "deductions": [
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-19.2 marks)."
+      "Audio Deduction: Lacks dynamic audio build-up or deeper narrative nuances (-19.2 marks)."
     ],
     "userMarks": "26 / 50",
     "userRemarks": "-",
@@ -835,7 +809,6 @@ window.TEAMS_DATA = [
     "id": 34,
     "sno": 34,
     "finalRank": 27,
-    "isFinalist": true,
     "teamName": "Utimatrix",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/34 - Utimatrix.mp3",
@@ -850,10 +823,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 5.2
     },
     "merits": [
-      "Qualified Entry (Listening Score: 26/50): Met basic audio submission criteria."
+      "Qualified Finalist (Listening Score: 26/50): Met audio submission criteria."
     ],
     "deductions": [
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-19.2 marks)."
+      "Audio Deduction: Lacks dynamic audio build-up or deeper narrative nuances (-19.2 marks)."
     ],
     "userMarks": "26 / 50",
     "userRemarks": "-",
@@ -867,7 +840,6 @@ window.TEAMS_DATA = [
     "id": 7,
     "sno": 7,
     "finalRank": 28,
-    "isFinalist": true,
     "teamName": "404TALENTNOTFOUND",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/07 - 404TALENTNOTFOUND.mp3",
@@ -882,10 +854,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 5.0
     },
     "merits": [
-      "Qualified Entry (Listening Score: 25/50): Met basic audio submission criteria."
+      "Qualified Finalist (Listening Score: 25/50): Met audio submission criteria."
     ],
     "deductions": [
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-20.0 marks)."
+      "Audio Deduction: Lacks dynamic audio build-up or deeper narrative nuances (-20.0 marks)."
     ],
     "userMarks": "25 / 50",
     "userRemarks": "-",
@@ -899,7 +871,6 @@ window.TEAMS_DATA = [
     "id": 11,
     "sno": 11,
     "finalRank": 29,
-    "isFinalist": true,
     "teamName": "TEAM JIGS",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/11 - TEAM JIGS.mp3",
@@ -914,10 +885,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 4.8
     },
     "merits": [
-      "Qualified Entry (Listening Score: 24/50): Met basic audio submission criteria."
+      "Qualified Finalist (Listening Score: 24/50): Met audio submission criteria."
     ],
     "deductions": [
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-20.8 marks)."
+      "Audio Deduction: Lacks dynamic audio build-up or deeper narrative nuances (-20.8 marks)."
     ],
     "userMarks": "24 / 50",
     "userRemarks": "-",
@@ -931,7 +902,6 @@ window.TEAMS_DATA = [
     "id": 13,
     "sno": 13,
     "finalRank": 30,
-    "isFinalist": true,
     "teamName": "SOLO",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/13 - SOLO.mp3",
@@ -946,10 +916,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 4.8
     },
     "merits": [
-      "Qualified Entry (Listening Score: 24/50): Met basic audio submission criteria."
+      "Qualified Finalist (Listening Score: 24/50): Met audio submission criteria."
     ],
     "deductions": [
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-20.8 marks)."
+      "Audio Deduction: Lacks dynamic audio build-up or deeper narrative nuances (-20.8 marks)."
     ],
     "userMarks": "24 / 50",
     "userRemarks": "-",
@@ -963,7 +933,6 @@ window.TEAMS_DATA = [
     "id": 14,
     "sno": 14,
     "finalRank": 31,
-    "isFinalist": true,
     "teamName": "Single knight",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/14 - Single knight.mp3",
@@ -978,10 +947,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 4.4
     },
     "merits": [
-      "Qualified Entry (Listening Score: 22/50): Met basic audio submission criteria."
+      "Qualified Finalist (Listening Score: 22/50): Met audio submission criteria."
     ],
     "deductions": [
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-22.4 marks)."
+      "Audio Deduction: Lacks dynamic audio build-up or deeper narrative nuances (-22.4 marks)."
     ],
     "userMarks": "22 / 50",
     "userRemarks": "-",
@@ -995,7 +964,6 @@ window.TEAMS_DATA = [
     "id": 15,
     "sno": 15,
     "finalRank": 32,
-    "isFinalist": true,
     "teamName": "Kanyarasi",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/15 - Kanyarasi.mp3",
@@ -1010,10 +978,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 4.4
     },
     "merits": [
-      "Qualified Entry (Listening Score: 22/50): Met basic audio submission criteria."
+      "Qualified Finalist (Listening Score: 22/50): Met audio submission criteria."
     ],
     "deductions": [
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-22.4 marks)."
+      "Audio Deduction: Lacks dynamic audio build-up or deeper narrative nuances (-22.4 marks)."
     ],
     "userMarks": "22 / 50",
     "userRemarks": "-",
@@ -1027,7 +995,6 @@ window.TEAMS_DATA = [
     "id": 16,
     "sno": 16,
     "finalRank": 33,
-    "isFinalist": true,
     "teamName": "Sonic Innovators",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/16 - Sonic Innovators.mp3",
@@ -1042,10 +1009,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 4.2
     },
     "merits": [
-      "Qualified Entry (Listening Score: 21/50): Met basic audio submission criteria."
+      "Qualified Finalist (Listening Score: 21/50): Met audio submission criteria."
     ],
     "deductions": [
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-23.2 marks)."
+      "Audio Deduction: Lacks dynamic audio build-up or deeper narrative nuances (-23.2 marks)."
     ],
     "userMarks": "21 / 50",
     "userRemarks": "-",
@@ -1059,7 +1026,6 @@ window.TEAMS_DATA = [
     "id": 27,
     "sno": 27,
     "finalRank": 34,
-    "isFinalist": true,
     "teamName": "Epic beats",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/27 - Epic beats.mp3",
@@ -1074,10 +1040,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 4.0
     },
     "merits": [
-      "Qualified Entry (Listening Score: 20/50): Met basic audio submission criteria."
+      "Qualified Finalist (Listening Score: 20/50): Met audio submission criteria."
     ],
     "deductions": [
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-24.0 marks)."
+      "Audio Deduction: Lacks dynamic audio build-up or deeper narrative nuances (-24.0 marks)."
     ],
     "userMarks": "20 / 50",
     "userRemarks": "-",
@@ -1091,7 +1057,6 @@ window.TEAMS_DATA = [
     "id": 28,
     "sno": 28,
     "finalRank": 35,
-    "isFinalist": true,
     "teamName": "AInovators",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/28 - AInovators.mp3",
@@ -1106,10 +1071,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 4.0
     },
     "merits": [
-      "Qualified Entry (Listening Score: 20/50): Met basic audio submission criteria."
+      "Qualified Finalist (Listening Score: 20/50): Met audio submission criteria."
     ],
     "deductions": [
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-24.0 marks)."
+      "Audio Deduction: Lacks dynamic audio build-up or deeper narrative nuances (-24.0 marks)."
     ],
     "userMarks": "20 / 50",
     "userRemarks": "-",
@@ -1123,7 +1088,6 @@ window.TEAMS_DATA = [
     "id": 29,
     "sno": 29,
     "finalRank": 36,
-    "isFinalist": true,
     "teamName": "Melody makers",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/29 - Melody makers.mp3",
@@ -1138,10 +1102,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 4.0
     },
     "merits": [
-      "Qualified Entry (Listening Score: 20/50): Met basic audio submission criteria."
+      "Qualified Finalist (Listening Score: 20/50): Met audio submission criteria."
     ],
     "deductions": [
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-24.0 marks)."
+      "Audio Deduction: Lacks dynamic audio build-up or deeper narrative nuances (-24.0 marks)."
     ],
     "userMarks": "20 / 50",
     "userRemarks": "-",
@@ -1150,34 +1114,19 @@ window.TEAMS_DATA = [
     "tools": "ChatGPT – for developing and refining the Telugu lyrics.\nSuno AI – for generating the song, vocals, melody and music.\ncapcut – for trimming/editing the final audio to approximately 1 minute.",
     "workflow": "1. Selected the theme of unsung heroes in our lives.\n2. Used ChatGPT to develop emotional Telugu lyrics.\n3. Refined the lyrics to make them suitable for singing.\n4. Used Suno AI to generate the melody, vocals and cinematic music.\n5. Reviewed the generated song and selected the strongest portions.\n6. Used capcut to trim and edit the song to the required duration.\n7. Finalized the 1-minute song and prepared it for submission",
     "phone": "6305016483"
-  },
+  }
+];
+window.ELIMINATED_TEAMS = [
   {
     "id": 22,
     "sno": 22,
-    "finalRank": 99,
-    "isFinalist": false,
     "teamName": "GUITAR AI",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/22 - GUITAR AI.mp4",
-    "totalScore": 12.0,
-    "userMark50": 15.0,
-    "maxScore": 40,
-    "percentage": 30.0,
-    "scores": {
-      "themeRelevance": 3.0,
-      "lyricsQuality": 3.0,
-      "promptEngineering": 3.0,
-      "submissionCompleteness": 3.0
-    },
-    "merits": [
-      "Participating Entry (Listening Score: 15/50)."
-    ],
-    "deductions": [
-      "Listening Feedback: Not shortlisted in Final Music List due to flat audio execution.",
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-28.0 marks)."
-    ],
-    "userMarks": "15 / 50",
-    "userRemarks": "Not shortlisted in Final Music List due to flat audio execution.",
+    "userMarks": "15",
+    "scoreVal": 15.0,
+    "elimBadge": "Low Score (15/50)",
+    "elimReason": "Low Listening Score (15/50): Very flat acoustic audio, simple loops, and weak engineering relevance.",
     "lyrics": "\"Architects of Daybreak\"\n(Emotional Intro)\nMidnight oil, a flickering screen,\nBlueprints of a world yet unseen.\nFive hours of sleep, a mountain of books,\nHiding the doubt behind hopeful looks.\n(Relatable Verse: Student Life)\nCold cafeteria coffee in hand,\nTrying to fathom what lecture demands.\nDifferential equations blurring the page,\nTrapped in the grind of this campus stage.\nSubmitting code just a minute past two,\nWondering if this is what I was built to do.\n(Energetic Section: Friends, Teamwork & Engineering)\nThen the lab door opens, my team walks in,\nAnd the chaos turns into a winning grin!\nWe argue 'bout circuits, we solder the wires,\nFueled by pizza and shared desires.\nBreadboards and motors, a tangled mess,\nLaughing away all the midterm stress!\n(Powerful Chorus)\nOh, we’re wiring the future, brick by brick!\nThrough every error code, thick and thick!\nIt’s more than a grade, it’s a spark in the dark,\nLeaving our permanent, human-made mark!\nFrom the theory we read to the problems we solve,\nWatch how our world is starting to evolve!\n(Technology Section: The Promise and Peril of AI)\nLines of artificial intelligence code,\nOpening doors down a double-edged road.\nIt can model a cure, it can balance the grid,\nProtecting the futures of every child hid.\nYet we hold the pen, we write the command,\nTo guide the power that rests in our hand.\nIt’s not just about what the algorithm can do—\nIt’s why we build it, and staying true.\n(Emotional Bridge: Failures & Perseverance)\nThe prototype failed... the simulation crashed.\nMonths of hard work in a single flash.\nIs it time to quit? Is the pressure too high?\nNo—engineers learn when they fall from the sky.\nEvery mistake is a data point earned,\nA lesson absorbed, a boundary turned.\n(Big, Inspiring Final Chorus)\nOh, we’re wiring the future, brick by brick!\nThrough every error code, thick and thick!\nIt’s more than a grade, it’s a spark in the dark,\nLeaving our permanent, human-made mark!\nFrom the classroom out to the real world's floor,\nWe’re building a pathway to something more!\n(Outro)\nBeyond the classroom...\nInto the dawn.\nWe code with purpose.\nWe carry on.",
     "prompts": "Create a complete original song for an AI Musical Competition based on the theme “Engineering Beyond the Classroom.” I want the final result to be a complete SONG with both instrumental music and sung vocals, not just an instrumental track.\nThe song should tell the realistic and relatable journey of a college engineering student. Include:\n Studies, classes, assignments and exams,Coding, engineering projects, AI and innovation\nFriends, teamwork, college memories and funStress, failures, mistakes and pressure\nDreams, ambition and building a career\nBoth pros and cons of technology and AI\nHow engineers can use technology responsibly to solve real-world problems\nSong structure: emotional intro → relatable verse about student life → energetic section about friends and engineering → powerful chorus → section about AI/technology and its advantages and disadvantages → emotional bridge about failures and never giving up → big, inspiring final chorus.\nMusic style: modern cinematic pop + electronic/futuristic music. Start soft and emotional, gradually build energy, and end with a powerful uplifting climax. Use piano, acoustic guitar, electronic synths, subtle futuristic/AI sounds and strong drums.\nVocals: clear youthful lead vocals, expressive and emotional in the verses, powerful and energetic in the chorus. Make the melody catchy and easy to remember.\nImportant: Make the lyrics completely original, meaningful, natural and suitable for a college competition. Do not make it sound like an advertisement or simply list engineering terms. Tell an actual story about student life and how engineering knowledge goes beyond the classroom.\nFinal output: Generate the complete song with lyrics + singing vocals + instrumental music, and provide it as a downloadable MP3 or WAV audio file. Also provide the final lyrics separately so I can review them.",
     "tools": "Gemini,Chat gpt",
@@ -1187,30 +1136,13 @@ window.TEAMS_DATA = [
   {
     "id": 26,
     "sno": 26,
-    "finalRank": 99,
-    "isFinalist": false,
     "teamName": "Melody Minds",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/26 - Melody Minds.mp3",
-    "totalScore": 12.0,
-    "userMark50": 15.0,
-    "maxScore": 40,
-    "percentage": 30.0,
-    "scores": {
-      "themeRelevance": 3.0,
-      "lyricsQuality": 3.0,
-      "promptEngineering": 3.0,
-      "submissionCompleteness": 3.0
-    },
-    "merits": [
-      "Participating Entry (Listening Score: 15/50)."
-    ],
-    "deductions": [
-      "Listening Feedback: Not shortlisted in Final Music List due to flat audio execution.",
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-28.0 marks)."
-    ],
-    "userMarks": "15 / 50",
-    "userRemarks": "Not shortlisted in Final Music List due to flat audio execution.",
+    "userMarks": "15",
+    "scoreVal": 15.0,
+    "elimBadge": "Low Score (15/50)",
+    "elimReason": "Low Listening Score (15/50): Juvenile lyrics ('hehe', 'oho-oho') about coffee/laptops with no real engineering impact; blank workflow.",
     "lyrics": "Hey we are the Gen Z students oho-oho oho-oho\n  Laptops open like windows to a dawn\n  Hehe we laugh and we launch new ideas\n\n\n  Night lights and coffee steam in our veins\n  Circuit boards humming like city trains\n  Python whispers logic into our dreams\n  JavaScript paints futures in electric beams\n\n  Hands on keys hearts on code\n  Turning curiosity into roads\n  We map a path with every line we write\n\n  We are the Gen Z students we shape the world\n  Building bridges with code and silver circuits\n  Oho-oho oho-oho we lead the new era\n  We solve the problems and turn dark into light\n  Yahoo-yahoo ha-ha\n\n  ECE bends signals into helpful hands\n  Civil draws the skyline with steady plans\n  Mechanical spins machines that breathe and fly\n  Medical minds heal with algorithms that try\n\n\n  From hardware sparks to data streams we rise\n  Empathy encoded in each enterprise\n  We craft solutions for a better sky\n\n  We are the Gen Z students we shape the world\n  Building bridges with code and silver circuits\n  Oho-oho oho-oho we lead the new era\n  We solve the problems and turn dark into light\n  Yahoo-yahoo ha-ha\n\n  When doubts try to crash we debug with hope\n  Merge our dreams commit to learn and grow\n  Quantum thoughts and fields of stars in view\n  One day our nation will be proud of what we do\n\n  Hehe we prototype the stars\n  Hehe we automate the scars\n  Robots and drones and automated rides\n  Seeds and circuits and healing devices\n\n  We are the Gen Z students we shape the world\n  Building bridges with code and silver circuits\n  Oho-oho oho-oho we lead the new era\n  We solve the problems and turn dark into light\n  Yahoo-yahoo ha-ha\n  Hey we are the Gen Z students oho-oho oho-oho\n  Laptops close but the work goes on and on\n  We are the engineers who change the world tonight",
     "prompts": "Generate a song using this lyrics",
     "tools": "Tad ai",
@@ -1220,30 +1152,13 @@ window.TEAMS_DATA = [
   {
     "id": 31,
     "sno": 31,
-    "finalRank": 99,
-    "isFinalist": false,
     "teamName": "The Boyzz",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/31 - The Boyzz.mp3",
-    "totalScore": 12.0,
-    "userMark50": 15.0,
-    "maxScore": 40,
-    "percentage": 30.0,
-    "scores": {
-      "themeRelevance": 3.0,
-      "lyricsQuality": 3.0,
-      "promptEngineering": 3.0,
-      "submissionCompleteness": 3.0
-    },
-    "merits": [
-      "Participating Entry (Listening Score: 15/50)."
-    ],
-    "deductions": [
-      "Listening Feedback: Not shortlisted in Final Music List due to flat audio execution.",
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-28.0 marks)."
-    ],
-    "userMarks": "15 / 50",
-    "userRemarks": "Not shortlisted in Final Music List due to flat audio execution.",
+    "userMarks": "15",
+    "scoreVal": 15.0,
+    "elimBadge": "Low Score (15/50)",
+    "elimReason": "Low Listening Score (15/50): Shallow rhyming slogans and poor audio mix.",
     "lyrics": "Engineering beyond the classroom, Watch our ideas begin to bloom. Code the future, build the dream, Nothing's impossible as it seems.\nVerse\nRobots move and bridges rise, Innovation paints the skies. Late-night coffee, endless tries, Tomorrow shines before our eyes.\nDrop\nThink. Design. Create. Inspire. Build. Transform. Reach Higher.\nBridge\nFrom classrooms into every street, We turn bold ideas into reality. Every problem, every climb, Becomes tomorrow—one step at a time.\nFinal Chorus\nEngineering beyond the classroom, Together we'll erase the gloom. One bold idea, one fearless mind, Building a better world for humankind.",
     "prompts": "Engineering Beyond the Classroom\nCreate an energetic EDM-pop anthem with cinematic synths, punchy drums, inspiring male and female vocals, and a powerful final chorus. Tempo: 128 BPM. Mood: motivational, futuristic, and emotional. Make the chorus catchy with layered harmonies and a strong beat drop after Verse 2.",
     "tools": "Suno ai, udio, chatgpt",
@@ -1253,30 +1168,13 @@ window.TEAMS_DATA = [
   {
     "id": 33,
     "sno": 33,
-    "finalRank": 99,
-    "isFinalist": false,
     "teamName": "Musical stars",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/33 - Musical stars.mp3",
-    "totalScore": 12.0,
-    "userMark50": 15.0,
-    "maxScore": 40,
-    "percentage": 30.0,
-    "scores": {
-      "themeRelevance": 3.0,
-      "lyricsQuality": 3.0,
-      "promptEngineering": 3.0,
-      "submissionCompleteness": 3.0
-    },
-    "merits": [
-      "Participating Entry (Listening Score: 15/50)."
-    ],
-    "deductions": [
-      "Listening Feedback: Not shortlisted in Final Music List due to flat audio execution.",
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-28.0 marks)."
-    ],
-    "userMarks": "15 / 50",
-    "userRemarks": "Not shortlisted in Final Music List due to flat audio execution.",
+    "userMarks": "15",
+    "scoreVal": 15.0,
+    "elimBadge": "Low Score (15/50)",
+    "elimReason": "Low Listening Score (15/50): Abstract disconnected lyrics and fatal prompt failure ('give me a prompt to win'); blank workflow.",
     "lyrics": "We Are Not Done Yet\nVerse 1\nYou found me bent\nBy the porch light rain\nShoes full of dust\nAnd a name gone faint\nBut you stayed right there\nLike you knew my storm\nPre-Chorus\nSlow hands, hold me up\nI can feel the ground\nOne small spark at a time\nPulling me around\nChorus\nWe are not done yet\nWe are not done yet\nHear my heart come back\nHear my heart come back\nIf the night gets long\nWe will rise again\nWe are not done yet\nWe are not done yet\nVerse 2\nI kept that old key\nOn a ring of rust\nKept a box of dreams\nCovered up in dust\nThen your voice said go\nAnd the dark stepped back\nPre-Chorus\nSlow hands, hold me up\nI can feel the ground\nOne small spark at a time\nPulling me around\nChorus\nWe are not done yet\nWe are not done yet\nHear my heart come back\nHear my heart come back\nIf the night gets long\nWe will rise again\nWe are not done yet\nWe are not done yet\nBridge\nOh, the cracks in us\nLet the light pour through\nWhat broke us open\nMade me run to you\nNow the whole town sings\nOn the edge of dawn\nFinal Chorus\nWe are not done yet\nWe are not done yet\nHear my heart come back\nHear my heart come back\nIf the night gets long\nWe will rise again\nWe are not done yet\nWe are not done yet\nWe are not done yet\nWe are not done yet\nWe are not done yet (not done yet)\nWe are not done yet (not done yet)",
     "prompts": "give me a nice prompt for me to win in this competition for making a song with ai with prompt . It should be like first selecting one best theme from the above , secondly to generate a prompt for creating a song through any ai , the lyrics and music style should be like any professional real world artist , and the background music and instruments should be the most vibing . Like that please give me a prompt , that contains all the best content.\n\nGenre: Cinematic pop-ballad building into anthemic pop-rock\nMood: Emotional, hopeful, triumphant, warm\nTempo: 78 BPM verses building to 96 BPM chorus (double-time feel)\nVocals: One lead vocalist, warm and slightly raspy, intimate in verses,\n        powerful and soaring in the chorus, layered gang-vocal harmonies\n        on the final chorus for a \"crowd\" feeling\nInstrumentation: Start with a single fingerpicked acoustic guitar and\n        soft piano. Add a heartbeat-like kick drum and subtle strings\n        (cello + violin swell) entering the pre-chorus. Full band drop\n        on chorus 2: electric guitar with a clean, shimmering delay,\n        driving snare, deep sub-bass, and a rising string section.\n        Bridge strips back to just piano and voice, then one final\n        key-change chorus with full instrumentation + choir-style\n        backing vocals for the emotional peak.\nProduction style: Warm, cinematic, radio-ready — think modern\n        singer-songwriter anthem crossed with a film score swell.\n        Clear vocal mix, wide stereo strings, punchy but not\n        distorted drums.\nStructure: Verse 1 – Pre-Chorus – Chorus – Verse 2 – Pre-Chorus –\n        Chorus – Bridge – Key-change Final Chorus – Outro (vocal ad-libs\n        over fading strings)",
     "tools": "Claud , mukera.ai",
@@ -1286,30 +1184,13 @@ window.TEAMS_DATA = [
   {
     "id": 36,
     "sno": 36,
-    "finalRank": 99,
-    "isFinalist": false,
     "teamName": "SoulSync",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/36 - SoulSync.mp3",
-    "totalScore": 12.0,
-    "userMark50": 15.0,
-    "maxScore": 40,
-    "percentage": 30.0,
-    "scores": {
-      "themeRelevance": 3.0,
-      "lyricsQuality": 3.0,
-      "promptEngineering": 3.0,
-      "submissionCompleteness": 3.0
-    },
-    "merits": [
-      "Participating Entry (Listening Score: 15/50)."
-    ],
-    "deductions": [
-      "Listening Feedback: Not shortlisted in Final Music List due to flat audio execution.",
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-28.0 marks)."
-    ],
-    "userMarks": "15 / 50",
-    "userRemarks": "Not shortlisted in Final Music List due to flat audio execution.",
+    "userMarks": "15",
+    "scoreVal": 15.0,
+    "elimBadge": "Low Score (15/50)",
+    "elimReason": "Low Listening Score (15/50): Highly generic pop tropes with no genuine connection to gratitude.",
     "lyrics": "I chased the lights, I chased the dreams,\nThought every win was all I’d need.\nBut through the highs and through the falls,\nI found the ones who gave me more.\n\nNot in the things we hold so tight,\nBut in the hands that stayed beside.\n\nYou, you — you’re the greatest gift,\nThe reason I believe, the strength that makes me live.\nThrough every road, through every change,\nThe memories we made will never fade.\nYou, you — when everything is gone,\nThe love we shared will carry on.\n\nAnd now I know what matters most—\nThe greatest gift was never gold.",
     "prompts": "Use the following lyrics exactly as written. Do not rewrite, replace, or add any lyrics. Turn them into a complete, professionally performed modern inspirational pop song.\n\nThe song should have a youthful, energetic, uplifting and emotional feel, with an expressive male lead vocal and clear English pronunciation. Start immediately with a catchy piano and acoustic guitar groove, followed by punchy pop drums, bass, hand claps, subtle cinematic strings, and uplifting backing vocals.\n\nSet the tempo around 100 BPM. Build naturally from the verse into the pre-chorus and then into a powerful, memorable chorus, especially emphasizing the repeated “You, you” hook. Make the vocal delivery natural and emotionally genuine, not like spoken poetry, a motivational speech, or an advertisement.\n\nKeep the total duration approximately 58–60 seconds. No long instrumental intro or outro. End naturally after the final line.\n\n**Lyrics:**\n\nI chased the lights, I chased the dreams,\nThought every win was all I’d need.\nBut through the highs and through the falls,\nI found the ones who gave me more.\n\nNot in the things we hold so tight,\nBut in the hands that stayed beside.\n\nYou, you — you’re the greatest gift,\nThe reason I believe, the strength that makes me live.\nThrough every road, through every change,\nThe memories we made will never fade.\nYou, you — when everything is gone,\nThe love we shared will carry on.\n\nAnd now I know what matters most—\nThe greatest gift was never gold.",
     "tools": "chatgpt for thinking of how to get ideas for the song  ,suno ai for getting ai generated songs",
@@ -1319,30 +1200,13 @@ window.TEAMS_DATA = [
   {
     "id": 42,
     "sno": 42,
-    "finalRank": 99,
-    "isFinalist": false,
     "teamName": "Think Twice",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/42 - Think Twice.mp3",
-    "totalScore": 16.0,
-    "userMark50": 20.0,
-    "maxScore": 40,
-    "percentage": 40.0,
-    "scores": {
-      "themeRelevance": 4.0,
-      "lyricsQuality": 4.0,
-      "promptEngineering": 4.0,
-      "submissionCompleteness": 4.0
-    },
-    "merits": [
-      "Qualified Entry (Listening Score: 20/50): Met basic audio submission criteria."
-    ],
-    "deductions": [
-      "Listening Feedback: Evaluated as Irrelevant to announced theme during listening.",
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-24.0 marks)."
-    ],
-    "userMarks": "20 / 50",
-    "userRemarks": "Evaluated as Irrelevant to announced theme during listening.",
+    "userMarks": "Irrelevant-25",
+    "scoreVal": 20.0,
+    "elimBadge": "Irrelevant (Off-Theme)",
+    "elimReason": "Judged Off-Theme / Irrelevant (Irrelevant-25): Lyrics focus on generic party-pop hooks rather than real engineering problem-solving.",
     "lyrics": "[Intro]\nWe step out now\nFrom the classroom door\n\n[Verse 1]\nEquations on the page\nTurn into a bridge\nA line of code we wrote\nHelps the whole world live\nCircuits learn to carry\nA thousand human calls\nFrom hospitals to farms\nWe build through every fall\n\n[Pre-Chorus]\nWhen the test is real\nWe don’t turn away\nHands on the future\nWe find a better way\n\n[Chorus]\nBeyond the classroom\nBeyond the classroom\nWe build what comes next\nBeyond the classroom\nFrom a classroom idea\nTo a world that moves\nBeyond the classroom\nWe turn dreams to use\n\n[Verse 2]\nA failed first prototype\nStill teaches us more\nWe fix, we learn, we try\nThen we reach for more\nCleaner roads, bright homes\nSafer cities rise\nTech with a careful heart\nFor the human side\n\n[Pre-Chorus]\nWhen the test is real\nWe don’t turn away\nHands on the future\nWe find a better way\n\n[Chorus]\nBeyond the classroom\nBeyond the classroom\nWe build what comes next\nBeyond the classroom\nFrom a classroom idea\nTo a world that moves\nBeyond the classroom\nWe turn dreams to use\n\n[Final Hook]\nBeyond the classroom\nWe change the world",
     "prompts": "**SUNO AI PROMPT — 60-SECOND COMPETITION VERSION**\n\nCreate a **powerful, inspiring, futuristic 60-second K-pop-inspired cinematic anthem** titled **“Beyond the Classroom.”**\n\n### MUSIC STYLE\n\nBegin with a short atmospheric intro using soft piano and futuristic electronic textures. Quickly build into energetic pop drums, powerful bass, bright synths, cinematic strings, and layered vocals.\n\nThe song should feel **innovative, youthful, futuristic, emotional, and victorious** — like young engineers realizing that what they learn in classrooms can change the real world.\n\nUse:\n\n* Emotional opening\n* Fast musical build\n* Catchy pre-chorus\n* Explosive, memorable chorus\n* Layered harmonies\n* Powerful final vocal line\n\nThe chorus must be the **strongest and most memorable section**.\n\n### VERY IMPORTANT — DURATION\n\n**Make the complete song approximately 60 seconds ONLY.**\n\nDo NOT create a long song.\n\nTarget structure:\n\n**0–6 sec — INTRO:**\nA striking line about leaving the classroom and stepping into the real world.\n\n**6–20 sec — VERSE:**\nShow how equations, code, designs, circuits, machines, and ideas learned in classrooms become real solutions.\n\n**20–32 sec — BUILD:**\nIncrease energy and describe engineers facing real-world problems with courage and creativity.\n\n**32–52 sec — BIG CHORUS:**\nA powerful anthem about engineering going beyond textbooks and classrooms to build a better future.\n\n**52–60 sec — FINAL HOOK:**\nA short, unforgettable ending about turning ideas into impact.\n\n### LYRICAL DIRECTION\n\nThe lyrics must be **meaningful, intelligent, inspirational, and specifically about engineering beyond the classroom.**\n\nDo NOT make the lyrics simply say “engineers are great.”\n\nShow the journey:\n\n**Classroom → Knowledge → Innovation → Real-world Problems → Solutions → Better Future**\n\nInclude ideas such as:\n\n* A formula becoming a bridge.\n* A line of code becoming a solution.\n* A circuit becoming technology that connects people.\n* Engineering helping hospitals, cities, the environment, transportation, agriculture, and communities.\n* Students taking theories from textbooks and turning them into something useful.\n* Engineers solving problems that affect real people's lives.\n* Failure becoming another step toward innovation.\n* Technology being used responsibly to create a better and more sustainable future.\n\nUse powerful imagery such as:\n\n**“From equations on a page to solutions in the streets.”**\n\n**“From a classroom idea to a world that moves.”**\n\n**“We don't just learn how the world works — we build what comes next.”**\n\nThe lyrics should emphasize that **engineering is not just about machines and technology; it is about solving human problems and creating meaningful change.**\n\n### CHORUS REQUIREMENT\n\nThe chorus must have a **short, catchy phrase that repeats naturally**, centered around:\n\n**“Beyond the classroom”**\n\nThe chorus should communicate:\n\n**We learned inside the classroom, but our purpose begins outside it.**\n\nMake the final line emotionally powerful and memorable, something that leaves the judges thinking about the impact engineers can create.\n\n### VOCAL DIRECTION\n\nUse youthful, confident lead vocals with strong harmonies in the chorus. The verses should feel sincere and determined, while the chorus should feel huge, uplifting, and victorious.\n\nAvoid overly complicated vocabulary. Every line should be easy to understand but carry a strong meaning.\n\n**Overall emotion:**\nCuriosity → Determination → Innovation → Hope → Victory.\n\nThe listener should finish the 60 seconds feeling:\n\n**“Engineering isn't confined to a classroom. It is a force that can transform the world.”**",
     "tools": "chatgpt,suno ai",
@@ -1352,30 +1216,13 @@ window.TEAMS_DATA = [
   {
     "id": 43,
     "sno": 43,
-    "finalRank": 99,
-    "isFinalist": false,
     "teamName": "Coders",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/43 - Coders.mp3",
-    "totalScore": 12.0,
-    "userMark50": 15.0,
-    "maxScore": 40,
-    "percentage": 30.0,
-    "scores": {
-      "themeRelevance": 3.0,
-      "lyricsQuality": 3.0,
-      "promptEngineering": 3.0,
-      "submissionCompleteness": 3.0
-    },
-    "merits": [
-      "Participating Entry (Listening Score: 15/50)."
-    ],
-    "deductions": [
-      "Listening Feedback: Evaluated as Irrelevant to theme during audio listening.",
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-28.0 marks)."
-    ],
-    "userMarks": "15 / 50",
-    "userRemarks": "Evaluated as Irrelevant to theme during audio listening.",
+    "userMarks": "Irrelevant-15",
+    "scoreVal": 15.0,
+    "elimBadge": "Irrelevant (Off-Theme)",
+    "elimReason": "Judged Off-Theme / Irrelevant (Irrelevant-15): Audio lacked thematic depth on inspiring mentors/heroes; missing workflow.",
     "lyrics": "ARCHITECTS OF TOMORROW\n\nTheme: Heroes Among Us — Engineering the Future\n\n[Intro – Soft, cinematic]\nWe started with a dream,\nA spark inside our eyes,\nWith questions in our minds,\nAnd courage to arise.\n\n[Verse 1 – Building]\nWe draw the lines, we shape the way,\nTurn little thoughts to dreams someday,\nThrough every failure, every fall,\nWe learn to rise, we give our all.\n\nCircuits glow and engines turn,\nEvery challenge makes us learn,\nFrom classroom walls to skies unknown,\nWe build a future of our own.\n\n[Pre-Chorus – Rising]\nWe don't wait for tomorrow,\nWe create it today,\nWith knowledge as our power,\nWe light the way.\n\n[Chorus – Powerful]\nWe are the architects of tomorrow,\nBuilding dreams beyond the sorrow,\nWith every spark, with every mind,\nA better world is what we find.\n\nWe are the voices, we are the flame,\nTurning impossible into a name,\nHand in hand, we'll lead the way,\nWe build tomorrow… starting today! \n\n[Verse 2 – Emotional + Inspirational]\nFor every hand that guides us on,\nFor every voice that says, “Go on,”\nFor every sacrifice unseen,\nYou helped us chase the life we dream.\n\nWe carry hope in what we do,\nA brighter world we're building too,\nNot just machines, not just design,\nBut human hearts that redefine.\n\n[Bridge – Emotional pause → Build]\nIf one idea can change a life,\nIf one brave heart can end the night,\nThen let our dreams become the light,\nLet every failure make us fight.\n\nTomorrow isn't far away…\nTomorrow is what we make today.\n\n[Final Chorus – Grand, energetic]\nWe are the architects of tomorrow,\nRising stronger through every sorrow,\nWith fearless hearts and minds that dream,\nWe'll change the world, we'll change the scene.\n\nWe are the builders, we are the flame,\nWe turn our vision into a name,\nFrom every dream to reality,\nWe engineer our destiny!\n\n[Outro – Powerful]\nWe don't inherit tomorrow…\nWe design it.\nWe don't wait for the future…\nWe build it.\n\nWe are the architects…\nof tomorrow.",
     "prompts": "Cinematic inspirational anthem about engineering students becoming the Architects of Tomorrow. Start with a soft emotional piano and atmospheric pads, then gradually build with cinematic strings, subtle electronic textures, deep drums and powerful percussion. Modern motivational pop-rock with an epic orchestral feel. Emotional verses with intimate vocals, followed by a huge uplifting chorus with layered harmonies and backing vocals. Strong dynamic progression: calm intro → emotional verse → rising pre-chorus → explosive chorus → emotional bridge → massive final chorus → powerful cinematic outro.\n\nVocals should sound youthful, passionate, confident and inspiring, with crystal-clear English pronunciation. The chorus must feel memorable, anthemic and suitable for a college competition stage. Add powerful drum impacts, orchestral swells, choir-style backing vocals and a dramatic final climax. Avoid excessive instrumental sections. Keep the lyrics clearly audible and prioritize emotional storytelling and vocal performance. Around 150 seconds, polished professional production, inspirational, futuristic, hopeful and grand.",
     "tools": "Suno Ai ,Chat Gpt, Gemini Ai",
@@ -1385,30 +1232,13 @@ window.TEAMS_DATA = [
   {
     "id": 44,
     "sno": 44,
-    "finalRank": 99,
-    "isFinalist": false,
     "teamName": "Byteforce",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/44 - Byteforce.mp3",
-    "totalScore": 8.0,
-    "userMark50": 10.0,
-    "maxScore": 40,
-    "percentage": 20.0,
-    "scores": {
-      "themeRelevance": 2.0,
-      "lyricsQuality": 2.0,
-      "promptEngineering": 2.0,
-      "submissionCompleteness": 2.0
-    },
-    "merits": [
-      "Participating Entry (Listening Score: 10/50)."
-    ],
-    "deductions": [
-      "Listening Feedback: Fail (10/50): College fest DJ party track with zero engineering problem-solving.",
-      "Audio Deduction: Song audio was judged flat, repetitive, or loosely connected to core theme during listening (-32.0 marks)."
-    ],
-    "userMarks": "10 / 50",
-    "userRemarks": "Fail (10/50): College fest DJ party track with zero engineering problem-solving.",
+    "userMarks": "F, 10",
+    "scoreVal": 10.0,
+    "elimBadge": "Fail (Off-Topic Party Track)",
+    "elimReason": "Fail (F, 10/50): Total theme violation — college fest DJ night street-party track ('CSE Sidhama') with zero engineering problem-solving.",
     "lyrics": "[Intro]\nఏయ్... సిద్ధమా?\nవిగ్నాన్... సిద్ధమా?\nCSE... సిద్ధమా?\n\nలైట్లు వెలిగే...\nబీట్‌లు మోగే...\nఈ రాత్రి మనదే!\n\n[Verse 1]\nక్లాస్‌లో కూర్చున్న కుర్రాళ్లం\nబయటకొస్తే తుఫానులం\nకోడ్‌తో రోజంతా ఆడినా\nఈ రాత్రి బీట్‌తో ఊగుదాం\n\nస్నేహమే తోడుగా\nజోషే ఊపిరిగా\nవిగ్నాన్ పేరు పలికితే\nవైబే మారిపోవాలా!\n\n[Pre-Chorus]\nఒక్కసారి చేతులెత్తు\nరెండుసార్లు బీట్ కొట్టు\nమూడుసార్లు పేరు చెప్పు...\n\nవిగ్నాన్!\n\n[DROP]\nవిగ్నాన్... ఓయ్!\nCSE... ఓయ్!\n\nబీట్ పడితే ఊగాలి\nజోష్ పెరిగేలా ఆడాలి\nమన గ్యాంగ్ దిగితే\nస్టేజ్ మొత్తం దద్దరిల్లాలి!\n\nహే!\nవిగ్నాన్!\nహే!\nCSE!\n\n[Verse 2]\nకోడ్ మన చేతిలో\nకలలు మన కళ్లలో\nస్నేహం మన గుండెలో\nజోష్ మన అడుగులో\n\nఎవరు ఆపలేరు\nఎవరూ ఆపలేరు\nమన దారిలో మనమే\nకొత్త కథ రాస్తాం!\n\n[Hook]\nరా రా రా...\nబీట్‌లో కలిసిపోరా!\nరా రా రా...\nఈ రాత్రి ఊగిపోరా!\n\nవిగ్నాన్ CSE\nమనదే ఈ వైబ్రేషన్\nవిగ్నాన్ CSE\nమనదే ఈ సెలబ్రేషన్!\n\n[Dance Break]\nఓహో!\nబీట్ పెంచు!\n\nచేయి పైకి!\nచేయి పైకి!\n\nఎడమ వైపు!\nకుడి వైపు!\n\nఅందరం ఒక్కటే!\n\n[Final Drop]\nవిగ్నాన్!\nCSE!\n\nమన జోష్!\nమన స్టైల్!\n\nమన స్నేహం!\nమన వైబ్!\n\nఈ రాత్రి...\nమనదే!\n\nవిగ్నాన్ CSE!\nవిగ్నాన్ CSE!\n\nఓయ్ ఓయ్ ఓయ్!\nమరోసారి!\n\nవిగ్నాన్ CSE!\n\n[Outro]\nబీట్ ఆగినా...\nవైబ్ ఆగదు!\n\nరాత్రి ముగిసినా...\nమన స్నేహం ముగియదు!\n\nవిగ్నాన్ CSE!",
     "prompts": "Original Telugu cinematic street-party anthem, gritty and stylish South Indian film sound, dark funky groove, heavy distorted bass, punchy kick and snare, raw Indian percussion, dappu rhythms, tight claps, atmospheric synths, catchy rhythmic vocal phrases, swagger and youthful confidence, minimal but addictive arrangement, cool laid-back verses that suddenly explode into a powerful dance chorus, energetic male Telugu vocals with group backing vocals, call-and-response sections, cinematic sound design, infectious groove, rebellious college-festival energy, stylish and modern production, 140 BPM, huge bass-driven hook, memorable crowd chant. Keep it original and do not imitate or reproduce any existing song or melody.",
     "tools": "Suno",
