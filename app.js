@@ -1,5 +1,5 @@
 /**
- * AI Music Competition — Live Evaluation & Stage Board Application Logic
+ * AI Music Competition — Live Stage Board Application Logic (Public View - No Scores)
  * Pure Client-Side JavaScript (Zero external dependencies)
  */
 
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let autoAdvance = false;
   let activeView = 'stage'; // 'stage' or 'directory'
   let currentThemeFilter = 'ALL';
-  let currentSort = 'sno_asc';
+  let currentSort = 'rank_asc';
   let searchQuery = '';
 
   // DOM Elements - Navigation & Headers
@@ -41,18 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentThemeTag = document.getElementById('currentThemeTag');
   const currentThemeText = document.getElementById('currentThemeText');
   const currentPhoneText = document.getElementById('currentPhoneText');
-  
-  // Scores & Rubric Bars
-  const currentTotalScore = document.getElementById('currentTotalScore');
-  const currentPercentage = document.getElementById('currentPercentage');
-  const scoreTheme = document.getElementById('scoreTheme');
-  const scoreLyrics = document.getElementById('scoreLyrics');
-  const scorePrompt = document.getElementById('scorePrompt');
-  const scoreCompleteness = document.getElementById('scoreCompleteness');
-  const barTheme = document.getElementById('barTheme');
-  const barLyrics = document.getElementById('barLyrics');
-  const barPrompt = document.getElementById('barPrompt');
-  const barCompleteness = document.getElementById('barCompleteness');
 
   // Audio Player Elements
   const mainAudioElement = document.getElementById('mainAudioElement');
@@ -67,12 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const muteBtn = document.getElementById('muteBtn');
   const rateBtns = document.querySelectorAll('.rate-btn');
 
-  // Critique Lists
-  const currentDeductionsList = document.getElementById('currentDeductionsList');
-  const currentMeritsList = document.getElementById('currentMeritsList');
-  const currentUserMark = document.getElementById('currentUserMark');
-  const currentUserRemark = document.getElementById('currentUserRemark');
-
   // Deep-Dive Submission Content
   const tabBtns = document.querySelectorAll('.tab-btn');
   const tabContents = document.querySelectorAll('.tab-content');
@@ -85,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const nextSno = document.getElementById('nextSno');
   const nextTeamName = document.getElementById('nextTeamName');
   const nextThemeName = document.getElementById('nextThemeName');
-  const nextTotalScore = document.getElementById('nextTotalScore');
   const rosterListContainer = document.getElementById('rosterListContainer');
   const rosterCount = document.getElementById('rosterCount');
 
@@ -94,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const tableSortSelect = document.getElementById('tableSortSelect');
   const masterTableBody = document.getElementById('masterTableBody');
+  const returnToStageBtn = document.getElementById('returnToStageBtn');
 
   // Initialize Application
   function init() {
@@ -126,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     teams.forEach((t, i) => {
       const opt = document.createElement('option');
       opt.value = i;
-      opt.textContent = `#${String(t.sno).padStart(2, '0')} - ${t.teamName} (${t.totalScore}/40)`;
+      opt.textContent = `#${String(t.sno).padStart(2, '0')} - ${t.teamName} [${t.theme}]`;
       teamSelectDropdown.appendChild(opt);
     });
   }
@@ -151,98 +133,55 @@ document.addEventListener('DOMContentLoaded', () => {
     currentThemeText.textContent = team.theme;
     currentPhoneText.textContent = team.phone || 'N/A';
 
-    // Scores & Progress Bars
-    currentTotalScore.textContent = team.totalScore.toFixed(1);
-    currentPercentage.textContent = `${team.percentage.toFixed(1)}%`;
-    
-    scoreTheme.textContent = `${team.scores.themeRelevance.toFixed(1)} / 10`;
-    scoreLyrics.textContent = `${team.scores.lyricsQuality.toFixed(1)} / 10`;
-    scorePrompt.textContent = `${team.scores.promptEngineering.toFixed(1)} / 10`;
-    scoreCompleteness.textContent = `${team.scores.submissionCompleteness.toFixed(1)} / 10`;
+    // Deep-dive Submission Content
+    currentLyricsText.textContent = team.lyrics && team.lyrics.trim() ? team.lyrics : 'No lyrics submitted by this team.';
+    currentPromptText.textContent = team.prompts && team.prompts.trim() ? team.prompts : 'No prompt text submitted.';
+    currentToolsText.textContent = team.tools && team.tools.trim() ? team.tools : 'N/A';
+    currentWorkflowText.textContent = team.workflow && team.workflow.trim() ? team.workflow : 'No workflow narrative submitted.';
 
-    barTheme.style.width = `${(team.scores.themeRelevance / 10) * 100}%`;
-    barLyrics.style.width = `${(team.scores.lyricsQuality / 10) * 100}%`;
-    barPrompt.style.width = `${(team.scores.promptEngineering / 10) * 100}%`;
-    barCompleteness.style.width = `${(team.scores.submissionCompleteness / 10) * 100}%`;
+    // Setup Audio Track
+    setupAudioTrack(team.audioSrc);
 
-    // Critique Lists: Deductions / Negatives for Judges
-    currentDeductionsList.innerHTML = '';
-    if (team.deductions && team.deductions.length > 0) {
-      team.deductions.forEach(d => {
-        const li = document.createElement('li');
-        li.textContent = d;
-        currentDeductionsList.appendChild(li);
-      });
-    } else {
-      const li = document.createElement('li');
-      li.textContent = 'No major deductions recorded. High fidelity submission.';
-      currentDeductionsList.appendChild(li);
-    }
-
-    // Key Merits
-    currentMeritsList.innerHTML = '';
-    if (team.merits && team.merits.length > 0) {
-      team.merits.forEach(m => {
-        const li = document.createElement('li');
-        li.textContent = m;
-        currentMeritsList.appendChild(li);
-      });
-    } else {
-      const li = document.createElement('li');
-      li.textContent = 'Baseline submission standards met.';
-      currentMeritsList.appendChild(li);
-    }
-
-    // Original Human Marks
-    currentUserMark.textContent = team.userMarks || 'N/A';
-    currentUserRemark.textContent = team.userRemarks || '-';
-
-    // Submission Deep-Dive Content
-    currentLyricsText.textContent = team.lyrics || 'No lyrics provided.';
-    currentPromptText.textContent = team.prompts || 'No prompts provided.';
-    currentToolsText.textContent = team.tools || 'None listed';
-    currentWorkflowText.textContent = team.workflow || 'No workflow methodology described.';
-
-    // Up Next Card
+    // Render Up Next Card
     nextSno.textContent = `#${String(nextTeam.sno).padStart(2, '0')}`;
     nextTeamName.textContent = nextTeam.teamName;
     nextThemeName.textContent = nextTeam.theme;
-    nextTotalScore.textContent = `${nextTeam.totalScore.toFixed(1)} / 40 (${nextTeam.percentage.toFixed(1)}%)`;
 
-    // Load Audio
-    loadAudioTrack(team.audioSrc);
-    updateRosterActiveState();
+    // Update active highlight in sidebar roster
+    updateActiveRosterItem();
   }
 
-  // Load and Set Audio Track
-  function loadAudioTrack(src) {
-    // Reset player state
+  // Setup Audio Track and reset playback state
+  function setupAudioTrack(audioSrc) {
     pauseAudio();
-    mainAudioElement.src = src;
+    mainAudioElement.src = audioSrc;
     mainAudioElement.load();
-    
-    // Display clean filename
-    const filename = src.split('/').pop() || 'audio_track.mp3';
-    currentAudioFilename.textContent = decodeURIComponent(filename);
     seekSlider.value = 0;
     currentTimeDisplay.textContent = '00:00';
     totalDurationDisplay.textContent = '00:00';
+    
+    const filename = audioSrc.split('/').pop();
+    currentAudioFilename.textContent = decodeURIComponent(filename);
   }
 
-  // Play / Pause Functions
+  // Audio Play / Pause Toggle
+  function togglePlay() {
+    if (!mainAudioElement.src) return;
+    if (mainAudioElement.paused) {
+      playAudio();
+    } else {
+      pauseAudio();
+    }
+  }
+
   function playAudio() {
-    mainAudioElement.play()
-      .then(() => {
-        isPlaying = true;
-        playIcon.textContent = '⏸';
-        waveAnim.classList.add('playing');
-      })
-      .catch(err => {
-        console.warn('Audio playback error (waiting for user interaction):', err);
-        isPlaying = false;
-        playIcon.textContent = '▶';
-        waveAnim.classList.remove('playing');
-      });
+    mainAudioElement.play().then(() => {
+      isPlaying = true;
+      playIcon.textContent = '⏸';
+      waveAnim.classList.add('playing');
+    }).catch(err => {
+      console.warn('Playback error or user interaction needed:', err);
+    });
   }
 
   function pauseAudio() {
@@ -252,138 +191,119 @@ document.addEventListener('DOMContentLoaded', () => {
     waveAnim.classList.remove('playing');
   }
 
-  function toggleAudio() {
-    if (isPlaying) {
-      pauseAudio();
-    } else {
-      playAudio();
-    }
+  // Render Sidebar Roster List
+  function renderRosterList() {
+    rosterListContainer.innerHTML = '';
+    teams.forEach((t, i) => {
+      const item = document.createElement('div');
+      item.className = `roster-item ${i === currentIdx ? 'active' : ''}`;
+      item.dataset.index = i;
+      item.innerHTML = `
+        <div class="roster-item-info">
+          <span class="roster-item-sno">#${String(t.sno).padStart(2, '0')}</span>
+          <div class="roster-item-meta">
+            <span class="roster-item-name">${t.teamName}</span>
+            <span class="roster-item-theme">${t.theme}</span>
+          </div>
+        </div>
+      `;
+      item.addEventListener('click', () => {
+        renderStageView(i);
+      });
+      rosterListContainer.appendChild(item);
+    });
   }
 
-  // Update Roster Active Highlights
-  function updateRosterActiveState() {
+  function updateActiveRosterItem() {
     const items = rosterListContainer.querySelectorAll('.roster-item');
-    items.forEach((item, idx) => {
-      item.classList.remove('active', 'up-next');
-      if (idx === currentIdx) {
-        item.classList.add('active');
-        item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      } else if (idx === (currentIdx + 1) % teams.length) {
-        item.classList.add('up-next');
+    items.forEach((it, i) => {
+      if (i === currentIdx) {
+        it.classList.add('active');
+        it.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } else {
+        it.classList.remove('active');
       }
     });
   }
 
-  // Render Queue Roster List
-  function renderRosterList() {
-    rosterListContainer.innerHTML = '';
-    teams.forEach((t, i) => {
-      const div = document.createElement('div');
-      div.className = 'roster-item';
-      if (i === currentIdx) div.classList.add('active');
-      if (i === (currentIdx + 1) % teams.length) div.classList.add('up-next');
-
-      div.innerHTML = `
-        <div class="roster-left">
-          <span class="roster-num">#${String(t.sno).padStart(2, '0')}</span>
-          <span class="roster-team">${t.teamName}</span>
-        </div>
-        <span class="roster-score">${t.totalScore.toFixed(1)}</span>
-      `;
-
-      div.addEventListener('click', () => {
-        renderStageView(i);
-      });
-
-      rosterListContainer.appendChild(div);
-    });
-  }
-
-  // Render Directory / Master Table
+  // Render Directory / Master Table (NO SCORES)
   function renderDirectoryTable() {
-    masterTableBody.innerHTML = '';
-
     let filtered = teams.filter(t => {
-      const matchTheme = (currentThemeFilter === 'ALL' || t.theme.toLowerCase().includes(currentThemeFilter.toLowerCase()));
-      const q = searchQuery.toLowerCase();
-      const matchSearch = !q || 
+      const matchTheme = (currentThemeFilter === 'ALL' || t.theme.toLowerCase() === currentThemeFilter.toLowerCase());
+      const q = searchQuery.toLowerCase().trim();
+      const matchSearch = (!q || 
         t.teamName.toLowerCase().includes(q) || 
         t.theme.toLowerCase().includes(q) || 
-        (t.lyrics && t.lyrics.toLowerCase().includes(q));
+        (t.phone && t.phone.toLowerCase().includes(q)) ||
+        String(t.sno).includes(q)
+      );
       return matchTheme && matchSearch;
     });
 
     // Sorting
-    if (currentSort === 'score_desc') {
-      filtered.sort((a, b) => b.totalScore - a.totalScore);
-    } else if (currentSort === 'score_asc') {
-      filtered.sort((a, b) => a.totalScore - b.totalScore);
-    } else if (currentSort === 'name_asc') {
-      filtered.sort((a, b) => a.teamName.localeCompare(b.teamName));
-    } else {
-      // sno_asc
-      filtered.sort((a, b) => a.sno - b.sno);
-    }
+    filtered.sort((a, b) => {
+      if (currentSort === 'rank_asc') return (a.finalRank || 99) - (b.finalRank || 99);
+      if (currentSort === 'sno_asc') return a.sno - b.sno;
+      if (currentSort === 'sno_desc') return b.sno - a.sno;
+      if (currentSort === 'name_asc') return a.teamName.localeCompare(b.teamName);
+      return 0;
+    });
 
+    masterTableBody.innerHTML = '';
     if (filtered.length === 0) {
-      const tr = document.createElement('tr');
-      tr.innerHTML = `<td colspan="11" style="text-align: center; padding: 30px; color: var(--text-muted);">No matching teams found.</td>`;
-      masterTableBody.appendChild(tr);
+      const emptyRow = document.createElement('tr');
+      emptyRow.innerHTML = `<td colspan="7" class="empty-table-cell">No teams matching current search/filter criteria.</td>`;
+      masterTableBody.appendChild(emptyRow);
       return;
     }
 
     filtered.forEach(t => {
-      const tr = document.createElement('tr');
-      const deductionSnippet = (t.deductions && t.deductions.length > 0) ? t.deductions[0] : 'None';
-
-      tr.innerHTML = `
-        <td class="table-num">#${String(t.sno).padStart(2, '0')}</td>
-        <td>
-          <div class="table-team-cell">
-            <span class="table-team-name">${t.teamName}</span>
-          </div>
+      const origIdx = teams.findIndex(item => item.sno === t.sno);
+      const isCurrentActive = (origIdx === currentIdx);
+      const row = document.createElement('tr');
+      row.className = isCurrentActive ? 'table-row-active' : '';
+      
+      row.innerHTML = `
+        <td class="col-rank"><span class="rank-badge-cell">#${String(t.finalRank || '-').padStart(2, '0')}</span></td>
+        <td class="col-sno"><span class="sno-pill">#${String(t.sno).padStart(2, '0')}</span></td>
+        <td class="col-team"><strong>${t.teamName}</strong></td>
+        <td class="col-theme"><span class="badge badge-theme">${t.theme}</span></td>
+        <td class="col-phone">${t.phone || 'N/A'}</td>
+        <td class="col-audio">
+          <button class="btn btn-small btn-secondary btn-table-play" data-src="${t.audioSrc}" data-idx="${origIdx}">
+            <span>▶</span> Listen
+          </button>
         </td>
-        <td><span class="theme-tag" style="font-size: 11px;">${t.theme}</span></td>
-        <td>${t.scores.themeRelevance.toFixed(1)}</td>
-        <td>${t.scores.lyricsQuality.toFixed(1)}</td>
-        <td>${t.scores.promptEngineering.toFixed(1)}</td>
-        <td>${t.scores.submissionCompleteness.toFixed(1)}</td>
-        <td><span class="table-score-badge">${t.totalScore.toFixed(1)}</span></td>
-        <td><span class="table-pct-badge">${t.percentage.toFixed(1)}%</span></td>
-        <td><div class="table-deduction-snippet">${deductionSnippet}</div></td>
-        <td>
-          <div class="table-actions-cell">
-            <button class="btn btn-small btn-primary" onclick="window.sendTeamToStage(${t.sno - 1})">
-              🎤 Stage
-            </button>
-            <button class="btn btn-small btn-secondary" onclick="window.playTableAudio(${t.sno - 1})">
-              ▶ Play
-            </button>
-          </div>
+        <td class="col-action" style="text-align: center;">
+          <button class="btn btn-small btn-primary btn-load-stage" data-idx="${origIdx}">
+            Stage View &rarr;
+          </button>
         </td>
       `;
+      masterTableBody.appendChild(row);
+    });
 
-      masterTableBody.appendChild(tr);
+    // Attach listeners for table actions
+    masterTableBody.querySelectorAll('.btn-load-stage').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const targetIdx = parseInt(e.currentTarget.dataset.idx, 10);
+        renderStageView(targetIdx);
+        toggleMainView('stage');
+      });
+    });
+
+    masterTableBody.querySelectorAll('.btn-table-play').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const targetIdx = parseInt(e.currentTarget.dataset.idx, 10);
+        renderStageView(targetIdx);
+        playAudio();
+      });
     });
   }
 
-  // Global window functions for table buttons
-  window.sendTeamToStage = function(idx) {
-    renderStageView(idx);
-    switchView('stage');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  window.playTableAudio = function(idx) {
-    renderStageView(idx);
-    setTimeout(() => {
-      playAudio();
-    }, 100);
-  };
-
-  // View Switcher (Stage vs Directory)
-  function switchView(viewName) {
-    activeView = viewName;
+  // Toggle View Mode: Stage vs Directory
+  function toggleMainView(view) {
+    activeView = view;
     if (activeView === 'stage') {
       stageView.classList.add('active-view');
       directoryView.classList.remove('active-view');
@@ -391,136 +311,155 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       stageView.classList.remove('active-view');
       directoryView.classList.add('active-view');
-      viewModeText.textContent = '🎤 Live Stage Board';
+      viewModeText.textContent = 'Live Stage View';
+      renderDirectoryTable();
     }
   }
 
-  // Setup Event Listeners
+  // Event Listeners
   function setupEventListeners() {
-    // Navigation Buttons
+    // Stage Navigation
     prevTeamBtn.addEventListener('click', () => {
-      const newIdx = (currentIdx - 1 + teams.length) % teams.length;
-      renderStageView(newIdx);
+      let prevIdx = currentIdx - 1;
+      if (prevIdx < 0) prevIdx = teams.length - 1;
+      renderStageView(prevIdx);
     });
 
     nextTeamBtn.addEventListener('click', () => {
-      const newIdx = (currentIdx + 1) % teams.length;
-      renderStageView(newIdx);
+      let nextIdx = (currentIdx + 1) % teams.length;
+      renderStageView(nextIdx);
     });
 
     callNextToStageBtn.addEventListener('click', () => {
-      const nextIdx = (currentIdx + 1) % teams.length;
+      let nextIdx = (currentIdx + 1) % teams.length;
       renderStageView(nextIdx);
-      setTimeout(() => {
-        playAudio();
-      }, 150);
     });
 
     teamSelectDropdown.addEventListener('change', (e) => {
-      renderStageView(parseInt(e.target.value, 10));
+      const selected = parseInt(e.target.value, 10);
+      renderStageView(selected);
     });
 
-    // Auto Advance Toggle
+    // Auto Advance Button
     autoAdvanceBtn.addEventListener('click', () => {
       autoAdvance = !autoAdvance;
       autoNextStatus.textContent = autoAdvance ? 'ON' : 'OFF';
-      autoAdvanceBtn.classList.toggle('btn-success', autoAdvance);
-      autoAdvanceBtn.classList.toggle('btn-outline', !autoAdvance);
+      autoAdvanceBtn.classList.toggle('active', autoAdvance);
     });
 
-    // View Switch Toggle
-    viewToggleBtn.addEventListener('click', () => {
-      switchView(activeView === 'stage' ? 'directory' : 'stage');
-    });
-
-    // Theme Toggle
-    themeToggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('light-theme');
-      const isLight = document.body.classList.contains('light-theme');
-      themeIcon.textContent = isLight ? '🌙' : '☀️';
-    });
-
-    // Audio Player Controls
-    playPauseBtn.addEventListener('click', toggleAudio);
+    // Audio Events
+    playPauseBtn.addEventListener('click', togglePlay);
 
     mainAudioElement.addEventListener('loadedmetadata', () => {
       totalDurationDisplay.textContent = formatTime(mainAudioElement.duration);
-      seekSlider.max = mainAudioElement.duration || 100;
     });
 
     mainAudioElement.addEventListener('timeupdate', () => {
-      currentTimeDisplay.textContent = formatTime(mainAudioElement.currentTime);
-      seekSlider.value = mainAudioElement.currentTime;
+      if (!mainAudioElement.duration) return;
+      const cur = mainAudioElement.currentTime;
+      const dur = mainAudioElement.duration;
+      currentTimeDisplay.textContent = formatTime(cur);
+      seekSlider.value = (cur / dur) * 100;
+    });
+
+    seekSlider.addEventListener('input', (e) => {
+      if (!mainAudioElement.duration) return;
+      const seekTo = (e.target.value / 100) * mainAudioElement.duration;
+      mainAudioElement.currentTime = seekTo;
     });
 
     mainAudioElement.addEventListener('ended', () => {
       pauseAudio();
       if (autoAdvance) {
-        const nextIdx = (currentIdx + 1) % teams.length;
+        let nextIdx = (currentIdx + 1) % teams.length;
         renderStageView(nextIdx);
-        setTimeout(() => {
-          playAudio();
-        }, 300);
+        setTimeout(() => playAudio(), 400);
       }
     });
 
-    seekSlider.addEventListener('input', (e) => {
-      mainAudioElement.currentTime = e.target.value;
-    });
-
-    volumeSlider.addEventListener('input', (e) => {
-      mainAudioElement.volume = e.target.value;
-      muteBtn.textContent = e.target.value == 0 ? '🔇' : '🔊';
-    });
-
-    muteBtn.addEventListener('click', () => {
-      if (mainAudioElement.muted) {
-        mainAudioElement.muted = false;
-        muteBtn.textContent = '🔊';
-      } else {
-        mainAudioElement.muted = true;
-        muteBtn.textContent = '🔇';
-      }
-    });
-
-    // Playback Rate Buttons
+    // Playback Rate Selector
     rateBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (e) => {
         rateBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        mainAudioElement.playbackRate = parseFloat(btn.dataset.rate);
+        e.target.classList.add('active');
+        const rate = parseFloat(e.target.dataset.rate);
+        mainAudioElement.playbackRate = rate;
       });
     });
 
-    // Deep Dive Tabs
+    // Volume & Mute
+    volumeSlider.addEventListener('input', (e) => {
+      const vol = parseFloat(e.target.value);
+      mainAudioElement.volume = vol;
+      muteBtn.textContent = vol === 0 ? '🔇' : '🔊';
+    });
+
+    muteBtn.addEventListener('click', () => {
+      if (mainAudioElement.volume > 0) {
+        mainAudioElement.dataset.prevVol = mainAudioElement.volume;
+        mainAudioElement.volume = 0;
+        volumeSlider.value = 0;
+        muteBtn.textContent = '🔇';
+      } else {
+        const prev = parseFloat(mainAudioElement.dataset.prevVol || 1);
+        mainAudioElement.volume = prev;
+        volumeSlider.value = prev;
+        muteBtn.textContent = '🔊';
+      }
+    });
+
+    // Tabs in Stage View
     tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (e) => {
         tabBtns.forEach(b => b.classList.remove('active'));
         tabContents.forEach(c => c.classList.remove('active'));
-        
-        btn.classList.add('active');
-        const tabId = btn.dataset.tab;
+        e.target.classList.add('active');
+        const tabId = e.target.dataset.tab;
         document.getElementById(tabId).classList.add('active');
       });
     });
 
-    // Table Search Input
+    // View Mode Toggle
+    viewToggleBtn.addEventListener('click', () => {
+      toggleMainView(activeView === 'stage' ? 'directory' : 'stage');
+    });
+
+    if (returnToStageBtn) {
+      returnToStageBtn.addEventListener('click', () => {
+        toggleMainView('stage');
+      });
+    }
+
+    // Theme Toggle (Dark / Light)
+    themeToggleBtn.addEventListener('click', () => {
+      const body = document.body;
+      const isDark = body.classList.contains('dark-theme');
+      if (isDark) {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+        themeIcon.textContent = '🌙';
+      } else {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+        themeIcon.textContent = '☀️';
+      }
+    });
+
+    // Directory Search & Filters
     tableSearchInput.addEventListener('input', (e) => {
       searchQuery = e.target.value;
       renderDirectoryTable();
     });
 
-    // Table Theme Filter Pills
     filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (e) => {
         filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        currentThemeFilter = btn.dataset.theme;
+        e.target.classList.add('active');
+        currentThemeFilter = e.target.dataset.theme;
         renderDirectoryTable();
       });
     });
 
-    // Table Sort Select
     tableSortSelect.addEventListener('change', (e) => {
       currentSort = e.target.value;
       renderDirectoryTable();
@@ -528,24 +467,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Keyboard Shortcuts
     document.addEventListener('keydown', (e) => {
-      // Don't trigger if user is typing in search input
+      // Ignore if user is typing in search input
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
       if (e.code === 'Space') {
         e.preventDefault();
-        toggleAudio();
+        togglePlay();
       } else if (e.code === 'ArrowRight') {
         e.preventDefault();
-        const nextIdx = (currentIdx + 1) % teams.length;
+        let nextIdx = (currentIdx + 1) % teams.length;
         renderStageView(nextIdx);
       } else if (e.code === 'ArrowLeft') {
         e.preventDefault();
-        const prevIdx = (currentIdx - 1 + teams.length) % teams.length;
+        let prevIdx = currentIdx - 1;
+        if (prevIdx < 0) prevIdx = teams.length - 1;
         renderStageView(prevIdx);
       }
     });
   }
 
-  // Run Init
+  // Run
   init();
 });

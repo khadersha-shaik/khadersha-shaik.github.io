@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Music Competition — Judges Scoring & Evaluation Help Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-theme">
+  <!-- Top Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <div class="brand-icon">🎵</div>
+        <div>
+          <h1 class="brand-title">AI Music Competition</h1>
+          <p class="brand-subtitle">🔒 Judges Evaluation & Scoring Breakdown (Confidential View)</p>
+        </div>
+      </div>
+
+      <div class="header-stats">
+        <div class="stat-badge">
+          <span class="stat-label">Total Teams</span>
+          <span class="stat-value" id="totalTeamsCount">44</span>
+        </div>
+        <div class="stat-badge highlight-active">
+          <span class="stat-label">Evaluating</span>
+          <span class="stat-value" id="currentTeamBadge">#01</span>
+        </div>
+        <div class="stat-badge highlight-next">
+          <span class="stat-label">Up Next</span>
+          <span class="stat-value" id="nextTeamBadge">#02</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-primary" title="Return to Public Live Board without Scores">
+          <span>&larr;</span> Public Stage Board (No Scores)
+        </a>
+        <a href="eliminated.html" class="btn btn-secondary" title="View 8 Eliminated Teams & Songs" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.4);">
+          <span>🚫</span> Eliminated Teams (8)
+        </a>
+        <a href="judges_sheet.html" class="btn btn-secondary" title="Open & Print Judges Scoring Sheet" target="_blank">
+          <span>🖨️</span> Judges Score Sheet
+        </a>
+        <button id="themeToggleBtn" class="btn btn-icon" title="Toggle Light/Dark Theme">
+          <span id="themeIcon">☀️</span>
+        </button>
+        <button id="viewToggleBtn" class="btn btn-primary">
+          <span class="btn-icon-text">📊</span> <span id="viewModeText">All Teams Directory</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-main">
+    
+    <!-- SECTION 1: LIVE STAGE & JUDGES CALL BOARD -->
+    <section id="stageView" class="view-section active-view">
+      
+      <!-- Stage Navigation Bar -->
+      <div class="stage-control-bar">
+        <div class="stage-nav-buttons">
+          <button id="prevTeamBtn" class="btn btn-secondary">
+            <span>&larr;</span> Previous Team
+          </button>
+          
+          <div class="team-quick-select">
+            <label for="teamSelectDropdown" class="select-label">Select Team to Stage:</label>
+            <select id="teamSelectDropdown" class="form-select"></select>
+          </div>
+
+          <button id="nextTeamBtn" class="btn btn-primary">
+            Next Team <span>&rarr;</span>
+          </button>
+        </div>
+
+        <div class="stage-status-pills">
+          <span class="status-pill status-evaluating">🟢 LIVE EVALUATION STAGE</span>
+          <button id="autoAdvanceBtn" class="btn btn-small btn-outline" title="Auto advance to next team when song finishes">
+            Auto-Next: <span id="autoNextStatus">OFF</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Stage Dual-Column Layout -->
+      <div class="stage-grid">
+        
+        <!-- LEFT COLUMN: CURRENT EVALUATING TEAM -->
+        <div class="current-stage-card card">
+          <div class="card-header-banner">
+            <div class="stage-pill-live">
+              <span class="pulsing-dot"></span> CURRENTLY PRESENTING & EVALUATING
+            </div>
+            <div class="theme-tag" id="currentThemeTag">Heroes Among Us</div>
+          </div>
+
+          <div class="stage-team-headline">
+            <div class="team-title-row">
+              <span class="team-number-pill" id="currentSno">#01</span>
+              <h2 class="team-main-name" id="currentTeamName">Team Name</h2>
+            </div>
+            <div class="team-meta-row">
+              <span class="meta-item"><strong>Theme:</strong> <span id="currentThemeText">Heroes Among Us</span></span>
+              <span class="meta-item"><strong>Contact:</strong> <span id="currentPhoneText">+91 00000 00000</span></span>
+            </div>
+          </div>
+
+          <!-- Score Overview Banner -->
+          <div class="score-overview-box">
+            <div class="score-main-display">
+              <div class="score-big-number">
+                <span id="currentTotalScore">37.5</span>
+                <span class="score-max">/ 40</span>
+              </div>
+              <div class="score-percentage-badge" id="currentPercentage">93.8%</div>
+            </div>
+
+            <!-- Rubric 4-Bar Metric Breakdown -->
+            <div class="rubric-bars-grid">
+              <div class="rubric-item">
+                <div class="rubric-header">
+                  <span>Theme Relevance</span>
+                  <span class="rubric-val" id="scoreTheme">9.0 / 10</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill fill-theme" id="barTheme" style="width: 90%"></div></div>
+              </div>
+
+              <div class="rubric-item">
+                <div class="rubric-header">
+                  <span>Lyrics Quality</span>
+                  <span class="rubric-val" id="scoreLyrics">8.5 / 10</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill fill-lyrics" id="barLyrics" style="width: 85%"></div></div>
+              </div>
+
+              <div class="rubric-item">
+                <div class="rubric-header">
+                  <span>Prompt Engineering</span>
+                  <span class="rubric-val" id="scorePrompt">8.0 / 10</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill fill-prompt" id="barPrompt" style="width: 80%"></div></div>
+              </div>
+
+              <div class="rubric-item">
+                <div class="rubric-header">
+                  <span>Completeness</span>
+                  <span class="rubric-val" id="scoreCompleteness">8.0 / 10</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill fill-completeness" id="barCompleteness" style="width: 80%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AUDIO PLAYER SECTION -->
+          <div class="audio-player-container">
+            <div class="player-header">
+              <div class="player-title">
+                <span class="audio-wave-anim" id="waveAnim">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </span>
+                <span id="currentAudioFilename">Song Audio File</span>
+              </div>
+              <div class="playback-rate-group">
+                <button class="rate-btn" data-rate="0.75">0.75x</button>
+                <button class="rate-btn active" data-rate="1.0">1.0x</button>
+                <button class="rate-btn" data-rate="1.25">1.25x</button>
+                <button class="rate-btn" data-rate="1.5">1.5x</button>
+              </div>
+            </div>
+
+            <!-- Custom Audio Controls -->
+            <div class="player-controls-row">
+              <button id="playPauseBtn" class="btn btn-play" title="Play / Pause">
+                <span id="playIcon">▶</span>
+              </button>
+
+              <div class="scrub-container">
+                <input type="range" id="seekSlider" class="seek-slider" min="0" max="100" value="0" step="0.1">
+                <div class="time-display">
+                  <span id="currentTime">00:00</span> / <span id="totalDuration">00:00</span>
+                </div>
+              </div>
+
+              <div class="volume-container">
+                <button id="muteBtn" class="btn btn-icon-small" title="Mute/Unmute">🔊</button>
+                <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.05" value="1">
+              </div>
+            </div>
+
+            <!-- Hidden Native Audio element -->
+            <audio id="mainAudioElement" preload="metadata"></audio>
+          </div>
+
+          <!-- JUDGES SCRUTINY & DEFENSE BOX -->
+          <div class="judge-interrogation-panel">
+            <div class="panel-section-title">
+              <span class="title-icon">⚖️</span>
+              <h3>Judges Evaluation & Scrutiny Points</h3>
+            </div>
+
+            <!-- Negative Points / Weaknesses to Question (High Priority) -->
+            <div class="critique-box box-negatives">
+              <div class="critique-header header-negatives">
+                <span class="badge-icon">⚠️</span>
+                <strong>Vulnerabilities & Mark Deductions (Points to Interrogate)</strong>
+              </div>
+              <ul class="critique-list" id="currentDeductionsList">
+                <li>Deduction item</li>
+              </ul>
+            </div>
+
+            <!-- Key Merits / Strengths -->
+            <div class="critique-box box-merits">
+              <div class="critique-header header-merits">
+                <span class="badge-icon">✨</span>
+                <strong>Key Strengths & Merits Awarded</strong>
+              </div>
+              <ul class="critique-list" id="currentMeritsList">
+                <li>Merit item</li>
+              </ul>
+            </div>
+
+            <!-- User Evaluator Notes & Original Marks -->
+            <div class="critique-box box-usermarks">
+              <div class="critique-header header-usermarks">
+                <span class="badge-icon">📝</span>
+                <strong>Original Evaluator Record</strong>
+              </div>
+              <div class="usermarks-content">
+                <div><strong>Original Mark:</strong> <span id="currentUserMark" class="mark-tag">N/A</span></div>
+                <div><strong>Evaluator Remark:</strong> <span id="currentUserRemark" class="remark-text">-</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deep-Dive Submission Tabs (Lyrics, Prompts, Tools) -->
+          <div class="submission-tabs-container">
+            <div class="tab-buttons-row">
+              <button class="tab-btn active" data-tab="tabLyrics">📜 Generated Lyrics</button>
+              <button class="tab-btn" data-tab="tabPrompt">🤖 AI Prompts Used</button>
+              <button class="tab-btn" data-tab="tabWorkflow">🛠️ Tools & Process</button>
+            </div>
+
+            <div class="tab-content active" id="tabLyrics">
+              <div class="content-box-scroll" id="currentLyricsText">Lyrics content here...</div>
+            </div>
+
+            <div class="tab-content" id="tabPrompt">
+              <div class="content-box-scroll prompt-code-box" id="currentPromptText">Prompt text here...</div>
+            </div>
+
+            <div class="tab-content" id="tabWorkflow">
+              <div class="tools-details-box">
+                <h4>AI Tools Stack:</h4>
+                <p id="currentToolsText">Tools here...</p>
+                <h4 style="margin-top: 15px;">Workflow Methodology:</h4>
+                <p id="currentWorkflowText">Workflow process here...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: UP NEXT QUEUE & STAGE CALL BOARD -->
+        <div class="stage-sidebar">
+          
+          <!-- UP NEXT CARD -->
+          <div class="up-next-card card">
+            <div class="card-header-banner banner-next">
+              <div class="stage-pill-next">
+                <span class="clock-icon">⏳</span> UP NEXT ON STAGE
+              </div>
+              <span class="badge-alert">GET READY</span>
+            </div>
+
+            <div class="next-team-body">
+              <div class="next-team-headline">
+                <span class="team-number-pill" id="nextSno">#02</span>
+                <div>
+                  <h3 class="next-team-title" id="nextTeamName">Next Team Name</h3>
+                  <div class="next-team-theme" id="nextThemeName">The Greatest Gift</div>
+                </div>
+              </div>
+
+              <div class="next-score-preview">
+                <div class="score-mini">
+                  <span class="mini-label">Evaluation Score:</span>
+                  <span class="mini-val" id="nextTotalScore">35.0 / 40 (87.5%)</span>
+                </div>
+              </div>
+
+              <button id="callNextToStageBtn" class="btn btn-success btn-block">
+                <span>📢</span> Call Next Team to Stage
+              </button>
+            </div>
+          </div>
+
+          <!-- FULL CALL LIST / QUEUE ROSTER -->
+          <div class="queue-roster-card card">
+            <div class="roster-header">
+              <h3>Stage Presentation Queue</h3>
+              <span class="roster-count" id="rosterCount">44 Teams</span>
+            </div>
+
+            <div class="roster-list-container" id="rosterListContainer">
+              <!-- Dynamically populated roster list items -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: ALL TEAMS DIRECTORY & LEADERBOARD -->
+    <section id="directoryView" class="view-section">
+      
+      <div class="directory-control-bar card">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="tableSearchInput" class="form-input" placeholder="Search by team name, theme, lyrics keyword..." />
+        </div>
+
+        <div class="filter-pills-group">
+          <button class="filter-btn active" data-theme="ALL">All Themes (44)</button>
+          <button class="filter-btn" data-theme="Heroes Among us">Heroes Among Us</button>
+          <button class="filter-btn" data-theme="Engineering">Engineering</button>
+          <button class="filter-btn" data-theme="The Greatest Gift">The Greatest Gift</button>
+        </div>
+
+        <div class="sort-select-box">
+          <label for="tableSortSelect">Sort by:</label>
+          <select id="tableSortSelect" class="form-select form-select-sm">
+            <option value="sno_asc">Serial Number (#01 to #44)</option>
+            <option value="score_desc">Score (Highest to Lowest)</option>
+            <option value="score_asc">Score (Lowest to Highest)</option>
+            <option value="name_asc">Team Name (A &rarr; Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Teams Master Table -->
+      <div class="table-responsive-wrapper card">
+        <table class="master-table" id="masterTeamsTable">
+          <thead>
+            <tr>
+              <th style="width: 60px;">#</th>
+              <th>Team Name</th>
+              <th>Theme</th>
+              <th style="width: 80px;">Theme (10)</th>
+              <th style="width: 80px;">Lyrics (10)</th>
+              <th style="width: 80px;">Prompt (10)</th>
+              <th style="width: 80px;">Complete (10)</th>
+              <th style="width: 95px;">Total (40)</th>
+              <th style="width: 80px;">%</th>
+              <th>Key Deduction (Challenge Point)</th>
+              <th style="width: 140px; text-align: center;">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="masterTableBody">
+            <!-- Table rows generated by JS -->
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Sticky Mini Audio Player when scrolling -->
+  <div class="sticky-audio-bar" id="stickyAudioBar" style="display: none;">
+    <div class="sticky-player-content">
+      <div class="sticky-info">
+        <span class="sticky-badge" id="stickySno">#01</span>
+        <span class="sticky-team" id="stickyTeam">Team Name</span>
+        <span class="sticky-song" id="stickySong">Song.mp3</span>
+      </div>
+      <div class="sticky-controls">
+        <button id="stickyPlayBtn" class="btn btn-small btn-primary">▶</button>
+        <span id="stickyTime">00:00 / 00:00</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="help_app.js"></script>
+</body>
+</html>
