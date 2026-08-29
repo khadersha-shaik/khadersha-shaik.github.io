@@ -264,8 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
       row.className = isCurrentActive ? 'table-row-active' : '';
       
       row.innerHTML = `
-        <td class="col-rank"><span class="rank-badge-cell">#${String(t.finalRank || '-').padStart(2, '0')}</span></td>
-        <td class="col-sno"><span class="sno-pill">#${String(t.sno).padStart(2, '0')}</span></td>
+        <td class="col-sno" style="text-align: center;"><span class="sno-pill">#${String(t.sno).padStart(2, '0')}</span></td>
         <td class="col-team"><strong>${t.teamName}</strong></td>
         <td class="col-theme"><span class="badge badge-theme">${t.theme}</span></td>
         <td class="col-phone">${t.phone || 'N/A'}</td>

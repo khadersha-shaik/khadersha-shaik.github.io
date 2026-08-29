@@ -279,21 +279,19 @@
           <div class="sort-group">
             <label for="tableSortSelect" class="sort-label">Sort By:</label>
             <select id="tableSortSelect" class="form-select-small">
-              <option value="rank_asc">Finalist Rank (1 to 36)</option>
-              <option value="sno_asc">Original S.No (Low to High)</option>
-              <option value="sno_desc">Original S.No (High to Low)</option>
+              <option value="sno_asc">Team Number (Low to High)</option>
+              <option value="sno_desc">Team Number (High to Low)</option>
               <option value="name_asc">Team Name (A-Z)</option>
             </select>
           </div>
         </div>
 
-        <!-- Master Table (WITHOUT SCORES) -->
+        <!-- Master Table (WITHOUT SCORES & RANKS) -->
         <div class="table-responsive">
           <table class="master-teams-table">
             <thead>
               <tr>
-                <th style="width: 70px;">Rank</th>
-                <th style="width: 70px;">Orig #</th>
+                <th style="width: 80px; text-align: center;">Team #</th>
                 <th>Team Name</th>
                 <th>Theme</th>
                 <th>Contact Phone</th>
