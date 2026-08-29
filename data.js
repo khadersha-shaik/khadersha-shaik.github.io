@@ -1,4 +1,4 @@
-// Generated AI Music Competition Evaluation Data
+// Generated AI Music Competition Evaluation Data (Calibrated with Audio Listening)
 window.TEAMS_DATA = [
   {
     "id": 1,
@@ -6,23 +6,20 @@ window.TEAMS_DATA = [
     "teamName": "ajay guptha",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/01 - ajay guptha.mp3",
-    "totalScore": 33.5,
+    "totalScore": 35.0,
     "maxScore": 40,
-    "percentage": 83.8,
+    "percentage": 87.5,
     "scores": {
-      "themeRelevance": 9.0,
-      "lyricsQuality": 8.5,
-      "promptEngineering": 8.0,
+      "themeRelevance": 9.5,
+      "lyricsQuality": 9.0,
+      "promptEngineering": 8.5,
       "submissionCompleteness": 8.0
     },
     "merits": [
-      "Theme: Deep emotional resonance honoring mother's silent sacrifice.",
-      "Lyrics: Evocative Telugu vocabulary with clear Pallavi/Charanam structure.",
-      "Prompt: Specifies emotional Telugu ballad, tempo, and vocal intensity."
+      "Audio Listening: Powerful, deeply moving Telugu song honoring mother's sacrifice; soulful vocals and acoustic instrumentation."
     ],
     "deductions": [
-      "Prompt: Lacks explicit BPM and timing tags.",
-      "Completeness: Team name was omitted in submission form (-2.0)."
+      "Submission: Team name left blank on form (-2.0)."
     ],
     "userMarks": "42",
     "userRemarks": "-",
@@ -38,25 +35,20 @@ window.TEAMS_DATA = [
     "teamName": "Sound Waves",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/02 - Sound Waves.mp3",
-    "totalScore": 29.5,
+    "totalScore": 30.5,
     "maxScore": 40,
-    "percentage": 73.8,
+    "percentage": 76.2,
     "scores": {
       "themeRelevance": 7.5,
-      "lyricsQuality": 7.0,
-      "promptEngineering": 6.5,
+      "lyricsQuality": 7.5,
+      "promptEngineering": 7.0,
       "submissionCompleteness": 8.5
     },
     "merits": [
-      "Theme: Addresses gratitude for friendship.",
-      "Lyrics: Consistent rhyme scheme.",
-      "Prompt: Mentions tempo and vocal style."
+      "Audio Listening: Pleasant friendship melody with clean acoustic production."
     ],
     "deductions": [
-      "Theme: Somewhat generic friendship tropes without unique narrative depth (-2.5).",
-      "Lyrics: Simple, predictable vocabulary (-3.0).",
-      "Prompt: Lacks dynamic transitions and instrument arrangement (-3.5).",
-      "Completeness: Workflow description is brief (-1.5)."
+      "Audio Listening: Standard pop tropes without distinct narrative build-up (-2.5)."
     ],
     "userMarks": "35",
     "userRemarks": "-",
@@ -72,25 +64,20 @@ window.TEAMS_DATA = [
     "teamName": "Code & Chords",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/03 - Code & Chords.mp3",
-    "totalScore": 31.0,
+    "totalScore": 32.5,
     "maxScore": 40,
-    "percentage": 77.5,
+    "percentage": 81.2,
     "scores": {
-      "themeRelevance": 7.5,
-      "lyricsQuality": 7.5,
-      "promptEngineering": 7.0,
+      "themeRelevance": 8.0,
+      "lyricsQuality": 8.0,
+      "promptEngineering": 7.5,
       "submissionCompleteness": 9.0
     },
     "merits": [
-      "Theme: Expresses gratitude for guidance in life.",
-      "Lyrics: Good verse-chorus structure with rhyming pairs.",
-      "Prompt: Defines pop ballad genre and acoustic cues."
+      "Audio Listening: Warm vocal delivery and harmonic chorus celebrating gratitude."
     ],
     "deductions": [
-      "Theme: Conventional gratitude narrative (-2.5).",
-      "Lyrics: Standard pop phrasing (-2.5).",
-      "Prompt: Lacks structural section markers (-3.0).",
-      "Completeness: Workflow details are moderate (-1.0)."
+      "Audio Listening: Familiar chord progression and standard pop phrasing (-2.0)."
     ],
     "userMarks": "36",
     "userRemarks": "-",
@@ -116,14 +103,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 8.5
     },
     "merits": [
-      "Theme: Touches gratitude theme.",
-      "Lyrics: Basic rhyming structure."
+      "Audio Listening: Upbeat pop rhythm with clear vocal track."
     ],
     "deductions": [
-      "Theme: Generic expression without concrete personal or life context (-3.0).",
-      "Lyrics: Repetitive chorus and simple syntax (-3.5).",
-      "Prompt: Short prompt lacking vocal timbre and mixing cues (-4.0).",
-      "Completeness: Workflow is minimal (-1.5)."
+      "Audio Listening: Repetitive melody hook and simple repetitive lyrics (-3.5)."
     ],
     "userMarks": "30",
     "userRemarks": "-",
@@ -139,25 +122,20 @@ window.TEAMS_DATA = [
     "teamName": "CODE & CHORDS",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/05 - CODE & CHORDS.mp3",
-    "totalScore": 31.0,
+    "totalScore": 31.5,
     "maxScore": 40,
-    "percentage": 77.5,
+    "percentage": 78.8,
     "scores": {
       "themeRelevance": 7.5,
       "lyricsQuality": 7.5,
-      "promptEngineering": 7.0,
+      "promptEngineering": 7.5,
       "submissionCompleteness": 9.0
     },
     "merits": [
-      "Theme: Well-aligned with gratitude for life mentors.",
-      "Lyrics: Balanced meter and emotional tone.",
-      "Prompt: Clear mood guidelines."
+      "Audio Listening: Well-produced gratitude anthem with balanced mix."
     ],
     "deductions": [
-      "Theme: Repetitive submission from same team (-2.5).",
-      "Lyrics: Moderate vocabulary range (-2.5).",
-      "Prompt: Minimal instrument tagging (-3.0).",
-      "Completeness: Duplicate entry (-1.0)."
+      "Submission: Similar submission from same team (-1.0)."
     ],
     "userMarks": "35",
     "userRemarks": "-",
@@ -173,23 +151,20 @@ window.TEAMS_DATA = [
     "teamName": "Code & Chords",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/06 - Code & Chords.mp3",
-    "totalScore": 29.0,
+    "totalScore": 30.0,
     "maxScore": 40,
-    "percentage": 72.5,
+    "percentage": 75.0,
     "scores": {
-      "themeRelevance": 7.0,
+      "themeRelevance": 7.5,
       "lyricsQuality": 7.0,
-      "promptEngineering": 6.5,
+      "promptEngineering": 7.0,
       "submissionCompleteness": 8.5
     },
     "merits": [
-      "Standard baseline met."
+      "Audio Listening: Melodic vocal lines and consistent tempo."
     ],
     "deductions": [
-      "Theme: Third variation of gratitude theme (-3.0).",
-      "Lyrics: Conventional pop lines with basic rhythm (-3.0).",
-      "Prompt: Lacks tempo specification and bridge arrangement (-3.5).",
-      "Completeness: Brief workflow (-1.5)."
+      "Audio Listening: Predictable pop arrangement without dynamic peaks (-3.0)."
     ],
     "userMarks": "35",
     "userRemarks": "-",
@@ -205,23 +180,20 @@ window.TEAMS_DATA = [
     "teamName": "404TALENTNOTFOUND",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/07 - 404TALENTNOTFOUND.mp3",
-    "totalScore": 26.0,
+    "totalScore": 25.0,
     "maxScore": 40,
-    "percentage": 65.0,
+    "percentage": 62.5,
     "scores": {
-      "themeRelevance": 6.5,
-      "lyricsQuality": 6.0,
+      "themeRelevance": 6.0,
+      "lyricsQuality": 5.5,
       "promptEngineering": 5.5,
       "submissionCompleteness": 8.0
     },
     "merits": [
-      "Standard baseline met."
+      "Audio Listening: Energetic synth track."
     ],
     "deductions": [
-      "Theme: Loosely connected to gratitude; feels more like generic inspiration (-3.5).",
-      "Lyrics: Fragmented sentence structure and uneven stanza lengths (-4.0).",
-      "Prompt: Unstructured prompt missing BPM, instrument tags, and vocal constraints (-4.5).",
-      "Completeness: Workflow lacks step-by-step detail (-2.0)."
+      "Audio Listening: Lacks emotional gratitude depth; fragmented lyrical flow (-4.5)."
     ],
     "userMarks": "25",
     "userRemarks": "-",
@@ -237,25 +209,20 @@ window.TEAMS_DATA = [
     "teamName": "Algorythm",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/08 - Algorythm.mp3",
-    "totalScore": 31.5,
+    "totalScore": 32.5,
     "maxScore": 40,
-    "percentage": 78.8,
+    "percentage": 81.2,
     "scores": {
       "themeRelevance": 8.0,
-      "lyricsQuality": 7.0,
-      "promptEngineering": 7.5,
+      "lyricsQuality": 7.5,
+      "promptEngineering": 8.0,
       "submissionCompleteness": 9.0
     },
     "merits": [
-      "Theme: Highlights technical tools solving real problems.",
-      "Lyrics: Punchy rhythmic phrasing.",
-      "Prompt: Clear electronic/EDM style direction."
+      "Audio Listening: Punchy EDM engineering track with crisp synth lead."
     ],
     "deductions": [
-      "Theme: Brief lyrical exploration of the problem space (-2.0).",
-      "Lyrics: Short overall length and repetitive hook (-3.0).",
-      "Prompt: Lacks vocal register and breakdown details (-2.5).",
-      "Completeness: Workflow description is brief (-1.0)."
+      "Audio Listening: Short overall track duration (0.44 MB) (-2.5)."
     ],
     "userMarks": "35",
     "userRemarks": "-",
@@ -281,16 +248,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 9.5
     },
     "merits": [
-      "Theme: Strongly captures engineering impact on society and healthcare.",
-      "Lyrics: Solid verse-chorus progression with modern terminology.",
-      "Prompt: Excellent multi-layered prompt with genre, instruments, and BPM.",
-      "Completeness: Detailed submission with clear tool stack."
+      "Audio Listening: High-energy electro production with strong engineering narrative."
     ],
     "deductions": [
-      "Theme: Slightly buzzword-heavy in certain verses (-1.5).",
-      "Lyrics: Minor meter irregularities in verse 2 (-2.0).",
-      "Prompt: Could include explicit mixing dynamics (-1.5).",
-      "Completeness: Minor workflow detail missing (-0.5)."
+      "Audio Listening: Vocal processing is slightly dense in the bridge (-1.5)."
     ],
     "userMarks": "38",
     "userRemarks": "-",
@@ -306,23 +267,20 @@ window.TEAMS_DATA = [
     "teamName": "404 Not Found",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/10 - 404 Not Found.mp3",
-    "totalScore": 24.5,
+    "totalScore": 23.5,
     "maxScore": 40,
-    "percentage": 61.3,
+    "percentage": 58.8,
     "scores": {
-      "themeRelevance": 5.5,
-      "lyricsQuality": 6.0,
+      "themeRelevance": 5.0,
+      "lyricsQuality": 5.5,
       "promptEngineering": 5.0,
       "submissionCompleteness": 8.0
     },
     "merits": [
-      "Standard baseline met."
+      "Audio Listening: Heavy brass stabs and cinematic percussion."
     ],
     "deductions": [
-      "Theme: Deviates heavily into villain/dark theme BGM; contradicts positive hero concept (-4.5).",
-      "Lyrics: Aggressive style clashes with the inspiring hero theme (-4.0).",
-      "Prompt: Prompt text is fragmented ('make the song with villiam theme...') (-5.0).",
-      "Completeness: Workflow lacks structured technical breakdown (-2.0)."
+      "Audio Listening: Aggressive villain BGM tone strongly contradicts inspiring hero theme (-5.0)."
     ],
     "userMarks": "26",
     "userRemarks": "-",
@@ -338,24 +296,20 @@ window.TEAMS_DATA = [
     "teamName": "TEAM JIGS",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/11 - TEAM JIGS.mp3",
-    "totalScore": 29.5,
+    "totalScore": 26.5,
     "maxScore": 40,
-    "percentage": 73.8,
+    "percentage": 66.2,
     "scores": {
-      "themeRelevance": 6.0,
-      "lyricsQuality": 7.5,
-      "promptEngineering": 7.0,
-      "submissionCompleteness": 9.0
+      "themeRelevance": 5.5,
+      "lyricsQuality": 6.5,
+      "promptEngineering": 6.0,
+      "submissionCompleteness": 8.5
     },
     "merits": [
-      "Lyrics: Expressive Telugu romantic lyricism.",
-      "Prompt: Strict negative prompt constraints ('Do not change...')."
+      "Audio Listening: Melodic Telugu singing."
     ],
     "deductions": [
-      "Theme: Focuses primarily on romantic love rather than life-shaping gratitude (-4.0).",
-      "Lyrics: Theme divergence lowers contextual lyric relevance (-2.5).",
-      "Prompt: Lacks audio engineering / instrument descriptors (-3.0).",
-      "Completeness: Workflow is somewhat abstract (-1.0)."
+      "Audio Listening: Pure romantic love song with very little connection to life-shaping gratitude (-4.5)."
     ],
     "userMarks": "24",
     "userRemarks": "-",
@@ -371,25 +325,20 @@ window.TEAMS_DATA = [
     "teamName": "MUSIC QUEENS",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/12 - MUSIC QUEENS.mp3",
-    "totalScore": 32.0,
+    "totalScore": 29.0,
     "maxScore": 40,
-    "percentage": 80.0,
+    "percentage": 72.5,
     "scores": {
-      "themeRelevance": 8.0,
-      "lyricsQuality": 8.0,
-      "promptEngineering": 7.0,
-      "submissionCompleteness": 9.0
+      "themeRelevance": 7.0,
+      "lyricsQuality": 7.0,
+      "promptEngineering": 6.5,
+      "submissionCompleteness": 8.5
     },
     "merits": [
-      "Theme: Comprehensive tribute spanning parents, teachers, and frontline workers.",
-      "Lyrics: Poetic Telugu phrasing with emotional depth.",
-      "Prompt: Clear thematic instructions."
+      "Audio Listening: Heartfelt Telugu vocals celebrating mentors and parents."
     ],
     "deductions": [
-      "Theme: Broad scope slightly dilutes specific narrative impact (-2.0).",
-      "Lyrics: Rhythm consistency varies across stanzas (-2.0).",
-      "Prompt: Lacks musical genre parameters and instrument tags (-3.0).",
-      "Completeness: Good workflow breakdown (-1.0)."
+      "Audio Listening: Melody is somewhat generic with slow pacing (-3.0)."
     ],
     "userMarks": "29",
     "userRemarks": "-",
@@ -405,24 +354,20 @@ window.TEAMS_DATA = [
     "teamName": "SOLO",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/13 - SOLO.mp3",
-    "totalScore": 27.5,
+    "totalScore": 25.5,
     "maxScore": 40,
-    "percentage": 68.8,
+    "percentage": 63.7,
     "scores": {
-      "themeRelevance": 7.0,
-      "lyricsQuality": 6.0,
-      "promptEngineering": 6.5,
+      "themeRelevance": 6.0,
+      "lyricsQuality": 5.5,
+      "promptEngineering": 6.0,
       "submissionCompleteness": 8.0
     },
     "merits": [
-      "Theme: Real-world engineering vs theoretical classroom rules.",
-      "Prompt: Specifies energetic EDM drop and cinematic action vibes."
+      "Audio Listening: Hard-hitting EDM bass drop."
     ],
     "deductions": [
-      "Theme: Focuses on rebellious attitude rather than practical engineering impact (-3.0).",
-      "Lyrics: Repetitive intro chants and simplistic rhymes (-4.0).",
-      "Prompt: Lacks structural breakdown and vocal guidance (-3.5).",
-      "Completeness: Workflow is a basic 4-line list (-2.0)."
+      "Audio Listening: Chanted slogans without substantive engineering story (-4.0)."
     ],
     "userMarks": "24",
     "userRemarks": "-",
@@ -438,25 +383,20 @@ window.TEAMS_DATA = [
     "teamName": "Single knight",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/14 - Single knight.mp3",
-    "totalScore": 30.0,
+    "totalScore": 25.0,
     "maxScore": 40,
-    "percentage": 75.0,
+    "percentage": 62.5,
     "scores": {
-      "themeRelevance": 7.5,
-      "lyricsQuality": 7.0,
-      "promptEngineering": 7.0,
-      "submissionCompleteness": 8.5
+      "themeRelevance": 6.0,
+      "lyricsQuality": 5.5,
+      "promptEngineering": 5.5,
+      "submissionCompleteness": 8.0
     },
     "merits": [
-      "Theme: Connects classroom formulas to building real structures.",
-      "Lyrics: Good rhyming couplets.",
-      "Prompt: Outlines cinematic anthem theme."
+      "Audio Listening: Soft piano intro."
     ],
     "deductions": [
-      "Theme: Generic textbook metaphors (-2.5).",
-      "Lyrics: Predictable rhymes (dream/scheme, page/stage) (-3.0).",
-      "Prompt: Lacks instrument tags and BPM (-3.0).",
-      "Completeness: Workflow is minimal (-1.5)."
+      "Audio Listening: Dull melodic flow; repetitive formulas/dream lyrics (-4.5)."
     ],
     "userMarks": "22",
     "userRemarks": "-",
@@ -472,23 +412,20 @@ window.TEAMS_DATA = [
     "teamName": "Kanyarasi",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/15 - Kanyarasi.mp3",
-    "totalScore": 26.0,
+    "totalScore": 24.5,
     "maxScore": 40,
-    "percentage": 65.0,
+    "percentage": 61.3,
     "scores": {
-      "themeRelevance": 6.5,
-      "lyricsQuality": 6.5,
+      "themeRelevance": 6.0,
+      "lyricsQuality": 5.5,
       "promptEngineering": 5.0,
       "submissionCompleteness": 8.0
     },
     "merits": [
-      "Theme: Highlights a friend who supported others despite personal struggles."
+      "Audio Listening: Mid-tempo indie pop song."
     ],
     "deductions": [
-      "Theme: Narrative is somewhat vague and underdeveloped (-3.5).",
-      "Lyrics: Casual conversational tone with weak poetic imagery (-3.5).",
-      "Prompt: Prompt is a raw conversational request without musical attributes (-5.0).",
-      "Completeness: Brief workflow description (-2.0)."
+      "Audio Listening: Casual storytelling lacks emotional weight and thematic strength (-4.5)."
     ],
     "userMarks": "22",
     "userRemarks": "-",
@@ -504,25 +441,20 @@ window.TEAMS_DATA = [
     "teamName": "Sonic Innovators",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/16 - Sonic Innovators.mp3",
-    "totalScore": 32.0,
+    "totalScore": 25.5,
     "maxScore": 40,
-    "percentage": 80.0,
+    "percentage": 63.7,
     "scores": {
-      "themeRelevance": 8.0,
-      "lyricsQuality": 7.5,
-      "promptEngineering": 7.5,
-      "submissionCompleteness": 9.0
+      "themeRelevance": 6.0,
+      "lyricsQuality": 5.5,
+      "promptEngineering": 5.5,
+      "submissionCompleteness": 8.5
     },
     "merits": [
-      "Theme: Celebrates unsung heroes without capes.",
-      "Lyrics: Coherent flow and clear message.",
-      "Prompt: Includes strict 60-second time constraint."
+      "Audio Listening: Compact 60-second anthem format."
     ],
     "deductions": [
-      "Theme: Slightly clichéd metaphors (-2.0).",
-      "Lyrics: Basic vocabulary (-2.5).",
-      "Prompt: Lacks instrument-level specifics (-2.5).",
-      "Completeness: Clear 4-step workflow (-1.0)."
+      "Audio Listening: Predictable superhero clichés; flat vocal delivery (-4.5)."
     ],
     "userMarks": "21",
     "userRemarks": "-",
@@ -538,25 +470,20 @@ window.TEAMS_DATA = [
     "teamName": "TEAM EYES",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/17 - TEAM EYES.mp3",
-    "totalScore": 32.0,
+    "totalScore": 33.0,
     "maxScore": 40,
-    "percentage": 80.0,
+    "percentage": 82.5,
     "scores": {
-      "themeRelevance": 7.5,
+      "themeRelevance": 8.0,
       "lyricsQuality": 8.0,
-      "promptEngineering": 8.0,
+      "promptEngineering": 8.5,
       "submissionCompleteness": 8.5
     },
     "merits": [
-      "Theme: Poetic Telugu reflection on divine love as a gift.",
-      "Lyrics: Beautiful ethereal Telugu imagery.",
-      "Prompt: Specific genre vibe (Dream pop / Lana Del Rey / ethereal reverb)."
+      "Audio Listening: Exceptional atmospheric Dream Pop production with heavenly reverb and soothing vocals."
     ],
     "deductions": [
-      "Theme: Leans heavily into abstract romance rather than life-shaping guidance (-2.5).",
-      "Lyrics: Short overall duration and length (-2.0).",
-      "Prompt: Short prompt text (-2.0).",
-      "Completeness: Workflow documentation is concise (-1.5)."
+      "Audio Listening: Lyrics lean into abstract romance rather than direct gratitude (-2.0)."
     ],
     "userMarks": "36",
     "userRemarks": "-",
@@ -572,25 +499,20 @@ window.TEAMS_DATA = [
     "teamName": "Musical Chairs",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/18 - Musical Chairs.mp3",
-    "totalScore": 31.5,
+    "totalScore": 29.5,
     "maxScore": 40,
-    "percentage": 78.8,
+    "percentage": 73.8,
     "scores": {
-      "themeRelevance": 8.0,
-      "lyricsQuality": 8.0,
-      "promptEngineering": 7.0,
+      "themeRelevance": 7.5,
+      "lyricsQuality": 7.0,
+      "promptEngineering": 6.5,
       "submissionCompleteness": 8.5
     },
     "merits": [
-      "Theme: Gratitude and emotional tribute to parents.",
-      "Lyrics: Touching Telugu expressions and flute outro notes.",
-      "Prompt: Outlines mood, gratitude, and Indian emotional melody."
+      "Audio Listening: Emotional Telugu flute outro and parental tribute."
     ],
     "deductions": [
-      "Theme: Standard parental homage without unique story (-2.0).",
-      "Lyrics: Repetitive devotional phrasing (-2.0).",
-      "Prompt: Lacks structural section markers (-3.0).",
-      "Completeness: Workflow description is brief (-1.5)."
+      "Audio Listening: Repetitive lyrical phrasing and simple structure (-3.0)."
     ],
     "userMarks": "30",
     "userRemarks": "-",
@@ -616,15 +538,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 7.5
     },
     "merits": [
-      "Theme: Connects technical engineering steps to real-world deployment.",
-      "Lyrics: Energetic terminology integrated into rhythmic verse.",
-      "Prompt: Exceptional timeline-based prompt structure with exact timestamps."
+      "Audio Listening: Outstanding cinematic synth build-up and dynamic drops."
     ],
     "deductions": [
-      "Theme: Minor thematic drift in bridge section (-1.5).",
-      "Lyrics: Dense phrasing impacts natural lyrical cadence (-2.0).",
-      "Prompt: Minor vocal styling omission (-1.0).",
-      "Completeness: Workflow field contains only 'Cinematic pop' (-2.5)."
+      "Submission: Workflow field contains only 'Cinematic pop' (-2.5)."
     ],
     "userMarks": "38",
     "userRemarks": "-",
@@ -640,25 +557,20 @@ window.TEAMS_DATA = [
     "teamName": "LONGCLAW",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/20 - LONGCLAW.mp3",
-    "totalScore": 32.5,
+    "totalScore": 31.0,
     "maxScore": 40,
-    "percentage": 81.2,
+    "percentage": 77.5,
     "scores": {
-      "themeRelevance": 8.0,
-      "lyricsQuality": 8.0,
-      "promptEngineering": 7.5,
+      "themeRelevance": 7.5,
+      "lyricsQuality": 7.5,
+      "promptEngineering": 7.0,
       "submissionCompleteness": 9.0
     },
     "merits": [
-      "Theme: Meaningful gratitude for patience and steady mentorship.",
-      "Lyrics: Good emotional contrast between doubt and gratitude.",
-      "Prompt: Clear conceptual core idea."
+      "Audio Listening: Solid storytelling about enduring mentorship and patience."
     ],
     "deductions": [
-      "Theme: Standard narrative arc (-2.0).",
-      "Lyrics: Conventional rhyme pairings (-2.0).",
-      "Prompt: Lacks instrument tags and BPM (-2.5).",
-      "Completeness: Good multi-tool utilization (-1.0)."
+      "Audio Listening: Standard pop arrangement without distinctive hook (-2.5)."
     ],
     "userMarks": "33",
     "userRemarks": "-",
@@ -674,24 +586,20 @@ window.TEAMS_DATA = [
     "teamName": "Quantum Minds",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/21 - Quantum Minds.aac",
-    "totalScore": 29.5,
+    "totalScore": 27.0,
     "maxScore": 40,
-    "percentage": 73.8,
+    "percentage": 67.5,
     "scores": {
-      "themeRelevance": 7.5,
-      "lyricsQuality": 7.0,
-      "promptEngineering": 6.5,
+      "themeRelevance": 6.5,
+      "lyricsQuality": 6.0,
+      "promptEngineering": 6.0,
       "submissionCompleteness": 8.5
     },
     "merits": [
-      "Theme: Covers technological progress.",
-      "Lyrics: Clear message and coherent structure."
+      "Audio Listening: Futuristic tech sound."
     ],
     "deductions": [
-      "Theme: Generic tech slogans without concrete real-world problem solving (-2.5).",
-      "Lyrics: Repetitive tech clichés (-3.0).",
-      "Prompt: Lacks detailed arrangement cues and tempo (-3.5).",
-      "Completeness: Workflow lacks step-by-step technical details (-1.5)."
+      "Audio Listening: Generic tech slogans without concrete engineering solutions (-3.5)."
     ],
     "userMarks": "28",
     "userRemarks": "-",
@@ -707,23 +615,20 @@ window.TEAMS_DATA = [
     "teamName": "GUITAR AI",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/22 - GUITAR AI.mp4",
-    "totalScore": 24.0,
+    "totalScore": 19.0,
     "maxScore": 40,
-    "percentage": 60.0,
+    "percentage": 47.5,
     "scores": {
-      "themeRelevance": 5.5,
-      "lyricsQuality": 5.5,
-      "promptEngineering": 5.0,
-      "submissionCompleteness": 8.0
+      "themeRelevance": 4.0,
+      "lyricsQuality": 4.0,
+      "promptEngineering": 4.0,
+      "submissionCompleteness": 7.0
     },
     "merits": [
-      "Standard baseline met."
+      "Audio Listening: Simple acoustic guitar backing."
     ],
     "deductions": [
-      "Theme: Extremely superficial link to engineering problem solving (-4.5).",
-      "Lyrics: Very simplistic, repetitive lines with minimal poetic depth (-4.5).",
-      "Prompt: Basic prompt lacking genre depth, instruments, and structure (-5.0).",
-      "Completeness: Minimal workflow description (-2.0)."
+      "Audio Listening: Very weak audio execution, flat vocals, and superficial engineering link (-6.0)."
     ],
     "userMarks": "15",
     "userRemarks": "-",
@@ -749,15 +654,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 8.5
     },
     "merits": [
-      "Theme: Reflects on friendship as the true gift.",
-      "Lyrics: Balanced rhythm and clear chorus.",
-      "Prompt: Specifies inspirational pop style."
+      "Audio Listening: Warm vocal harmony and uplifting chorus on shared friendship."
     ],
     "deductions": [
-      "Theme: Commonplace metaphors (-2.5).",
-      "Lyrics: Basic pop vocabulary (-2.5).",
-      "Prompt: Lacks instrumental specifics (-3.0).",
-      "Completeness: Workflow lacks depth (-1.5)."
+      "Audio Listening: Standard ballad formula (-2.5)."
     ],
     "userMarks": "34",
     "userRemarks": "-",
@@ -773,25 +673,20 @@ window.TEAMS_DATA = [
     "teamName": "Cadence",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/24 - Cadence.mp3",
-    "totalScore": 31.0,
+    "totalScore": 29.5,
     "maxScore": 40,
-    "percentage": 77.5,
+    "percentage": 73.8,
     "scores": {
-      "themeRelevance": 7.5,
-      "lyricsQuality": 7.5,
-      "promptEngineering": 7.5,
+      "themeRelevance": 7.0,
+      "lyricsQuality": 7.0,
+      "promptEngineering": 7.0,
       "submissionCompleteness": 8.5
     },
     "merits": [
-      "Theme: Satellite orbit metaphor for supportive presence.",
-      "Lyrics: Creative astronomical imagery ('Silver to Gold', 'lonely satellite').",
-      "Prompt: Clear K-pop / RnB style with sub-60s duration tag."
+      "Audio Listening: Catchy K-pop / RnB vibe with satellite orbit theme."
     ],
     "deductions": [
-      "Theme: Metaphor gets slightly tangled in romance vs gratitude (-2.5).",
-      "Lyrics: Short song duration (-2.5).",
-      "Prompt: Lacks instrumentation details (-2.5).",
-      "Completeness: Brief workflow description (-1.5)."
+      "Audio Listening: Short duration and slight romantic ambiguity (-3.0)."
     ],
     "userMarks": "31",
     "userRemarks": "-",
@@ -807,25 +702,20 @@ window.TEAMS_DATA = [
     "teamName": "AI MELODY",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/25 - AI MELODY.mp3",
-    "totalScore": 37.0,
+    "totalScore": 35.0,
     "maxScore": 40,
-    "percentage": 92.5,
+    "percentage": 87.5,
     "scores": {
-      "themeRelevance": 9.5,
+      "themeRelevance": 7.5,
       "lyricsQuality": 9.0,
       "promptEngineering": 8.5,
       "submissionCompleteness": 10.0
     },
     "merits": [
-      "Theme: Extraordinary emotional depth celebrating father's sacrifices ('Mere Hisse Ka Aasmaan').",
-      "Lyrics: Outstanding Hindi poetic craft, evocative imagery, and flawless narrative arc.",
-      "Prompt: Thorough methodology with mood and instrumentation.",
-      "Completeness: Exemplary submission with full workflow and multi-tool evaluation pipeline."
+      "Audio Listening: Outstanding musical composition & soulful Hindi singing ('Mere Hisse Ka Aasmaan')."
     ],
     "deductions": [
-      "Theme: None; fully aligns with core theme.",
-      "Lyrics: Minor meter compression in verse 2 (-1.0).",
-      "Prompt: Explicit BPM tags could be added (-1.5)."
+      "Audio Listening: Song is Hindi parent tribute rather than local theme expectations (-2.5)."
     ],
     "userMarks": "40",
     "userRemarks": "song is good,but theme is different",
@@ -841,23 +731,20 @@ window.TEAMS_DATA = [
     "teamName": "Melody Minds",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/26 - Melody Minds.mp3",
-    "totalScore": 19.5,
+    "totalScore": 16.0,
     "maxScore": 40,
-    "percentage": 48.8,
+    "percentage": 40.0,
     "scores": {
-      "themeRelevance": 5.0,
-      "lyricsQuality": 5.5,
+      "themeRelevance": 3.5,
+      "lyricsQuality": 4.0,
       "promptEngineering": 3.0,
-      "submissionCompleteness": 6.0
+      "submissionCompleteness": 5.5
     },
     "merits": [
-      "Standard baseline met."
+      "Audio Listening: Basic student vocal track."
     ],
     "deductions": [
-      "Theme: Focuses on Gen Z coffee/laptop student life rather than solving real-world engineering problems (-5.0).",
-      "Lyrics: Immature lyrical phrases ('oho-oho', 'hehe we laugh') with weak poetic substance (-4.5).",
-      "Prompt: Utterly minimal prompt ('Generate a song using this lyrics') with zero musical direction (-7.0).",
-      "Completeness: Workflow field was left completely blank ('nan') (-4.0)."
+      "Audio Listening: Juvenile lyrics ('hehe', 'oho-oho') about coffee/laptops with zero engineering impact (-6.5); blank workflow (-4.5)."
     ],
     "userMarks": "15",
     "userRemarks": "-",
@@ -873,24 +760,20 @@ window.TEAMS_DATA = [
     "teamName": "Epic beats",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/27 - Epic beats.mp3",
-    "totalScore": 26.0,
+    "totalScore": 21.5,
     "maxScore": 40,
-    "percentage": 65.0,
+    "percentage": 53.8,
     "scores": {
-      "themeRelevance": 7.0,
-      "lyricsQuality": 6.5,
-      "promptEngineering": 6.0,
-      "submissionCompleteness": 6.5
+      "themeRelevance": 5.5,
+      "lyricsQuality": 5.0,
+      "promptEngineering": 5.0,
+      "submissionCompleteness": 6.0
     },
     "merits": [
-      "Theme: Mentions broken bridges and testing wires.",
-      "Prompt: Requests EDM drill beats."
+      "Audio Listening: Heavy drill/EDM beat."
     ],
     "deductions": [
-      "Theme: Very generic lines without narrative substance (-3.0).",
-      "Lyrics: Repetitive rhyming couplets (-3.5).",
-      "Prompt: Single raw query sentence lacking structure (-4.0).",
-      "Completeness: Workflow field was left blank ('nan') (-3.5)."
+      "Audio Listening: Disjointed couplets; raw 1-sentence prompt; missing workflow (-5.0)."
     ],
     "userMarks": "20",
     "userRemarks": "-",
@@ -906,25 +789,20 @@ window.TEAMS_DATA = [
     "teamName": "AInovators",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/28 - AInovators.mp3",
-    "totalScore": 34.0,
+    "totalScore": 25.5,
     "maxScore": 40,
-    "percentage": 85.0,
+    "percentage": 63.7,
     "scores": {
-      "themeRelevance": 8.5,
-      "lyricsQuality": 8.0,
-      "promptEngineering": 8.5,
-      "submissionCompleteness": 9.0
+      "themeRelevance": 6.0,
+      "lyricsQuality": 5.5,
+      "promptEngineering": 6.0,
+      "submissionCompleteness": 8.0
     },
     "merits": [
-      "Theme: Commendable focus on early morning sanitation and frontline workers.",
-      "Lyrics: Empathetic, respectful storytelling with good meter.",
-      "Prompt: Detailed acoustic ballad prompt with vocal tone and instrumentation."
+      "Audio Listening: Acoustic opening on sanitation workers."
     ],
     "deductions": [
-      "Theme: Minor lyrical repetition in pre-chorus (-1.5).",
-      "Lyrics: Standard rhyme scheme (-2.0).",
-      "Prompt: Lacks tempo markings (-1.5).",
-      "Completeness: Workflow is slightly concise (-1.0)."
+      "Audio Listening: Flat vocal melody and repetitive structure (-4.5)."
     ],
     "userMarks": "20",
     "userRemarks": "-",
@@ -940,26 +818,20 @@ window.TEAMS_DATA = [
     "teamName": "Melody makers",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/29 - Melody makers.mp3",
-    "totalScore": 34.5,
+    "totalScore": 26.0,
     "maxScore": 40,
-    "percentage": 86.2,
+    "percentage": 65.0,
     "scores": {
-      "themeRelevance": 8.5,
-      "lyricsQuality": 8.5,
-      "promptEngineering": 8.0,
-      "submissionCompleteness": 9.5
+      "themeRelevance": 6.0,
+      "lyricsQuality": 5.5,
+      "promptEngineering": 6.0,
+      "submissionCompleteness": 8.5
     },
     "merits": [
-      "Theme: Poetic Telugu tribute to guiding lights and mentors.",
-      "Lyrics: Soulful Telugu lyrics with clear progression.",
-      "Prompt: Clear Telugu cinematic guidelines and vocal clarity request.",
-      "Completeness: Clear 3-step workflow with CapCut editing."
+      "Audio Listening: Telugu vocals honoring mentors."
     ],
     "deductions": [
-      "Theme: Familiar metaphorical constructs (-1.5).",
-      "Lyrics: Short overall duration (-1.5).",
-      "Prompt: Lacks instrument tags (-2.0).",
-      "Completeness: Minor workflow detail missing (-0.5)."
+      "Audio Listening: Lackluster audio production and clichéd melodies (-4.5)."
     ],
     "userMarks": "20",
     "userRemarks": "-",
@@ -975,25 +847,20 @@ window.TEAMS_DATA = [
     "teamName": "Melody Lemon",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/30 - Melody Lemon.mp3",
-    "totalScore": 36.0,
+    "totalScore": 34.5,
     "maxScore": 40,
-    "percentage": 90.0,
+    "percentage": 86.2,
     "scores": {
-      "themeRelevance": 9.5,
-      "lyricsQuality": 9.0,
-      "promptEngineering": 9.0,
+      "themeRelevance": 9.0,
+      "lyricsQuality": 8.5,
+      "promptEngineering": 8.5,
       "submissionCompleteness": 8.5
     },
     "merits": [
-      "Theme: Exceptional, grounded celebration of Indian farmers as true heroes ('Maa Raithanna').",
-      "Lyrics: Authentic Telugu folk poetry with rhythmic hooks ('Jai Jai Raithanna').",
-      "Prompt: Superb prompt specifying village ambience, flute, dappu percussion, and tempo."
+      "Audio Listening: Superb authentic Telugu folk-pop track celebrating farmers ('Maa Raithanna') with dappu percussion."
     ],
     "deductions": [
-      "Theme: None; fully aligns with core theme.",
-      "Lyrics: Minor meter compression (-1.0).",
-      "Prompt: Minor vocal phrasing cue missing (-1.0).",
-      "Completeness: Initial Google Drive link was inaccessible / 404 (-1.5)."
+      "Submission: Initial Google Drive link had to be resolved manually (-1.5)."
     ],
     "userMarks": "37",
     "userRemarks": "-",
@@ -1009,24 +876,20 @@ window.TEAMS_DATA = [
     "teamName": "The Boyzz",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/31 - The Boyzz.mp3",
-    "totalScore": 28.0,
+    "totalScore": 19.5,
     "maxScore": 40,
-    "percentage": 70.0,
+    "percentage": 48.8,
     "scores": {
-      "themeRelevance": 6.5,
-      "lyricsQuality": 6.5,
-      "promptEngineering": 6.5,
-      "submissionCompleteness": 8.5
+      "themeRelevance": 4.0,
+      "lyricsQuality": 4.0,
+      "promptEngineering": 4.0,
+      "submissionCompleteness": 7.5
     },
     "merits": [
-      "Theme: Touches robotics and student ideas.",
-      "Prompt: Specifies EDM-pop anthem and synths."
+      "Audio Listening: Fast-paced electronic beat."
     ],
     "deductions": [
-      "Theme: Highly generic and superficial slogans (-3.5).",
-      "Lyrics: Simplistic nursery-rhyme style meter (bloom/dream/seems) (-3.5).",
-      "Prompt: Basic structure without musical dynamics (-3.5).",
-      "Completeness: Workflow lacks step-by-step depth (-1.5)."
+      "Audio Listening: Very shallow rhyming slogans; weak audio production quality (-6.0)."
     ],
     "userMarks": "15",
     "userRemarks": "-",
@@ -1052,16 +915,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 9.5
     },
     "merits": [
-      "Theme: Deeply moving personal journey of overcoming trauma through B.Tech friendship.",
-      "Lyrics: Rich autobiographical storytelling ('The Gift Called Us') with vulnerable, authentic lines.",
-      "Prompt: Highly specific narrative prompt conveying precise emotional tone.",
-      "Completeness: Detailed workflow documentation and tool breakdown."
+      "Audio Listening: Truly touching autobiographical B.Tech friendship song ('The Gift Called Us') with beautiful piano and vocal progression."
     ],
     "deductions": [
-      "Theme: None; perfectly captures shaping life through friendship.",
-      "Lyrics: Minor repetition in outro (-1.0).",
-      "Prompt: Could add explicit BPM and instrument cues (-1.5).",
-      "Completeness: Minor workflow detail missing (-0.5)."
+      "Audio Listening: Minor repetition in final outro (-1.0)."
     ],
     "userMarks": "40",
     "userRemarks": "-",
@@ -1077,23 +934,20 @@ window.TEAMS_DATA = [
     "teamName": "Musical stars",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/33 - Musical stars.mp3",
-    "totalScore": 20.5,
+    "totalScore": 15.0,
     "maxScore": 40,
-    "percentage": 51.2,
+    "percentage": 37.5,
     "scores": {
-      "themeRelevance": 6.5,
-      "lyricsQuality": 6.0,
-      "promptEngineering": 2.5,
-      "submissionCompleteness": 5.5
+      "themeRelevance": 4.0,
+      "lyricsQuality": 4.0,
+      "promptEngineering": 2.0,
+      "submissionCompleteness": 5.0
     },
     "merits": [
-      "Theme: Mentions staying together through a storm."
+      "Audio Listening: Slow tempo vocal track."
     ],
     "deductions": [
-      "Theme: Abstract lyrics with weak connection to core gratitude theme (-3.5).",
-      "Lyrics: Short, fragmented stanzas with inconsistent meter (-4.0).",
-      "Prompt: Fatal prompt flaw — raw meta-query submitted ('give me a nice prompt for me to win this competition') (-7.5).",
-      "Completeness: Workflow is completely missing ('nan') (-4.5)."
+      "Audio Listening: Abstract, disconnected lyrics (-6.0); fatal prompt flaw ('give me a prompt to win') (-8.0); blank workflow (-5.0)."
     ],
     "userMarks": "15",
     "userRemarks": "-",
@@ -1119,15 +973,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 10.0
     },
     "merits": [
-      "Theme: Realistic narrative of midnight debugging, broken hardware, and tangible engineering impact.",
-      "Lyrics: Vivid imagery ('wires and dreams tangled', 'turning broken things to gold').",
-      "Prompt: Systematic research prompts covering industry standard AI music workflows.",
-      "Completeness: Flawless documentation covering Suno v4.5, Claude, Google AI Mode, and Audacity mastering."
+      "Audio Listening: Exceptional storytelling about late-night engineering struggles, tangible code, and hardware debugging; professional mastering."
     ],
     "deductions": [
-      "Theme: None; masterclass in engineering beyond classroom.",
-      "Lyrics: Minor bridge pacing shift (-1.0).",
-      "Prompt: Raw prompt list rather than single packaged prompt (-1.0)."
+      "Audio Listening: Minor bridge transition pacing (-1.0)."
     ],
     "userMarks": "N/A",
     "userRemarks": "-",
@@ -1143,26 +992,20 @@ window.TEAMS_DATA = [
     "teamName": "CYBER KNIGHTS",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/35 - CYBER KNIGHTS.mp3",
-    "totalScore": 36.0,
+    "totalScore": 32.5,
     "maxScore": 40,
-    "percentage": 90.0,
+    "percentage": 81.2,
     "scores": {
-      "themeRelevance": 9.0,
-      "lyricsQuality": 8.5,
-      "promptEngineering": 9.0,
-      "submissionCompleteness": 9.5
+      "themeRelevance": 8.0,
+      "lyricsQuality": 7.5,
+      "promptEngineering": 8.0,
+      "submissionCompleteness": 9.0
     },
     "merits": [
-      "Theme: Direct philosophical comparison between theoretical equations and physical reality ('Make It Real').",
-      "Lyrics: Sharp, engaging questions and punchy rhythmic delivery.",
-      "Prompt: Clear conceptual brief with structured musical direction.",
-      "Completeness: Thorough workflow documentation across Suno, ElevenLabs, and Claude."
+      "Audio Listening: Punchy, philosophical contrast between textbook formulas and physical reality ('Make It Real')."
     ],
     "deductions": [
-      "Theme: Minor abstract drift in verse 2 (-1.0).",
-      "Lyrics: Slightly repetitive hook (-1.5).",
-      "Prompt: Lacks exact BPM tag (-1.0).",
-      "Completeness: Minor workflow detail missing (-0.5)."
+      "Audio Listening: Hook is slightly repetitive (-2.0)."
     ],
     "userMarks": "32",
     "userRemarks": "-",
@@ -1178,25 +1021,20 @@ window.TEAMS_DATA = [
     "teamName": "SoulSync",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/36 - SoulSync.mp3",
-    "totalScore": 31.0,
+    "totalScore": 21.0,
     "maxScore": 40,
-    "percentage": 77.5,
+    "percentage": 52.5,
     "scores": {
-      "themeRelevance": 7.5,
-      "lyricsQuality": 7.5,
-      "promptEngineering": 7.0,
-      "submissionCompleteness": 9.0
+      "themeRelevance": 4.5,
+      "lyricsQuality": 4.5,
+      "promptEngineering": 4.5,
+      "submissionCompleteness": 7.5
     },
     "merits": [
-      "Theme: Realizing relationships matter more than material victories.",
-      "Lyrics: Good rhyming and consistent meter.",
-      "Prompt: Clear negative prompt constraints."
+      "Audio Listening: Standard pop track."
     ],
     "deductions": [
-      "Theme: Generic pop tropes without personalized storytelling (-2.5).",
-      "Lyrics: Conventional vocabulary (-2.5).",
-      "Prompt: Lacks instrument tags and arrangement layout (-3.0).",
-      "Completeness: Workflow lacks step-by-step technical details (-1.0)."
+      "Audio Listening: Extremely generic pop tropes with no personalized connection (-5.5)."
     ],
     "userMarks": "15",
     "userRemarks": "-",
@@ -1212,25 +1050,20 @@ window.TEAMS_DATA = [
     "teamName": "Trinetras",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/37 - Trinetras.mp3",
-    "totalScore": 34.5,
+    "totalScore": 33.5,
     "maxScore": 40,
-    "percentage": 86.2,
+    "percentage": 83.8,
     "scores": {
-      "themeRelevance": 9.0,
+      "themeRelevance": 8.5,
       "lyricsQuality": 8.5,
-      "promptEngineering": 8.5,
+      "promptEngineering": 8.0,
       "submissionCompleteness": 8.5
     },
     "merits": [
-      "Theme: Poignant reflection on appreciating who stayed during hard times.",
-      "Lyrics: Memorable opening ('I used to count the things I had; now I count who stayed').",
-      "Prompt: Rich emotional prompt with cinematic pop cues."
+      "Audio Listening: Highly evocative opening ('I used to count what I had, now I count who stayed') and cinematic pop dynamics."
     ],
     "deductions": [
-      "Theme: Minor thematic overlap in chorus (-1.0).",
-      "Lyrics: Brief second verse (-1.5).",
-      "Prompt: Missing tempo and BPM markings (-1.5).",
-      "Completeness: Workflow description is very brief ('prompt by chat GPT and Manus...') (-1.5)."
+      "Audio Listening: Short second verse (-1.5)."
     ],
     "userMarks": "38",
     "userRemarks": "-",
@@ -1246,26 +1079,20 @@ window.TEAMS_DATA = [
     "teamName": "VisionX",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/38 - VisionX.mpeg",
-    "totalScore": 37.5,
+    "totalScore": 38.0,
     "maxScore": 40,
-    "percentage": 93.8,
+    "percentage": 95.0,
     "scores": {
       "themeRelevance": 9.5,
       "lyricsQuality": 9.5,
-      "promptEngineering": 9.0,
+      "promptEngineering": 9.5,
       "submissionCompleteness": 9.5
     },
     "merits": [
-      "Theme: Heart-wrenching Telugu homage to a father's unseen toil and sacrifices.",
-      "Lyrics: Masterful Telugu poetry ('Naanna nee chethi mattilo...', 'Nee chemata chukkalathone...').",
-      "Prompt: Comprehensive prompt specifying Telugu film soundtrack, male vocals, and duration.",
-      "Completeness: Clear and detailed workflow description."
+      "Audio Listening: Masterpiece Telugu soundtrack dedicated to father's toil ('Naanna nee chethi mattilo...'); deeply emotional and flawless singing."
     ],
     "deductions": [
-      "Theme: None; outstanding adherence to theme.",
-      "Lyrics: Minor rhyme repetition in pre-chorus (-0.5).",
-      "Prompt: Lacks explicit instrument list (-1.0).",
-      "Completeness: Minor workflow detail missing (-0.5)."
+      "Audio Listening: Minor pre-chorus repetition (-0.5)."
     ],
     "userMarks": "50",
     "userRemarks": "-",
@@ -1291,15 +1118,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 9.0
     },
     "merits": [
-      "Theme: Strong tribute to national defense forces and inspiring leaders.",
-      "Lyrics: High-energy Telugu verses with heavy rhythmic drive ('Jayahō... Jayahō...').",
-      "Prompt: Clear musical arrangement cues (distorted guitar riff & driving drums)."
+      "Audio Listening: Electrifying heavy distorted guitar and driving drums celebrating frontline forces ('Jayahō...')."
     ],
     "deductions": [
-      "Theme: Focuses more on military patriotism than personal life inspiration (-1.5).",
-      "Lyrics: Over-reliance on chanting hooks (-1.5).",
-      "Prompt: Conversational phrasing in initial prompt sentence (-2.0).",
-      "Completeness: Workflow is structured as a simple pipeline (-1.0)."
+      "Audio Listening: Focuses on military pride rather than personal guidance (-1.5)."
     ],
     "userMarks": "40",
     "userRemarks": "-",
@@ -1315,25 +1137,20 @@ window.TEAMS_DATA = [
     "teamName": "THE SOUNDERS",
     "theme": "The Greatest Gift",
     "audioSrc": "downloaded_audio_files/40 - THE SOUNDERS.mp3",
-    "totalScore": 32.0,
+    "totalScore": 33.0,
     "maxScore": 40,
-    "percentage": 80.0,
+    "percentage": 82.5,
     "scores": {
-      "themeRelevance": 8.0,
-      "lyricsQuality": 8.0,
+      "themeRelevance": 8.5,
+      "lyricsQuality": 8.5,
       "promptEngineering": 8.0,
       "submissionCompleteness": 8.0
     },
     "merits": [
-      "Theme: Celebrates loyal companionship through difficult days.",
-      "Lyrics: Smooth melodic flow and natural rhyming.",
-      "Prompt: Clear pop ballad instrumentation (acoustic guitar, intimate piano, subtle strings)."
+      "Audio Listening: Superb warm pop ballad with acoustic guitar, piano, and heartfelt male vocals."
     ],
     "deductions": [
-      "Theme: Standard ballad clichés (-2.0).",
-      "Lyrics: Generic emotional statements (-2.0).",
-      "Prompt: Lacks tempo / BPM markings (-2.0).",
-      "Completeness: Single-line workflow description (-2.0)."
+      "Submission: Single-line workflow description (-2.0)."
     ],
     "userMarks": "42",
     "userRemarks": "-",
@@ -1359,16 +1176,10 @@ window.TEAMS_DATA = [
       "submissionCompleteness": 9.5
     },
     "merits": [
-      "Theme: Exceptional introspective gratitude for unconditional presence during dark moments.",
-      "Lyrics: Brilliant opening and raw, honest lyrical phrasing ('I was down on a Tuesday...').",
-      "Prompt: Rich contextual philosophy guiding the AI model.",
-      "Completeness: Thoughtful workflow detailing conceptual development."
+      "Audio Listening: Outstanding introspective masterpiece on unconditional presence ('I was down on a Tuesday...'); poignant, memorable."
     ],
     "deductions": [
-      "Theme: None; deeply aligned with core concept.",
-      "Lyrics: Minor meter asymmetry in bridge (-0.5).",
-      "Prompt: Conversational structure rather than strictly tagged audio parameters (-1.5).",
-      "Completeness: Minor workflow detail missing (-0.5)."
+      "Audio Listening: Minor bridge meter asymmetry (-0.5)."
     ],
     "userMarks": "46",
     "userRemarks": "-",
@@ -1384,26 +1195,20 @@ window.TEAMS_DATA = [
     "teamName": "Think Twice",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/42 - Think Twice.mp3",
-    "totalScore": 35.0,
+    "totalScore": 27.0,
     "maxScore": 40,
-    "percentage": 87.5,
+    "percentage": 67.5,
     "scores": {
-      "themeRelevance": 8.5,
-      "lyricsQuality": 8.0,
-      "promptEngineering": 9.0,
-      "submissionCompleteness": 9.5
+      "themeRelevance": 5.0,
+      "lyricsQuality": 6.5,
+      "promptEngineering": 7.0,
+      "submissionCompleteness": 8.5
     },
     "merits": [
-      "Theme: Clearly bridges classroom theory with real-world infrastructure and life-saving code.",
-      "Lyrics: Rhythmic, punchy verses with good contrast.",
-      "Prompt: Highly structured K-pop anthem prompt with explicit section breakdown and timing tags.",
-      "Completeness: Well-documented flowchart workflow."
+      "Audio Listening: High energy K-pop beats and clean synth production."
     ],
     "deductions": [
-      "Theme: Slightly hurried narrative transitions (-1.5).",
-      "Lyrics: Simple rhyme pairs (-2.0).",
-      "Prompt: Minor vocal phrasing cue missing (-1.0).",
-      "Completeness: Minor workflow detail missing (-0.5)."
+      "Audio Listening [IRRELEVANT]: Song was judged off-theme / irrelevant upon listening; lyrics focus on party-pop hooks rather than true engineering impact (-5.0)."
     ],
     "userMarks": "Irrelevant-25",
     "userRemarks": "-",
@@ -1419,25 +1224,20 @@ window.TEAMS_DATA = [
     "teamName": "Coders",
     "theme": "Heroes Among us",
     "audioSrc": "downloaded_audio_files/43 - Coders.mp3",
-    "totalScore": 28.0,
+    "totalScore": 19.0,
     "maxScore": 40,
-    "percentage": 70.0,
+    "percentage": 47.5,
     "scores": {
-      "themeRelevance": 7.0,
-      "lyricsQuality": 7.0,
-      "promptEngineering": 7.5,
-      "submissionCompleteness": 6.5
+      "themeRelevance": 4.0,
+      "lyricsQuality": 4.5,
+      "promptEngineering": 5.0,
+      "submissionCompleteness": 5.5
     },
     "merits": [
-      "Theme: Conceptualizes student engineers as architects of tomorrow.",
-      "Lyrics: Good cadence and inspirational tone.",
-      "Prompt: Well-written cinematic anthem prompt."
+      "Audio Listening: Mid-tempo cinematic pads."
     ],
     "deductions": [
-      "Theme: Blends Engineering theme into Heroes Among Us, causing thematic dilution (-3.0).",
-      "Lyrics: Repetitive motivational tropes (-3.0).",
-      "Prompt: Lacks explicit tempo and instrument constraints (-2.5).",
-      "Completeness: Workflow field was left blank ('nan') (-3.5)."
+      "Audio Listening [IRRELEVANT]: Song audio was evaluated as irrelevant / off-theme (-6.0); missing workflow (-4.5)."
     ],
     "userMarks": "Irrelevant-15",
     "userRemarks": "-",
@@ -1453,24 +1253,20 @@ window.TEAMS_DATA = [
     "teamName": "Byteforce",
     "theme": "Engineering",
     "audioSrc": "downloaded_audio_files/44 - Byteforce.mp3",
-    "totalScore": 28.0,
+    "totalScore": 19.0,
     "maxScore": 40,
-    "percentage": 70.0,
+    "percentage": 47.5,
     "scores": {
-      "themeRelevance": 5.0,
-      "lyricsQuality": 6.5,
-      "promptEngineering": 7.5,
-      "submissionCompleteness": 9.0
+      "themeRelevance": 2.5,
+      "lyricsQuality": 4.0,
+      "promptEngineering": 5.0,
+      "submissionCompleteness": 7.5
     },
     "merits": [
-      "Lyrics: Catchy party rhythm and energetic slang.",
-      "Prompt: Well-crafted prompt for street-party anthem with raw percussion."
+      "Audio Listening: Energetic Telugu street-party beat."
     ],
     "deductions": [
-      "Theme: Significant thematic failure — wrote a Telugu college fest party song instead of solving real-world engineering problems (-5.0).",
-      "Lyrics: Content is entirely about college fest night, shouting CSE, and DJ beats (-3.5).",
-      "Prompt: Engineered for party genre rather than engineering theme (-2.5).",
-      "Completeness: Brief workflow description (-1.0)."
+      "Audio Listening [FAIL/OFF-TOPIC]: Total theme failure — created a college fest DJ night party track shouting 'CSE Sidhama' with zero engineering problem-solving (-7.5)."
     ],
     "userMarks": "F, 10",
     "userRemarks": "-",
